@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<!--TODO 1.將「div class="row-group"」區塊改為純顯示-->
+
+<head>
+    <meta charset="utf-8" lang="zh-Hant-TW">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+    <title>分進/再保賠款帳單明細</title>
+    <!-- jQuery -->
+    <script src="../../shigen/plugin/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+    <!-- fontawsome -->
+    <script defer src="../../shigen/fonts/js/all.min.js"></script>
+    <link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+    <!-- 共用樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/base.css">
+    <!-- menu 樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+    <link rel="stylesheet" href="../../shigen/css/menu.css">
+    <!-- 主要樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/type.css">
+
+    <!-- 自訂JS樣式 -->
+    <script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+        <div class="ajax-section-main"></div>
+        <div class="container-fluid content">
+
+            <div class="bread-crumbs">
+                <a href="#">分進作業</a> &gt; <a href="#">統計作業</a>
+            </div>
+            <div class="big_title title s1">分進統計作業</div>
+            <!-- <div class="col-12">
+                <button class="btn btn-edit" onclick="location.href='FRIF201.html'">
+                    績效表
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF020.html'">
+                    地區累積風險
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF202.html'">
+                    帳單資料統計表
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF204.html'">
+                    保費發展
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF205.html'">
+                    精算三角表
+                </button>
+            </div> -->
+            <div class="item_title title s2">帳單資料統計表</div>
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">Entry Date<br>輸入日期</div>
+                    <div class="col-4 col-border">
+                        <input style="min-width: 39%;" type="text" placeholder="YYYY/MM/DD" required >
+                        ~
+                        <input style="min-width: 39%;" type="text" placeholder="YYYY/MM/DD" required >
+                    </div>
+                    <div class="input-title col-2 col-border">U/W<br>承保年</div>
+                    <div class="col-4 col-border">
+                        <input style="min-width: 39%;" type="text" placeholder="YYYY" required >
+                        ~
+                        <input style="min-width: 39%;" type="text" placeholder="YYYY" required >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">選擇檔案</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="" selected>全部</option>
+                            <option value="">主檔</option>
+                            <option value="">臨時檔</option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">Treaty Code<br>合約卷號</div>
+                    <div class="col-4 col-border">
+                        <input style="min-width: 39%;" type="text" placeholder="" required >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Data<br>資料</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="" selected>全部</option>
+                            <option value="">實際數</option>
+                            <option value="">估計數</option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">Representative Treaty Code<br>代表號</div>
+                    <div class="col-4 col-border">
+                       <select name="" id="">
+                           <option value="Y">Y</option>
+                           <option value="N">N</option>
+                       </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">國內/國外</div>
+                    <div class="col-4 col-border">
+                      <select name="" id="">
+                          <option value="" selected>全部</option>
+                          <option value="">國內</option>
+                          <option value="">國外</option>
+                      </select>
+                    </div>
+                    <div class="input-title col-2 col-border">Combined Accounts<br>合併會計項目</div>
+                    <div class="col-4 col-border">
+                      <select name="" id="">
+                          <option value="Y" selected>Y</option>
+                          <option value="N">N</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Business Code<br>預算險別代號</div>
+                    <div class="col-4 col-border">
+                      <select name="" id="">
+                          <option value="">全部</option>
+                      </select>
+                      <a href="#">
+                        <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i>
+                    </a>
+                    </div>
+                    <div class="input-title col-2 col-border">Statistics<br>報表格式</div>
+                    <div class="col-4 col-border">
+                      <select name="" id="">
+                          <option value="1">全部</option>
+                          <option value="2">帳單明細</option>
+                          <option value="2">合約卷號</option>
+                          <option value="2">精算險別代號</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <button class="btn btn-primary">匯出</button>
+                    <button class="btn btn-primary">取消</button>
+                </div>
+            </div>
+            
+           
+        </div><!-- content end  -->
+    </section>
+
+</body>
+
+
+</html>

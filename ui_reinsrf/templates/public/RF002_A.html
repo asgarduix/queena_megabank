@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" lang="zh-Hant-TW">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+<title>兆豐</title>
+<!-- jQuery -->
+<script src="../../shigen/plugin/jquery.min.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+<script src="../../shigen/plugin/bootstrap/bootstrap.min.js"></script>
+<!-- fontawsome -->
+<script defer src="../../shigen/fonts/js/all.min.js"></script>
+<link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+<!--load all styles -->
+<!-- 共用樣式 -->
+<link rel="stylesheet" href="../../shigen/css/base.css">
+<!-- menu 樣式 -->
+<link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+<link rel="stylesheet" href="../../shigen/css/menu.css">
+<!-- 主要樣式 -->
+<link rel="stylesheet" href="../../shigen/css/type.css">
+
+<!-- 自訂JS樣式 -->
+<script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+    <div class="ajax-section-main"></div>
+    <div class="container-fluid content">
+        
+            <div class="bread-crumbs">
+                <a href="#">分進作業</a> &gt; <a href="#">合約作業</a>
+            </div>
+            <div class="big_title title s1">合約作業</div>
+            <div class="col-12">
+                <!-- <button class="btn btn-edit" onclick="location.href='RF002_A.html'">
+                    比例合約
+                </button>
+                <button class="btn btn-edit" onclick="location.href='RF004_A.html'">
+                    非比例合約
+                </button>
+                <button class="btn btn-edit" onclick="location.href='RF003.html'">
+                    代表號EPI
+                </button>
+                <button class="btn btn-edit" onclick="location.href='RF001_A.html'">
+                    合約查詢與列印
+                </button> -->
+                <div class="col-12 col-border">
+                    <div class="row-group form-row-group">
+                        <div class="row">
+                            <div class="input-title col-2 col-border">Treaty Code<br>合約卷號</div>
+                            <div class="col-4 col-border">
+                                <input type="text" placeholder="" required>
+                            </div>
+                            <div class="input-title col-2 col-border">U/W Year<br>承保年度</div>
+                            <div class="col-4 col-border">
+                                <input type="text" placeholder="" required>
+                            </div>
+                        </div>
+                    <div class="row">
+                    <div class="col-4 col-border">
+                    <button class="btn btn-primary">新增</button>
+                    <button class="btn btn-primary">查詢</button>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="item_title title s2">比例合約</div>
+                <div class="divSpace"></div>
+            <div class="tableGray">
+            <div class="item_title title s2">合約基本資料</div>
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">*Treaty Code<br>合約卷號</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="input-title col-2 col-border">*Representative Treaty Code<br>代表號</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*Treaty Name<br>合約名稱</div>
+                    <div class="col-10 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*Ceding Company Code<br>分保公司代碼</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="input-title col-2 col-border">*Type Code<br>合約型態</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="">Quota Share</option>
+                            <option value="">Surplus</option>
+                            <option value="">Quota Share & Surplus</option>
+                            <option value="">Facultative</option>
+                            <option value="">Open Cover</option>
+                            <option value="">Pool</option>
+                            <option value="">Binding Authority</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Ceding Company Name<br>分保公司全名</div>
+                    <div class="col-10 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*Inception Date<br>起保日</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="YYYY/MM/DD" required>
+                    </div>
+                    <div class="input-title col-2 col-border">*Attachment Point<br>再保險契約起賠額</div>
+                    <div class="col-4 col-border">
+                        <select style="min-width:30%;" name="" id="">
+                            <option value="" selected>幣別</option>
+                            <option value="" >USD</option>
+                        </select>
+                        <input style="max-width:50%;" type="text" placeholder="金額" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Cancel Date<br>註銷日期</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="YYYY/MM/DD" required>
+                    </div>
+                    <div class="input-title col-2 col-border">*Attachment of Liability<br>責任歸屬</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                        <option value="" selected>Risk Attaching</option>
+                        <option value="" >Loss Occurance</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">PNOC<br>暫時註銷通知</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="MM/DD" required>
+                    </div>
+                    <div class="input-title col-2 col-border">*國內/國外</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="" selected>國內</option>
+                            <option value="">國外</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">PNOC Automatically Tendered<br>自動提暫時註銷通知</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="Y">Y</option>
+                            <option value="N">N</option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">*Original File No.<br>對方來文號碼</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="請輸入號碼" required>
+                    </div>
+                </div>
+                <div class="row">
+                   
+                    <div class="input-title col-2 col-border">Commutation Date<br>結束日期</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="YYYY/MM/DD" required>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="divSpace"></div>
+            </div>
+            <div class="tableGray">
+            <div class="item_title title s2">各年度資訊</div>
+            <!-- table scroll-x -->
+            <div class="x_scroll ">
+                <table class="calculateBox">
+                    <tr class="calculateBoxHead">
+                        <td>U/W Year<br>承保年</td>
+                        <td>*Status<br>合約狀態</td>
+                        <td>*Portfolio Transfer<br>責任轉移</td>
+                        <td>Clean-Cut Date<br>結清日</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="YYYY" required></td>
+                        <td>
+                            <select name="" id="">
+                                <option value="O">Open</option>
+                                <option value="C">Close</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="R">Run-Off</option>
+                                <option value="C">Clean-Cut</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="YYYY/MM/DD" required></td>
+                    </tr>
+                    <tr class="calculateBoxHead">
+                        <td>Broker Code<br>經紀人代碼</td>
+                        <td>Broker Name<br>經紀人簡稱</td>
+                        <td>*Trade<br>收付對象</td>
+                        <td>*Trade Code<br>收付代碼</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="請填入七碼" required></td>
+                        <td><input type="text" placeholder="文件寫自動帶入" required></td>
+                        <td>
+                            <select name="" id="">
+                                <option value="R">相同</option>
+                                <option value="C">自留</option>
+                                <option value="C">指定</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="1234567" required></td>
+                    </tr>
+                    <tr class="calculateBoxHead">
+                        <td colspan="7">Commission<br>佣金</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">
+                            <button class="btn btn-edit"  onclick="window.open('RF001_B.html', 'newwindow', config='height=1000,width=1280,toolbar=no');">
+                                各項佣金
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="calculateBoxHead">
+                        <td>*EPI (100%)<br>預估再保費</td>
+                        <td>*EPI (Our Share)<br>預估再保費</td>
+                        <td>*Revised EPI (100%)<br>修正後預估再保費</td>
+                        <td>*Revised EPI (Our Share)<br>修正後預估再保費</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select style="min-width:30%;" name="" id="">
+                                <option value="">幣別</option>
+                            </select>
+                            <input style="max-width:50%;" type="text" placeholder="金額" required>
+                        </td>
+                        <td>
+                            <select style="min-width:30%;" name="" id="">
+                                <option value="">幣別</option>
+                            </select>
+                            <input style="max-width:50%;" type="text" placeholder="金額" required>
+                        </td>
+                        <td>
+                            <select style="min-width:30%;" name="" id="">
+                                <option value="">幣別</option>
+                            </select>
+                            <input style="max-width:50%;" type="text" placeholder="金額" required>
+                        </td>
+                        <td>
+                            <select style="min-width:30%;" name="" id="">
+                                <option value="">幣別</option>
+                            </select>
+                            <input style="max-width:50%;" type="text" placeholder="金額" required>
+                        </td>
+                    </tr>
+                    <tr class="calculateBoxHead">
+                        <td>*Earthquake<br>地震</td>
+                        <td>*Windstorm/Flood<br>颱風/洪水</td>
+                        <td>Event Limit (100%)<br>事件限額</td>
+                        <td>Cash Loss (100%)<br>現金攤賠</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="" id="">
+                                <option value="Y">Y</option>
+                                <option value="N">N</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="Y">Y</option>
+                                <option value="N">N</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select style="min-width:30%;" name="" id="">
+                                <option value="">幣別</option>
+                            </select>
+                            <input style="max-width:50%;" type="text" placeholder="金額" required>
+                        </td>
+                        <td>
+                            <select style="min-width:30%;" name="" id="">
+                                <option value="">幣別</option>
+                            </select>
+                            <input style="max-width:50%;" type="text" placeholder="金額" required>
+                        </td>
+                    </tr>
+                    <tr class="calculateBoxHead">
+                        <td>*Inception Date<br>再保險契約責任始期</td>
+                        <td>Expiration Date<br>再保險契約責任終期</td>
+                        <td colspan="2">*Last Updated Date<br>最後修改日</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="自動帶入可修改" required></td>
+                        <td><input type="text" placeholder="自動帶入可修改" required></td>
+                        <td colspan="2"><input type="text" placeholder="自動帶入" required></td>
+                    </tr>
+                    <tr class="calculateBoxHead">
+                        <td colspan="4">*Slip/Wording<br>合約文件</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="fileList">
+                                <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                
+                            <button class="btn btn-edit">瀏覽</button>
+                            <button class="btn btn-primary">上傳</button>
+                            
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            <div class="divSpace"></div>
+            <div class="col-12 d-flex">
+                <button class="btn btn-primary">複製</button>
+                <button class="btn btn-primary">暫存</button>
+                <button class="btn btn-primary">修改</button>
+                <button class="btn btn-primary">儲存</button>
+                <button class="btn btn-primary">匯出</button>
+                <button class="btn btn-primary">列印</button>
+                <button class="btn btn-edit" onclick="window.open('RF002_A_pop.html', 'newwindow', config='height=750,width=1280,toolbar=no');">
+                    新增合約型態
+                </button>
+            </div>
+            <div class="divSpace"></div>
+            <div class="row-group">
+                <div class="col-12" style="border: 1px solid #ccc; padding: 3px;">
+                    <table class="tblCssDataGrid css_table" style="table-layout:fixed">
+                        <tbody>
+                            <tr class="cssDataGridHeader">
+                                <th>U/W Year<br>承保年度</th>
+                                <th>Section</th>
+                                <th>Type Code<br>合約型態</th>
+                                <th>Our Share (%)<br>分入成分(%)</th>
+                                <th>EPI (Our Share)<br>預估再保費</th>
+                                <th>Revised EPI (Our Share)<br>修正後預估再保費</th>
+                            </tr>
+                            <tr class="cssDataGridHeader">
+                                <td>
+                                   2021
+                                </td>
+                                <td>
+                                   1
+                                </td>
+                                <td>
+                                   QS
+                                </td>
+                                <td>
+                                    2%
+                                </td>
+                                <td>
+                                   TWD$200,000,000
+                                </td>
+                                <td>
+                                    TWD$200,000,000
+                                </td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            <div class="divSpace"></div>
+    </div>
+    <!-- content end  -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                  請輸入需新增之層數
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="row-group">
+                <div class="row">
+                    <div class="input-title col-4 col-border justify-content-end">Section</div>
+                    <div class="col-8 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-4 col-border justify-content-end">Type</div>
+                    <div class="col-8 col-border">
+                        <select name="" id="">
+                            <option value="">Quota Share</option>
+                            <option value="">Surplus</option>
+                        </select>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary">確認</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+</body>
+
+
+</html>

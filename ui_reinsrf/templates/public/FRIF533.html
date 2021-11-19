@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<!--TODO 1.將「div class="row-group"」區塊改為純顯示-->
+
+<head>
+    <meta charset="utf-8" lang="zh-Hant-TW">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+    <title>分進/再保賠款帳單明細</title>
+    <!-- jQuery -->
+    <script src="../../shigen/plugin/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+    <script src="../../shigen/plugin/bootstrap/bootstrap.min.js"></script>
+    <!-- fontawsome -->
+    <script defer src="../../shigen/fonts/js/all.min.js"></script>
+    <link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+    <!-- 共用樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/base.css">
+    <!-- menu 樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+    <link rel="stylesheet" href="../../shigen/css/menu.css">
+    <!-- 主要樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/type.css">
+
+    <!-- 自訂JS樣式 -->
+    <script src="../../shigen/js/global.js"></script>
+    
+    
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+    <section>
+        <div class="ajax-section-main"></div>
+        <div class="container-fluid content">
+
+            <div class="bread-crumbs">
+                <a href="#">分出作業</a> &gt; <a href="#">分出作業</a>
+            </div>
+            <div class="big_title title s1">分出作業</div>
+
+            <div class="item_title title s2">合約成分作業</div>
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">Department<br>部門名稱</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1">國內部</option>
+                            <option value="2" selected>國外部</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Type Code<br>合約型態</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1" selected>Propotianal-Quota Share</option>
+                            <option value="2">test</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">U/W Year<br>承保年度</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="YYYY" required >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Treaty Name<br>合約名稱</div>
+                    <div class="col-10 col-border">
+                        <input type="text" placeholder="模糊搜尋比照高風險國家名單" required >
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="input-title col-2 col-border">Layer<br>合約層數</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="1~10" required >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2 col-border"></div>
+                    <div class="col-2 col-border">
+                        <button class="btn btn-primary">新增</button>
+                        <button class="btn btn-primary">查詢</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-group">
+                <div class="col-12"  style="border: 1px solid #ccc; padding: 3px;">
+                    <div class="row">
+                        <div class="col-12 col-border">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                新增
+                              </button>
+                            <!-- 彈跳視窗內容 -->
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModalone">
+                                複製
+                            </button>
+                            <button class="btn btn-primary">暫存</button>
+                            <button class="btn btn-primary">修改</button>
+                            <button class="btn btn-primary">刪除</button>
+                            <button class="btn btn-primary">送出</button>
+                            <button class="btn btn-primary">覆核</button>
+                            <button class="btn btn-primary">退回</button>
+                            <button class="btn btn-primary">離開</button>
+                        </div>
+                    </div>
+                    <table class="tblCssDataGrid css_table" style="table-layout:fixed">
+                        <tbody>
+                            <tr class="cssDataGridHeader">
+                                <th style="width: 50px;">
+                                    <span class="checkbox_box ml-2">
+                                        <input id="check1" type="checkbox" name="check">
+                                        <label for="check1"></label>
+                                    </span>
+                                </th>
+                                <th>Layer<br>合約層數</th>
+                                <th>Share<br>承接比例</th>
+                                <th>Company Code<br>再保險公司代碼</th>
+                                <th>Broker Code<br>再保險經紀公司代碼</th>
+                                <th>Trade<br>收付對象</th>
+                                <th>Trade Code<br>收付代碼</th>
+                            </tr>
+                            <tr class="cssDataGridHeader">
+                                <td>
+                                    <span class="checkbox_box ml-2">
+                                        <input id="check1" type="checkbox" name="check">
+                                        <label for="check1"></label>
+                                    </span>
+                                </td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="" selected>First</option>
+                                        <option value="" selected>Two</option>
+                                        <option value="" selected>Three</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="請填入百分比" required >
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="請填入公司代碼" required >
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="請填入公司代碼" required >
+                                </td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="" selected>相同</option>
+                                        <option value="" selected>自留</option>
+                                        <option value="" selected>指定</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="請填入收付代碼" required >
+                                </td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>  
+        
+        </div>
+       
+        <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                      請輸入需新增之層數及再保公司家數
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row-group">
+                    <div class="row">
+                        <div class="input-title col-4 col-border justify-content-end">合約層數</div>
+                        <div class="col-8 col-border">
+                            <select name="" id="">
+                                <option value="1">First</option>
+                                <option value="2" selected>Two</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-title col-4 col-border justify-content-end">再保公司家數</div>
+                        <div class="col-8 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary">確認</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- Modalone -->
+          <div class="modal fade" id="exampleModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                      請輸入需新增之年度及層數
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row-group">
+                    <div class="row">
+                        <div class="input-title col-4 col-border justify-content-end">承保年度</div>
+                        <div class="col-8 col-border">
+                            <input style="max-width: 50%;" type="text" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-title col-4 col-border justify-content-end">合約層數</div>
+                        <div class="col-8 col-border">
+                          
+                            <select  style="min-width: 10%;" name="" id="">
+                                <option value="1">First</option>
+                                <option value="2" selected>Two</option>
+                            </select>
+                            <a href="#">
+                                <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">確認</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+</body>
+
+
+</html>

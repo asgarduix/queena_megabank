@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" lang="zh-Hant-TW">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+<title>兆豐</title>
+<!-- jQuery -->
+<script src="../../shigen/plugin/jquery.min.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+<!-- fontawsome -->
+<script defer src="../../shigen/fonts/js/all.min.js"></script>
+<link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+<!--load all styles -->
+<!-- 共用樣式 -->
+<link rel="stylesheet" href="../../shigen/css/base.css">
+<!-- menu 樣式 -->
+<link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+<link rel="stylesheet" href="../../shigen/css/menu.css">
+<!-- 主要樣式 -->
+<link rel="stylesheet" href="../../shigen/css/type.css">
+
+<!-- 自訂JS樣式 -->
+<script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+    <div class="ajax-section-main"></div>
+    <div class="container-fluid content">
+        
+            <div class="bread-crumbs">
+                <a href="#">分進作業</a> &gt; <a href="#">合約作業</a> &gt; <a>非比例合約</a>
+            </div>
+            <div class="big_title title s1">合約成分作業</div>
+            <div class="col-12">
+                <button class="btn btn-edit" onclick="location.href='FRIF527.html'">
+                    合約代碼及名稱作業
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF529.html'">
+                    合約成分作業
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF531.html'">
+                    合約條件摘要
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF533.html'">
+                    合約條件變動
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF535.html'">
+                    合約交易對象查詢與列印
+                </button>
+            </div>
+            <!-- <div class="row-group">
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn btn-primary">新增</button>
+                        <button class="btn btn-primary">修改</button>
+                        <button class="btn btn-primary">刪除</button>
+                        <button class="btn btn-primary">查詢</button>
+                    </div>
+                </div>
+            </div> -->
+            <div class="item_title title s2">比例合約</div>
+            
+
+            <!-- table scroll-x -->
+            <div class="x_scroll ">
+                <table class="calculateBox">
+                    <tr class="calculateBoxHead">
+                        <td>U/W-Year<br>(承保年)</td>
+                        <td>*Status<br>(合約狀態)</td>
+                        <td>*Inception Date<br>(再保險契約責任始期)</td>
+                        <td>Expiration Date<br>(再保險契約責任終期)</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="" required></td>
+                        <td>
+                            <select name="" id="">
+                                <option value="1">Open</option>
+                                <option value="2">Close</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="" required></td>
+                        <td><input type="text" placeholder="" required></td>
+                    </tr>
+                    <tr class="calculateBoxHead">
+                        <td>Our-Share(%)<br>(分入比例)</td>
+                        <td></td>
+                        <td>Rate On Line(%)<br>(責任額費率)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>0.0000%</td>
+                        <td></td>
+                        <td>0.0000%</td>
+                        <td></td>
+                    </tr>
+                    <tr class="calculateBoxHead">
+                        <td>Limit(100%)<br>(再保契約再保責任額(限額))</td>
+                        <td>Limit(Our-Share)<br>(再保契約再保責任額(限額))</td>
+                        <td>Attachment Point(100%)<br>(再保險契約起賠額)</td>
+                        <td>Attachment Point(Our-Share)<br>再保險契約起賠額</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr class="calculateBoxHead">
+                        <td>GNPI(100%)<br>(毛淨保費)</td>
+                        <td>GNPI(Our-Share)<br>(毛淨保費)</td>
+                        <td>Revised GNPI(100%)<br>(修正後毛淨保費)</td>
+                        <td>Revised GNPI(Our-Share)<br>(修正後毛淨保費)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="calculateBoxHead">
+                        <td>Earthquake(Y/N)<br>(地震)</td>
+                        <td>Windstorm/Flood(Y/N)<br>(颱風/洪水)</td>
+                        <td>Territory Code<br>(區域代碼)</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="" id="">
+                                <option value="1">Y</option>
+                                <option value="2">N</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="1">Y</option>
+                                <option value="2">N</option>
+                            </select>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="calculateBoxHead">
+                        <td>Slip/Wording<br>(合約文件)</td>
+                        <td>Remark<br>(備註)</td>
+                        <td>Our Reference<br>(相關卷號)</td>
+                        <td>Last Updated Date<br>(最後修改日)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>YYYY/MM/DD</td>
+                    </tr>
+                </table>
+            </div>
+            
+            
+    </div><!-- content end  -->
+</section>
+
+</body>
+
+
+</html>

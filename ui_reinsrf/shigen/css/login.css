@@ -1,0 +1,72 @@
+/* 登入頁 */
+.login-bg {
+    background: #F6FDFF;
+}
+
+.login-box {
+    width: 70%;
+    margin: 10% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 0;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    /* background: #fff url(../images/general/icon_gray.svg) 105% 160% no-repeat; */
+}
+
+.login-img {
+    width: 50%;
+    min-height: 450px;
+    background: url(../images/theme/candycar.png) #fff center center no-repeat;
+    background-size: contain;
+}
+
+.login-form {
+    width: 50%;
+    /* background-color:#fff; */
+    padding: 0 5%;
+}
+
+.login-form h1 {
+    text-align: center;
+    width: 200px;
+    margin: 40px auto;
+}
+
+.login-form h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 15px 0;
+    color: #333333;
+}
+
+.login-form .form-check {
+    color: #757575;
+    vertical-align: middle;
+}
+
+.login-form .form-check .form-check-input {
+    vertical-align: middle;
+    margin-top: 0rem;
+}
+
+.login-form .form-control {
+    background-color: #E4E4E4;
+    border: 0;
+    color: #999;
+}
+
+.btn-login {
+    width: 100%;
+    background-color: #467FC6;
+    color: #fff;
+    font-size: 1rem;
+    min-height: 40px;
+}
+
+.btn-login:hover {
+    background-color: #3B6DAB;
+    color: #fff;
+}

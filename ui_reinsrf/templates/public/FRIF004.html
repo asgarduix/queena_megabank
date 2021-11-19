@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" lang="zh-Hant-TW">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+<title>兆豐</title>
+<!-- jQuery -->
+<script src="../../shigen/plugin/jquery.min.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+<!-- fontawsome -->
+<script defer src="../../shigen/fonts/js/all.min.js"></script>
+<link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+<!--load all styles -->
+<!-- 共用樣式 -->
+<link rel="stylesheet" href="../../shigen/css/base.css">
+<!-- menu 樣式 -->
+<link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+<link rel="stylesheet" href="../../shigen/css/menu.css">
+<!-- 主要樣式 -->
+<link rel="stylesheet" href="../../shigen/css/type.css">
+
+<!-- 自訂JS樣式 -->
+<script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+    <div class="ajax-section-main"></div>
+    <div class="container-fluid content">
+        
+            <div class="bread-crumbs">
+                <a href="#">分進作業</a> &gt; <a href="#">分進合約作業</a> &gt; <a>分進合約作業-查詢</a>
+            </div>
+            <div class="big_title title s1">承保受理作業</div>
+            
+            <div class="item_title title s2">合約代碼及名稱作業</div>
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">Treaty-Code(合約卷號)：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">*合約型態：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1">合約</option>
+                            <option value="2">臨分</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*Treaty-Name(合約名稱)：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">*Type-Code(合約型態代碼)：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*Ceding-Co-Code(分保公司代碼)：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">Loss Occurrence/Risk Attacging：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Broker-Code(經紀人代碼)：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">*國內/國外：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1">國內</option>
+                            <option value="2">國外</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*Business-Code(預算險別代號)：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">*Currency(幣別代碼)：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*Accounting-Code(會計險別代號)：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">Original-File-No(對方來文號碼)：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*Actuarial-Code(精算損益險別代號)：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">Coverage 代碼Phase I：</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*Inception-Date(起保日YYYYMMDD)：</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1">國別</option>
+                            <option value="2">國別</option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">Coverage 代碼Phase II：</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Cancel-Date(註銷日期YYYYMMDD)：</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="input-title col-2 col-border">Portfolio：</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Call-Up-Date(提註銷函日期YYYYMMDD)：</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Commutation-Date(結束日期YYYYMMDD)：</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item_title title s2">各年度資訊</div>
+            <div class="row-group">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-end">
+                        <button class="btn btn-secondary">新增</button>
+                        <button class="btn btn-primary">查詢</button>
+                        <button class="btn btn-primary">匯出</button>
+                    </div>
+                </div>
+            </div>
+            <div class="x_scroll">
+            <table class="calculateBox">
+                <tr class="calculateBoxHead">
+                    <td>(a)U/W-Year<br>(承保年)</td>
+                    <td>( b)Our-Share(%)<br>(分入比例)</td>
+                    <td>( c)Excess Point(100%)<br>(再保險契約起賠額)</td>
+                    <td>(d)Limit(100%)<br>(再保契約再保責任額(限額))</td>
+                    <td>(e)EPI(100%)<br>(預期再保費)</td>
+                    <td>( f)Revised EPI(100%)<br>(修正後預期再保費)</td>
+                    <td>(g)Fee(%)<br>(費用率)</td>
+                    <td>(h)</td>
+                    <td>(i)再保險契約責任始期</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>1.5000%</td>
+                    <td>30,000,000</td>
+                    <td>4,500,000</td>
+                    <td>100,000</td>
+                    <td>100,000</td>
+                    <td>5.0</td>
+                    <td></td>
+                    <td>2020/01/01</td>
+                </tr>
+                <tr class="calculateBoxHead">
+                    <td></td>
+                    <td></td>
+                    <td>(j)Excess Point(Our-Share)</td>
+                    <td>(k)Limit(Our-Share)<br>=( d)*(b)</td>
+                    <td>(l)EPI(Our-Share)<br>=(e)*(b)</td>
+                    <td>(m)Revised EPI(Our-Share)<br>=(f)*(b)</td>
+                    <td>(o)Earthquake(Y/N)<br>(地震)</td>
+                    <td>(p)Windstorm/Flood(Y/N)<br>(颱風/洪水)</td>
+                    <td>(q)再保險契約責任終期</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>450,000</td>
+                    <td>67,500</td>
+                    <td>1,500</td>
+                    <td>1,500</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td></td>
+                </tr>
+                <tr class="calculateBoxHead">
+                    <td></td>
+                    <td></td>
+                    <td>(r)Territory Code<br>(區域代碼)</td>
+                    <td>(s)Slip/Wording<br>(附件)</td>
+                    <td>(t)Remark<br>(備註)</td>
+                    <td>(u)Our Reference<br>(代表號)</td>
+                    <td>(v)Our Reference<br>(代表號)</td>
+                    <td>(w)</td>
+                    <td>(x)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>KR</td>
+                    <td><button class="btn btn-primary">查看</button></td>
+                    <td>請注意看看…</td>
+                    <td>LI-0001</td>
+                    <td>LI-0001</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+            <div class="">
+                新增或修改(每欄位皆為必填，除(t)、(u)、(v)、(w)外)
+            </div>
+            <div class="x_scroll">
+            <table class="calculateBox">
+                <tr class="calculateBoxHead">
+                    <td>(a)U/W-Year<br>(承保年)</td>
+                    <td>( b)Our-Share(%)<br>(分入比例)</td>
+                    <td>( c)Excess Point(100%)<br>(再保險契約起賠額)</td>
+                    <td>(d)Limit(100%)<br>(再保契約再保責任額(限額))</td>
+                    <td>(e)EPI(100%)<br>(預期再保費)</td>
+                    <td>( f)Revised EPI(100%)<br>(修正後預期再保費)</td>
+                    <td>(g)Fee(%)<br>(費用率)</td>
+                    <td>(h)</td>
+                    <td>(i)再保險契約責任始期</td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="" style="width: 40px;" required></td>
+                    <td><input type="text" placeholder="" required>%</td>
+                    <td><input type="text" placeholder="" required></td>
+                    <td><input type="text" placeholder="" required></td>
+                    <td><input type="text" placeholder="" required></td>
+                    <td><input type="text" placeholder="" required></td>
+                    <td><input type="text" placeholder="" required></td>
+                    <td></td>
+                    <td><input type="text" placeholder="" required></td>
+                </tr>
+                <tr class="calculateBoxHead">
+                    <td></td>
+                    <td></td>
+                    <td>(j)Excess Point(Our-Share)</td>
+                    <td>(k)Limit(Our-Share)<br>=( d)*(b)</td>
+                    <td>(l)EPI(Our-Share)<br>=(e)*(b)</td>
+                    <td>(m)Revised EPI(Our-Share)<br>=(f)*(b)</td>
+                    <td>(o)Earthquake(Y/N)<br>(地震)</td>
+                    <td>(p)Windstorm/Flood(Y/N)<br>(颱風/洪水)</td>
+                    <td>(q)再保險契約責任終期</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <select name="" style="min-width: 60px;" id="">
+                            <option value="">Y</option>
+                            <option value="">N</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" style="min-width: 60px;" id="">
+                            <option value="">Y</option>
+                            <option value="">N</option>
+                        </select>
+                    </td>
+                    <td><input type="text" placeholder="" required></td>
+                </tr>
+                <tr class="calculateBoxHead">
+                    <td></td>
+                    <td></td>
+                    <td>(r)Territory Code<br>(區域代碼)</td>
+                    <td>(s)Slip/Wording<br>(附件)</td>
+                    <td>(t)Remark<br>(備註)</td>
+                    <td>(u)Our Reference<br>(代表號)</td>
+                    <td>(v)Our Reference<br>(代表號)</td>
+                    <td>(w)</td>
+                    <td>(x)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><button class="btn btn-primary">選擇</button></td>
+                    <td><button class="btn btn-primary">上傳</button></td>
+                    <td><input type="text" placeholder="" required></td>
+                    <td><input type="text" placeholder="" required></td>
+                    <td><input type="text" placeholder="" required></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+            <div class="">
+                新增或修改(每欄位皆為必填，除(t)、(u)、(v)、(w)外)
+            </div>
+            
+                <div class="row-group">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <button class="btn btn-secondary">確認</button>
+                            <button class="btn btn-primary">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+    </div><!-- content end  -->
+</section>
+
+</body>
+
+
+</html>

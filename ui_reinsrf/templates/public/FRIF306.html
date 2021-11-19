@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" lang="zh-Hant-TW">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+<title>兆豐</title>
+<!-- jQuery -->
+<script src="../../shigen/plugin/jquery.min.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+<!-- fontawsome -->
+<script defer src="../../shigen/fonts/js/all.min.js"></script>
+<link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+<!--load all styles -->
+<!-- 共用樣式 -->
+<link rel="stylesheet" href="../../shigen/css/base.css">
+<!-- menu 樣式 -->
+<link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+<link rel="stylesheet" href="../../shigen/css/menu.css">
+<!-- 主要樣式 -->
+<link rel="stylesheet" href="../../shigen/css/type.css">
+
+<!-- 自訂JS樣式 -->
+<script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+    <div class="ajax-section-main"></div>
+    <div class="container-fluid content">
+        
+            <div class="bread-crumbs">
+                <a href="#">分進作業</a> &gt; <a href="#">帳單作業</a>
+            </div>
+            <div class="big_title title s1">臨時檔登錄與維護</div>
+            <div class="col-12">
+                <button class="btn btn-edit" onclick="location.href='FRIF308.html'">
+                    帳單臨時擋資料列印
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF309.html'">
+                    帳單臨時檔併入主檔及補傳
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF313.html'">
+                    帳單主檔查詢(單筆)
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF311.html'">
+                    合約帳單查詢
+                </button>
+            </div>
+            <div class="row-group">
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn btn-primary">查詢</button>
+                        <button class="btn btn-primary">列印</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item_title title s2">Period</div>
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">一般(General)</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1">1st Quarter</option>
+                            <option value="2">2nd Quarter</option>
+                            <option value="3">3rd Quarter</option>
+                            <option value="4">4rd Quarter</option>
+                            <option value="5">1st Half Year</option>
+                            <option value="6">2nd Half Year</option>
+                            <option value="7">Year</option>
+                            <option value="8">Other</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*起(Inception Date)：</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*迄(Expiry Date)：</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*盈餘佣金(Profit Commission)</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*現金攤賠／出險日(Cash Call/Date of Loss)</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*責任移轉(Portfolio Transfer)</div>
+                    <div class="col col-border">
+                        <input type="text" placeholder="" required>
+                        <select name="" id="">
+                            <option value="1">Premium</option>
+                            <option value="2">Loss</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="1">Out/Withdrawal</option>
+                            <option value="2">In/Entry</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*梯次佣金調整(Commission Adjustment)</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*損失分攤(Loss Participation)</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*折償/結清(Commutation/Cut-Off)</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*信用狀(Letter of Credit (LOC))</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*未決賠款預付款(Outstanding Claim Advance (OCA))</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+    </div><!-- content end  -->
+</section>
+
+</body>
+
+
+</html>
