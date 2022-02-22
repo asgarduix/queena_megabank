@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" lang="zh-Hant-TW">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+<title>兆豐</title>
+<!-- jQuery -->
+<script src="../../shigen/plugin/jquery.min.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+<!-- fontawsome -->
+<script defer src="../../shigen/fonts/js/all.min.js"></script>
+<link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+<!--load all styles -->
+<!-- 共用樣式 -->
+<link rel="stylesheet" href="../../shigen/css/base.css">
+<!-- menu 樣式 -->
+<link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+<link rel="stylesheet" href="../../shigen/css/menu.css">
+<!-- 主要樣式 -->
+<link rel="stylesheet" href="../../shigen/css/type.css">
+
+<!-- 自訂JS樣式 -->
+<script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+    <div class="ajax-section-main"></div>
+    <div class="container-fluid content">
+        
+            <div class="bread-crumbs">
+                <a href="#">分進作業</a> &gt; <a href="#">估計數作業</a>
+            </div>
+            <div class="big_title title s1">估計數作業</div>
+            <!-- <div class="col-12">
+                <button class="btn btn-edit" onclick="location.href='FRIF401.html'">
+                    未決賠款併入未達帳
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF402.html'">
+                    未達帳試算作業
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF403.html'">
+                    未達帳傳送作業
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF404.html'">
+                    估計數主檔查詢
+                </button>
+            </div> -->
+            <div class="item_title title s2">未達帳傳送作業</div>
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">Date<br>未達帳試算日期</div>
+                    <div class="col-4 col-border">
+                        <input style="max-width:39%;" type="text" placeholder="YYYY/MM/DD" required>
+                        ～
+                        <input style="max-width:39%;" type="text" placeholder="YYYY/MM/DD" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary">查詢</button>
+                </div>
+            </div>
+            <!-- 按下查詢鈕後才出現表格 -->
+            <div style="border: 1px solid #ccc; padding: 3px; margin-top:15px;">
+                <table class="tblCssDataGrid css_table" width="100%" style="table-layout:fixed">
+                    <tbody>
+                        <tr class="cssDataGridHeader">
+                        <th><a href="">未達帳估算期間</a></th>
+                        <th><a href="">Date<br>試算日期</a></th>
+                        <th><a href="">Version<br>版本</a></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>2021/04/28</td>
+                        <td>2021/04/28</td>
+                        <td>1</td>
+                        <td>
+                            <button class="btn btn-primary">選擇</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021/04/28</td>
+                        <td>2021/04/28</td>
+                        <td>1</td>
+                        <td>
+                            <button class="btn btn-primary">選擇</button>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <!-- 按下查詢鈕後才出現表格 -->
+            <div style="border: 1px solid #ccc; padding: 3px; margin-top:15px;">
+                <table class="tblCssDataGrid css_table" width="100%" style="table-layout:fixed">
+                    <tbody>
+                        <tr class="cssDataGridHeader">
+                        <th><a href="">Accounting Code<br>會計險別代號</a></th>
+                        <th><a href="">Treaty Code<br>合約卷號</a></th>
+                        <th><a href="">U/W Year<br>承保年度</a></th>
+                        <th><a href="">Premium<br>保費</a></th>
+                        <th><a href="">Commission<br>佣金費用</a></th>
+                        <th><a href="">Adjust Commission<br>梯次佣金費用調整</a></th>
+                        <th><a href="">Profit Commission<br>盈餘佣金費用</a></th>
+                        <th><a href="">Handling Fee<br>手續費用</a></th>
+                        <th><a href="">Overriding Commission<br>轉再保手續費</a></th>
+                        <th><a href="">Brokerage<br>經紀人佣金</a></th>
+                        <th><a href="">OS Loss<br>未決賠款 (未達帳)</a></th>
+                        <th><a href="">OS Loss<br>未決賠款</a></th>
+                        <th><a href="">Major Loss<br>重大賠款 (未決)</a></th>
+                    </tr>
+                    <tr>
+                        <td>1234567</td>
+                        <td>1234567</td>
+                        <td>1234567</td>
+                        <td>1234567</td>
+                        <td>1234567</td>
+                        <td>1234567</td>
+                        <td>1234567</td>
+                        <td>1234567</td>
+                        <td>1234567</td>
+                        <td>1234567</td>
+                        <td>1234567</td>
+                        <td>1234567</td>
+                        <td>1234567</td>
+                    </tr>
+                     <!-- total行不動 -->
+                    <tr class="table-total">
+                        <td colspan="2">火險 Sub Total</td>
+                        <td colspan="11">100,000</td>
+                    </tr>
+                    <tr class="table-total">
+                        <td colspan="2">車險 Sub Total</td>
+                        <td colspan="11">100,000</td>
+                    </tr>
+                    <tr class="table-total">
+                        <td colspan="2">水險 Sub Total</td>
+                        <td colspan="11">100,000</td>
+                    </tr>
+                    <tr class="table-total">
+                        <td colspan="2">意外險 Sub Total</td>
+                        <td colspan="11">100,000</td>
+                    </tr>
+                    <tr class="table-total">
+                        <td colspan="2">健傷險 Sub Total</td>
+                        <td colspan="11">100,000</td>
+                    </tr>
+                    <tr class="table-total">
+                        <td colspan="2">Grand Total</td>
+                        <td colspan="11">500,000</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <button class="btn btn-primary">傳送</button>
+                <button class="btn btn-primary">取消</button>
+    </div><!-- content end  -->
+</section>
+
+</body>
+
+
+</html>

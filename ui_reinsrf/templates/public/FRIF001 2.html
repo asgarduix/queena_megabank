@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" lang="zh-Hant-TW">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+<title>公司資料維護</title>
+<!-- jQuery -->
+<script src="../../shigen/plugin/jquery.min.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+<!-- fontawsome -->
+<script defer src="../../shigen/fonts/js/all.min.js"></script>
+<link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+<!--load all styles -->
+<!-- 共用樣式 -->
+<link rel="stylesheet" href="../../shigen/css/base.css">
+<!-- menu 樣式 -->
+<link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+<link rel="stylesheet" href="../../shigen/css/menu.css">
+<!-- 主要樣式 -->
+<link rel="stylesheet" href="../../shigen/css/type.css">
+
+<!-- 自訂JS樣式 -->
+<script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+    <div class="ajax-section-main"></div>
+    <div class="container-fluid content">
+        
+            <div class="bread-crumbs">
+                <a href="#">維護作業</a> &gt; <a href="#">公司資料</a> &gt; <a>公司資料維護</a>
+            </div>
+            <div class="big_title title s1">公司資料</div>
+            
+            <div class="item_title title s2">公司資料維護</div>
+			<h3 class="filterBar accordion" id="accordionForeign" onclick="showFunction('accordionForeign');">國外部權限</h3>
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">再保人代碼</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+					<div class="input-title col-2 col-border">更新日期</div>
+                    <div class="col-4 col-border">
+                        20201010
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">收付代碼</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+					<div class="input-title col-2 col-border">歸戶</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+				</div>
+				<div class="row">
+                    <div class="input-title col-2 col-border">保發中心代碼</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+					<div class="input-title col-2 col-border">歸戶後保發代碼</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">行業別</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="">財產保險業_民營(16520)</option>
+							<option value="">再保險業_民營(16530)</option>
+							<option value="">保險代理及經紀業_民營(16551)</option>
+							<option value="">其他保險輔助業_民營(16559)</option>
+							<option value="">財產保險業_公營(26520)</option>
+							<option value="">再保險業_公營(26530)</option>
+							<option value="">保險代理及經紀業_公營(26551)</option>
+							<option value="">其他保險輔助業_公營(26559)</option>
+                        </select>
+                    </div>
+					<div class="input-title col-2 col-border">歸戶後行業別</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="">財產保險業_民營(16520)</option>
+							<option value="">再保險業_民營(16530)</option>
+							<option value="">保險代理及經紀業_民營(16551)</option>
+							<option value="">其他保險輔助業_民營(16559)</option>
+							<option value="">財產保險業_公營(26520)</option>
+							<option value="">再保險業_公營(26530)</option>
+							<option value="">保險代理及經紀業_公營(26551)</option>
+							<option value="">其他保險輔助業_公營(26559)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">英文縮寫</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+					<div class="input-title col-2 col-border">國內/外</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1">國內</option>
+                            <option value="2">國外</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">英文簡稱</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+					<div class="input-title col-2 col-border">國別</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="">JP-日本</option>
+                            <option value="">KN-聖克里斯多福及尼維斯</option>
+							<option value="">PA-巴拿馬</option>
+                            <option value="">SG-新加坡</option>
+							<option value="">US-美國</option>
+                            <option value="">PZ-巴拿馬運河區</option>
+                        </select>
+                    </div>
+				</div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">中文簡稱</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+					<div class="input-title col-2 col-border">大陸地區</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1">是</option>
+                            <option value="2">否</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">英文全名</div>
+                    <div class="col-10 col-border">
+                        <textarea cols="50" rows="1" style="border: 1px solid #eeeeee;height: 15px; border-radius: 5px; background-color: #fff;">
+輸入你想要寫的內容...
+                            </textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">中文全名</div>
+                    <div class="col-10 col-border">
+                        <textarea cols="50" rows="1" style="border: 1px solid #eeeeee;height: 15px; border-radius: 5px; background-color: #fff;">
+輸入你想要寫的內容...
+                            </textarea>
+                    </div>
+                </div>
+				<div class="row">
+					<div class="input-title col-2 col-border">保經代碼</div>
+                    <div class="col-4 col-border">
+                        <div class="col-4 col-border">
+                            <select name="" id="">
+                                <option value="0">0-再保人</option>
+                                <option value="1">1-經紀人</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-title col-2 col-border">負責人</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+				</div>
+                <div class="row">
+					<div class="input-title col-2 col-border">適格性</div>
+                    <div class="col-4 col-border">
+                        <span class="checkbox_box">
+                            <input id="radio01_1" type="radio" name="radio01" value="1" checked>
+                            <label for="radio01_1">適格</label>
+                        </span>
+                        <span class="checkbox_box">
+                            <input id="radio01_2" type="radio" name="radio01" value="2">
+                            <label for="radio01_2">未適格</label>
+                        </span>
+                    </div>
+                    <div class="input-title col-2 col-border">統一編號</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+				</div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">狀態</div>
+                    <div class="col-4 col-border">
+                        <span class="checkbox_box">
+                            <input id="radio01_1" type="radio" name="radio01" value="1" checked>
+                            <label for="radio01_1">使用中</label>
+                        </span>
+                        <span class="checkbox_box">
+                            <input id="radio01_2" type="radio" name="radio01" value="2">
+                            <label for="radio01_2">暫停使用</label>
+                        </span>
+                        <span class="checkbox_box">
+                            <input id="radio01_3" type="radio" name="radio01" value="3">
+                            <label for="radio01_3">已停用</label>
+                        </span>
+                    </div>
+                    <div class="input-title col-2 col-border">國外部維護人代號</div>
+                    <div class="col-4 col-border">
+                        C89004
+                    </div>
+                </div>
+                <div class="item_title title s2" style="background-color: #b4dae8; color: #fff;">信評資訊</div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">信評機構</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="">S&P</option>
+                            <option value="">Moody's</option>
+							<option value="">Fitch</option>
+                            <option value="">AM Best</option>
+							<option value="">中華信評</option>
+                        </select>
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="input-title col-2 col-border">信評等級</div>
+                    <div class="col-10 col-border">
+                        <select style="min-width: 50%;" name="" id="">
+                            <option value="">AAA</option>
+                            <option value="">AA+</option>
+							<option value="">AA</option>
+                            <option value="">AA-</option>
+							<option value="">A+</option>
+                            <option value="">A</option>
+							<option value="">A-</option>
+                            <option value="">BBB+</option>
+							<option value="">BBB</option>
+                            <option value="">BBB-</option>
+                        </select>
+                        <button class="btn btn-edit">確認</button>&nbsp; &nbsp;<button class="btn btn-edit">歷程顯示</button>
+                    </div>
+                    </div>
+                <div class="row">
+                    <div class="col-10 offset-2 col-border">
+                        <table class="tblCssDataGrid table_style2">
+                            <tbody>
+                                <tr class="cssDataGridHeader">
+                                    <th><a href="">&nbsp; &nbsp;信評機構&nbsp; &nbsp;</a></th>
+                                    <th><a href="">&nbsp; &nbsp;信評等級&nbsp; &nbsp;</a></th>
+                                    <th><a href="">&nbsp; &nbsp;評等&nbsp; &nbsp;</a></th>
+                                    <th><a href="">&nbsp; &nbsp;適格性&nbsp; &nbsp;</a></th>
+                                    <th><a href="">&nbsp; &nbsp;更新日期&nbsp; &nbsp;</a></th>
+									<th><a href="">&nbsp; &nbsp;撤銷&nbsp; &nbsp;</a></th>
+                                </tr>
+                                <tr>
+                                    <td>S&P</td>
+                                    <td>BBB+</td>
+                                    <td>8</td>
+                                    <td>Y-適格</td>
+                                    <td>2020/11/10</td>
+									<td><button class="btn btn-edit">撤銷</button></td>
+                                </tr>
+								<tr>
+                                    <td>AM Best</td>
+                                    <td>B+</td>
+                                    <td>9</td>
+                                    <td>N-未適格</td>
+                                    <td>2019/5/15</td>
+									<td>已撤銷</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Reinsurers' Rating List</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="0">Y</option>
+                            <option value="1">N</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">信評備註&nbsp; &nbsp;</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                
+                <div class="item_title title s2" style="background-color: #b4dae8; color: #fff;">異動資料</div>
+                <div class="row">
+				    <div class="col-10 offset-2 col-border"><button class="btn btn-edit">新增</button></div>
+                    
+                    <div class="col-10 offset-2 col-border">
+                        <table style="margin-bottom: 15px;" class="tblCssDataGrid table_style2">
+                            <tbody>
+                                <tr class="cssDataGridHeader">
+                                    <th>功能</th>
+                                    <th><a href="">異動代號</a></th>
+                                    <th><a href="">登入人員代號</a></th>
+                                    <th><a href="">異動日期</a></th>
+                                    <th><a href="">異動內容</a></th>
+                                    <th><a href="">檔案</a></th>
+									
+                                </tr>
+                                <tr>
+                                    <td>
+                                        
+                                        <button class="btn btn-edit">修改</button>
+										<button class="btn btn-edit">刪除</button>
+                                    </td>
+                                    <td>新增</td>
+                                    <td>C808088</td>
+                                    <td>2019/11/30</td>
+                                    <td>XXXXXXXXXX</td>
+                                    <td>2019合約</td>
+                                </tr>
+								<tr>
+                                    <td>
+                                        <button class="btn btn-edit">儲存</button>
+                                        <button class="btn btn-edit">放棄</button>
+                                    </td>
+                                    <td>新增</td>
+                                    <td>C808088</td>
+                                    <td>2020/10/30</td>
+                                    <td><input type="text" placeholder="" required></td>
+                                    <td><button class="btn btn-edit">上傳檔案</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="item_title title s2" style="background-color: #b4dae8; color: #fff;">聯絡窗口</div>
+                <div class="row">
+				    <div class="col-10 offset-2 col-border"><button class="btn btn-edit">新增</button></div>
+                    <div class="col-10 offset-2 col-border">
+                        <div class="x_scroll">
+					    <table class="tblCssDataGrid table_style2">
+                            <tbody>
+                                <tr class="cssDataGridHeader">
+                                    <th>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;功能&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</th>
+                                    <th><a href="">Name</a></th>
+                                    <th><a href="">E-mail</a></th>
+                                    <th><a href="">Tel</a></th>
+                                    <th><a href="">Direct</a></th>
+                                    <th><a href="">Address</a></th>
+                                    <th style="max-width: 20%;"><a href="">備註</a></th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-edit">修改</button>
+                                        <button class="btn btn-edit">刪除</button>
+                                    </td>
+                                    <td>王小小</td>
+                                    <td>wang.smile@yahoo.com.tw</td>
+                                    <td>0988555214</td>
+                                    <td>經理</td>
+                                    <td>123新北市五股區忠孝接50巷19弄20號</td>
+                                    <td>延遲了半年繳款延遲了半年繳款延遲了半年繳款延遲了半年繳款延遲了半年繳款延遲了半年繳款延遲了半年繳款延遲了半年繳款</td>
+                                </tr>
+								<tr>
+                                    <td>
+                                        <button class="btn btn-edit">儲存</button>
+                                        <button class="btn btn-edit">放棄</button>
+                                    </td>
+                                    <td><input type="text" placeholder="王小小" required></td>
+                                    <td><input type="text" placeholder="wang.smile@yahoo.com.tw" required></td>
+                                    <td><input type="text" placeholder="0988555214" required></td>
+                                    <td><input type="text" placeholder="經理" required></td>
+                                    <td><input type="text" placeholder="123新北市五股區忠孝接50巷19弄20號" required>
+                                    </td>
+                                    <td><input type="text" placeholder="請寫下您的備註" required></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+					</div>
+                </div>
+                    <div class="col-4 col-border">
+                    <button class="btn btn-primary">暫存</button>
+                    <button class="btn btn-primary">修改</button>
+					<button class="btn btn-primary">刪除</button>
+                    <button class="btn btn-primary">取消</button>
+					<button class="btn btn-primary">送出</button>
+					<button class="btn btn-primary">覆核</button>
+					<button class="btn btn-primary">退回</button>
+                    </div>
+            
+            </div><!-- row-group -->
+            
+            
+            <h3 class="filterBar accordion" id="accordionFinias" onclick="showFunction('accordionFinias');">財管部權限</h3>
+            <div class="row-group form-row-group">
+			    <div class="item_title title s2" style="background-color: #b4dae8; color: #fff;">匯款資訊</div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">帳戶說明</div>
+                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                    <div class="input-title col-2 col-border">幣別</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="0">TWD</option>
+                            <option value="1">USD</option>
+							<option value="1">CNY</option>
+							<option value="1">GBP</option>
+							<option value="1">HKD</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">銀行代碼</div>
+                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                    <div class="input-title col-2 col-border">銀行地址</div>
+                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">匯款戶名</div>
+                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                    <div class="input-title col-2 col-border">匯款帳號</div>
+                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">SWIET CODE</div>
+                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                    <div class="input-title col-2 col-border">IBAN CODE</div>
+                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">中轉行</div>
+                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                    <div class="input-title col-2 col-border">中轉匯款帳號</div>
+                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">中轉WIET CODE</div>
+                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                    <div class="input-title col-2 col-border">中轉BAN CODE</div>
+                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                </div>
+                <div class="">
+                    
+                    <div class="col-4 offset-2 col-border">
+                        <button class="btn btn-edit">確認</button>
+                        <button class="btn btn-edit">註銷顯示</button>
+                    </div>
+                </div>
+				<div class="row">
+                    
+                    <div class="col-10 offset-2 col-border">
+                        <div class="x_scroll">
+                            <table class="tblCssDataGrid table_style2" style="margin-bottom: 15px;">
+                                <tbody>
+                                    <tr class="cssDataGridHeader">
+                                        <th><a href="">&nbsp; &nbsp;註銷&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;帳戶說明&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;幣別&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;銀行代碼&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;銀行名稱&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;銀行地址&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;匯款戶名&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;匯款帳號&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;SWIET CODE&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;IBAN CODE&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;中轉行&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;中轉行匯款帳號&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;中轉行SWIET CODE&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;中轉行IBAN CODE&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;新增日期&nbsp; &nbsp;</a></th>
+                                        <th><a href="">&nbsp; &nbsp;註銷日期&nbsp; &nbsp;</a></th>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-edit">註銷</button></td>
+                                        <td></td>
+                                        <td>TWD</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>HOME INSURANCE CO.</td>
+                                        <td>12345678901234</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2018/12/30</td>
+                                        <td></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><button class="btn btn-edit">註銷</button></td>
+                                        <td></td>
+                                        <td>HKD</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>HONG KONG AND ORIENT GENERAL INSURANCE CO., LTD.</td>
+                                        <td>9999999999999</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2018/10/20</td>
+                                        <td></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>註銷</td>
+                                        <td></td>
+                                        <td>TWD</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>HOME INSURANCE CO.</td>
+                                        <td>99945678901234</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>2017/12/30</td>
+                                        <td>2018/12/30</td>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_title title s2" style="background-color: #b4dae8; color: #fff; margin-top: 15px;">財管聯絡窗口</div>
+                <div class="row">
+                    
+                    <div class="col-10 offset-2 col-border"><button class="btn btn-edit">新增</button></div>
+                    
+                    <div class="col-10 offset-2 col-border">
+                        <div class="x_scroll">
+                        <table class="tblCssDataGrid table_style2">
+                            <tbody>
+                                <tr class="cssDataGridHeader">
+                                    <th>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;功能&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</th>
+                                    <th><a href="">聯絡人說明</a></th>
+									<th><a href="">Name</a></th>
+									<th><a href="">Direct</a></th>
+                                    <th><a href="">E-mail</a></th>
+                                    <th><a href="">Tel</a></th>
+                                    <th><a href="">Fax</a></th>
+                                    <th><a href="">Address</a></th>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-edit">修改</button>
+                                        <button class="btn btn-edit">刪除</button>
+                                    </td>
+									<td></td>
+                                    <td>王小小</td>
+									<td>經理</td>
+                                    <td>wang.smile@yahoo.com.tw</td>
+                                    <td>0988555214</td>
+                                    <td></td>
+                                    <td>123新北市五股區忠孝接50巷19弄20號</td>
+                                   
+                                </tr>
+								<tr>
+                                    <td>
+                                        <button class="btn btn-edit">儲存</button>
+                                        <button class="btn btn-edit">放棄</button>
+                                    </td>
+									<td><input type="text" placeholder="" required></td>
+                                    <td><input type="text" placeholder="" required></td>
+                                    <td><input type="text" placeholder="" required></td>
+                                    <td><input type="text" placeholder="" required></td>
+                                    <td><input type="text" placeholder="" required></td>
+                                    <td><input type="text" placeholder="" required></td>
+									<td><input type="text" placeholder="" required></td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            
+                   
+
+                    <div class="row">
+                        <div class="input-title col-2 col-border">創建人代號</div>
+                        <div class="col-4 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="input-title col-2 col-border">名字</div>
+                        <div class="col-4 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-title col-2 col-border">代理人1</div>
+                        <div class="col-4 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="input-title col-2 col-border">名字</div>
+                        <div class="col-4 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-title col-2 col-border">代理人2</div>
+                        <div class="col-4 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="input-title col-2 col-border">名字</div>
+                        <div class="col-4 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">備註</div>
+                    <div class="col-10 offset-2 col-border">
+                        <button class="btn btn-edit">新增</button></div>
+                    
+                    <div class="col-10 offset-2 col-border">
+                        <table class="tblCssDataGrid table_style2">
+                            <tbody>
+                                <tr class="cssDataGridHeader">
+                                    <th>功能</th>
+                                    <th><a href="">序號</a></th>
+                                    <th><a href="">異動說明</a></th>
+                                    <th><a href="">異動日期</a></th>
+                                    <th><a href="">異動人員</a></th>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-edit">修改</button>
+                                        <button class="btn btn-edit">刪除</button>
+                                    </td>
+                                    <td>1</td>
+                                    <td>XXXXXX</td>
+                                    <td>2018/11/11</td>
+                                    <td>A08</td>
+                                    
+                                </tr>
+								<tr>
+                                    <td>
+                                        <button class="btn btn-edit">儲存</button>
+                                        <button class="btn btn-edit">放棄</button>
+                                    </td>
+                                    <td>2</td>
+                                    <td><input type="text" placeholder="" required></td>
+                                    <td><input type="text" placeholder="" required></td>
+                                    <td><input type="text" placeholder="" required></td>
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 offset-2 col-border">
+                        <span class="checkbox_box" style="left:0px ;">
+                            <input id="check1" type="checkbox" name="check" value="1" checked>
+                            <label for="check1"></label>
+                        </span>
+                        催收比例
+                        <input type="text" value= "50" placeholder="" required>%
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 offset-2 col-border">
+                        <span class="checkbox_box" style="left:0px ;">
+                            <input id="check1" type="checkbox" name="check" value="1" checked>
+                            <label for="check1"></label>
+                        </span>
+					    備呆比例
+                        <input type="text" value= "100" placeholder="" required>%
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 offset-2 col-border">
+                        <span class="checkbox_box" style="left:0px ;">
+                            <input id="check1" type="checkbox" name="check" value="1" checked>
+                            <label for="check1"></label>
+                        </span>
+                        停止收付
+                        <input type="text" value= "100" placeholder="" required>%
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 offset-2 col-border">
+					    <button class="btn btn-primary">確認</button>
+					    <button class="btn btn-primary">關閉</button>
+                    </div>
+                </div>
+            </div><!-- row-group end -->
+			
+			
+    </div><!-- content end  -->
+</section>
+<script>
+    
+
+    $('.accordion').click(function(){
+        $('.accordion').stop(true, true).toggleClass('plus');
+        if($('.accordion').hasClass('plus')==false) {
+            $(this).next().stop(true, true).show();
+        }else {
+            $(this).next().stop(true, true).hide();
+        }
+    });
+</script>
+</body>
+
+
+</html>

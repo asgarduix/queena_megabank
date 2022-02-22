@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" lang="zh-Hant-TW">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+<title>兆豐</title>
+<!-- jQuery -->
+<script src="../../shigen/plugin/jquery.min.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+<!-- fontawsome -->
+<script defer src="../../shigen/fonts/js/all.min.js"></script>
+<link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+<!--load all styles -->
+<!-- 共用樣式 -->
+<link rel="stylesheet" href="../../shigen/css/base.css">
+<!-- menu 樣式 -->
+<link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+<link rel="stylesheet" href="../../shigen/css/menu.css">
+<!-- 主要樣式 -->
+<link rel="stylesheet" href="../../shigen/css/type.css">
+
+<!-- 自訂JS樣式 -->
+<script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+    <div class="ajax-section-main"></div>
+    <div class="container-fluid content">
+        
+            <div class="bread-crumbs">
+                <a href="#">分進作業</a> &gt; <a href="#">估計數作業</a>
+            </div>
+            <div class="big_title title s1">估計數作業</div>
+            <!-- <div class="col-12">
+                <button class="btn btn-edit" onclick="location.href='FRIF401.html'">
+                    未決賠款併入未達帳
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF402.html'">
+                    未達帳試算作業
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF403.html'">
+                    未達帳傳送作業
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF404.html'">
+                    估計數主檔查詢
+                </button>
+            </div> -->
+            <div class="item_title title s2">未決賠款併入未達帳</div>
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">OS Loss Entry Date<br>未決賠款輸入日期</div>
+                    <div class="col-4 col-border">
+                        <input style="max-width:39%;" type="text" placeholder="YYYY/MM/DD" required>
+                        ～
+                        <input style="max-width:39%;" type="text" placeholder="YYYY/MM/DD" required>
+                    </div>
+                    <div class="input-title col-2 col-border">Date<br>試算日期</div>
+                    <div class="col-4 col-border">
+                        <input style="max-width:39%;" type="text" placeholder="YYYY/MM/DD" required>
+                        ～
+                        <input style="max-width:39%;" type="text" placeholder="YYYY/MM/DD" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary">查詢</button>
+                </div>
+            </div>
+
+            <!-- 按下查詢鈕後才出現表格 -->
+            <div style="border: 1px solid #ccc; padding: 3px; margin-top:15px;">
+                <table class="tblCssDataGrid css_table" width="100%" style="table-layout:fixed">
+                    <tbody>
+                        <tr class="cssDataGridHeader">
+                        <th><a href="">Date<br>試算日期</a></th>
+                        <th><a href="">Version<br>版本</a></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>2021/04/28</td>
+                        <td>1</td>
+                        <td>
+                            <button class="btn btn-primary">選擇</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021/04/28</td>
+                        <td>1</td>
+                        <td>
+                            <button class="btn btn-primary">選擇</button>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            <!-- 按選擇後表格才會出現 -->
+            
+            <div style="border: 1px solid #ccc; padding: 3px; margin-top:15px;">
+            <table class="tblCssDataGrid css_table" width="100%" style="table-layout:fixed">
+                <tbody>
+                    <tr class="cssDataGridHeader">
+                    <th><a href="">Class 1<br>分類一</a></th>
+                    <th><a href="">Class 2<br>分類二</a></th>
+                    <th><a href="">Percentage (%)<br>比例 (%)</a></th>
+                    <th><a href="">TWD Amount (Our Share)<br>台幣金額 (分入成分)</a></th>
+                    <th><a href="">TWD Amount (Discount)<br>台幣金額 (折扣)</a></th>
+                    <th><a href="">Date<br>試算日期</a></th>
+                    <th><a href="">Version<br>版本</a></th>
+                </tr>
+                <tr>
+                    <td>國內</td>
+                    <td>火災保險</td>
+                    <td>20%</td>
+                    <td>1,000,000</td>
+                    <td>200,000</td>
+                    <td>2021/04/28</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>國內</td>
+                    <td>船舶保險</td>
+                    <td>50%</td>
+                    <td>1,000,000</td>
+                    <td>500,000</td>
+                    <td>2021/04/28</td>
+                    <td>1</td>
+                </tr>
+                <!-- total行不動 -->
+                <tr class="table-total">
+                    <td>Total</td>
+                    <td></td>
+                    <td></td>
+                    <td>2,000,000</td>
+                    <td>700,000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+                    <button class="btn btn-primary">修改</button>
+                    <button class="btn btn-primary">儲存</button>
+                    <button class="btn btn-primary">匯出</button>
+            </div>
+            <!-- TABLE結束 -->
+            
+            
+    </div><!-- content end  -->
+</section>
+
+</body>
+
+
+</html>

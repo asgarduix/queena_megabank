@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" lang="zh-Hant-TW">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+<title>兆豐</title>
+<!-- jQuery -->
+<script src="../../shigen/plugin/jquery.min.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+<!-- fontawsome -->
+<script defer src="../../shigen/fonts/js/all.min.js"></script>
+<link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+<!--load all styles -->
+<!-- 共用樣式 -->
+<link rel="stylesheet" href="../../shigen/css/base.css">
+<!-- menu 樣式 -->
+<link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+<link rel="stylesheet" href="../../shigen/css/menu.css">
+<!-- 主要樣式 -->
+<link rel="stylesheet" href="../../shigen/css/type.css">
+
+<!-- 自訂JS樣式 -->
+<script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+    <div class="ajax-section-main"></div>
+    <div class="container-fluid content">
+        
+            <div class="bread-crumbs">
+                <a href="#">分進作業</a> &gt; <a href="#">帳單作業</a>
+            </div>
+            <div class="big_title title s1">統計作業</div>
+            <div class="col-12">
+                <button class="btn btn-edit" onclick="location.href='FRIF201.html'">
+                    績效表
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF202.html'">
+                    合約各會計科目資料
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF203.html'">
+                    地區累積風險
+                </button>
+                <button class="btn btn-edit" onclick="location.href=''">
+                    保費/佣金/賠款資料列印
+                </button>
+                <button class="btn btn-edit" onclick="location.href=''">
+                    保費發展
+                </button>
+                <button class="btn btn-edit" onclick="location.href=''">
+                    損失三角表-實際數/估計數
+                </button>
+            </div>
+            <div class="row-group">
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn btn-primary">新增</button>
+                        <button class="btn btn-primary">修改</button>
+                        <button class="btn btn-primary">查詢</button>
+                        <button class="btn btn-primary">列印</button>
+                        <button class="btn btn-primary">刪除</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item_title title s2">新增/修改</div>
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">Treaty-Code</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">U/W-Year</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Territory Code</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                        <a href="#">
+                        <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i>
+                        </a>
+                        <!-- 按下增加按鈕，彈出選擇頁面，選擇後，欄位可自動增加？ -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Earthquake(100%)</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Earthquake(Our-Share)</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Windstorm/Flood(100%)</div>
+                    <div class="col col-border">
+                        <input type="text" placeholder="" required>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Windstorm/Flood(Our-Share)</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">備註</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="col-12 d-flex ">
+                    <button class="btn btn-secondary">新增</button>
+                </div>
+            </div>
+
+            <div class="item_title title s2">查詢/列印</div>
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">Treaty-Code</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">再保人代碼</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">U/W-Year</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Territory Code</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="col-12 d-flex ">
+                    <button class="btn btn-primary">查詢</button>
+                    <button class="btn btn-primary">匯出</button>
+                </div>
+            </div>
+            <!-- 資料帶出欄位 -->
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">Treaty-Code</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Treaty-Name</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Ceding-Code</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Broker-Code</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Territory Code</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">U/W-Year</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Earthquake</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Windstorm/Flood</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+    </div><!-- content end  -->
+</section>
+
+</body>
+
+
+</html>

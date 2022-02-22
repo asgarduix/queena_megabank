@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<!--TODO 畫面checkbox由uiux改style-->
+<head>
+<meta charset="utf-8" lang="zh-Hant-TW">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+<title>同業往來帳務查詢作業</title>
+<!-- jQuery -->
+<script src="../../shigen/plugin/jquery.min.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+<!-- fontawsome -->
+<script defer src="../../shigen/fonts/js/all.min.js"></script>
+<link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+<!--load all styles -->
+<!-- 共用樣式 -->
+<link rel="stylesheet" href="../../shigen/css/base.css">
+<!-- menu 樣式 -->
+<link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+<link rel="stylesheet" href="../../shigen/css/menu.css">
+<!-- 主要樣式 -->
+<link rel="stylesheet" href="../../shigen/css/type.css">
+
+<!-- 自訂JS樣式 -->
+<script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <!-- <div class="ajax-aside-nav"></div> -->
+<section class="pl-0">
+    <div class="ajax-section-main"></div>
+    <div class="container-fluid content">
+        
+            <div class="bread-crumbs">
+                <a href="#">帳務查詢作業</a> &gt; <a href="#">帳務查詢作業</a> &gt; <a>同業往來帳務查詢</a>
+            </div>
+            <div class="big_title title s1">同業往來帳務查詢作業</div>
+            
+            <div class="item_title title s2">同業往來帳務查詢</div>
+            <div class="row-group">
+                <div class="row">
+				    <div class="input-title col-2 col-border">入帳日期</div>
+                    <div class="col-4 col-border">
+                        <div class="col-4 col-border">
+                        <input type="text" placeholder="" required value="19000101"></input> &nbsp; &nbsp; ~  &nbsp; &nbsp;<input type="text" placeholder="" required value="20201214"></input>&nbsp; &nbsp;(YYYYMMDD)<br>&nbsp; &nbsp;<button class="btn btn-secondary">9M</button>&nbsp; &nbsp;<button class="btn btn-secondary">2Y</button>
+                    </div>
+                        
+                    </div>
+					 <div class="input-title col-2 col-border"></div>
+                    <div class="col-4 col-border">
+                      
+                    </div>
+					
+                </div>
+				<div class="row">
+				    <div class="input-title col-2 col-border">再保人</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required></input>
+                    </div> 
+                        
+                    
+					 <div class="input-title col-2 col-border"></div>
+                    <div class="col-4 col-border">
+                      
+                    </div>
+					
+                </div>
+				<div class="row">
+				   <div class="input-title col-2 col-border">銷帳狀態</div>
+                    <div class="col-4 col-border">
+                        <select>
+                            <option value="">全部</option>
+                                <option value="">已銷</option>
+                                    <option value="">未銷  </option>
+                         </select>
+                    </div>
+                        
+                    
+					 <div class="input-title col-2 col-border"></div>
+                    <div class="col-4 col-border">
+                      
+                    </div>
+					
+                </div>
+				<div class="row">
+				    <div class="input-title col-2 col-border"></div>
+                    <div class="col-4 col-border">
+                        					
+                        
+                    </div>
+                        
+                    
+					 <div class="input-title col-2 col-border"></div>
+                    <div class="col-4 col-border">
+                      
+                    </div>
+					
+                </div>
+				
+                
+                
+            </div>
+              <div class="row-group">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-end">
+                        <button class="btn btn-primary">查詢</button>
+                        <button class="btn btn-primary">轉催收</button>
+                        <button class="btn btn-primary">轉備呆</button>
+                        <button class="btn btn-primary">列印未銷檔明細表</button>
+                        <button class="btn btn-primary">列印已銷資料</button>
+                        <button class="btn btn-primary">列印同業往來借貸</button>
+                        <button class="btn btn-primary">列印應攤回再保賠款未銷資料明細表</button>
+                        <button class="btn btn-primary">匯出EXCEL</button>
+                    </div>
+                </div>
+            </div> 
+			
+			 <div class="x_scroll ">
+            	<div class="bread-crumbs">
+                <div class="row">
+				         <div class="col-2">
+						     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 筆數：100筆
+				         </div>
+						 <div class="col-2">
+						     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 金額：200,308,780元
+				         </div>
+						 <div class="col-2">
+						     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+				         </div>
+						 <div class="col-2">
+						     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+				         </div>
+						 <div class="col-2">
+						     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 單位：新台幣元
+				         </div>
+                   
+                    </div>
+					<!--
+					<div class="row">
+				         <div class="col-2">
+						     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 勾選筆數：7筆
+				         </div>
+						 <div class="col-2">
+						     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 港幣(HKD)：500.00元
+				         </div>
+						 <div class="col-2">
+						     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 日圓(JPY)：400.00元
+				         </div>
+						 <div class="col-2">
+						     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 韓圓(KRW)：50.00元
+				         </div>
+						 <div class="col-2">
+						     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 其他外幣：0.00元
+				         </div>
+                   
+                    </div>
+					-->
+                </div>
+				
+			
+            <div class="filterBar">
+                <div class="row-group">
+				<!--
+                    <div class="row">
+                        
+                        <div class="col-2">
+                            <a href="#" id="" class="pages_icon to_left">⊻</a>
+                            <a href="#" id="" class="pages_icon">＜</a>
+                            <a href="#" id="" class="pages_icon">＞</a>
+                            <a href="#" id="" class="pages_icon to_right">⊼</a>
+                        </div>
+                        <div class="col-2">
+                            <span id="" class="">總共</span>
+                            <span id="" class="">0</span>
+                            <span id="" class="">筆</span>
+                        </div>
+                        <div class="col-2">
+                            <span id="" class="">每頁</span>
+                            <select name="" id="" style="min-width: 40px;">
+                                <option value="">10</option>
+                                <option value="">50</option>
+                                <option value="">100</option>
+                                <option value="">200</option>
+                            </select>
+                            <span id="" class="">筆</span>
+                            <button class="btn btn-secondary">go</button>
+                        </div>
+                        <div class="col-2">
+                            <span id="" class="">總共</span>
+                            <span id="" class="">1</span>
+                            <span id="" class="">頁</span>
+                        </div>
+                        <div class="col-3">
+                            <span id="" class="">目前第</span>
+                            <input name="" type="text" value="1" id="" class="" style="width:32px;">
+                            <span id="" class="">頁</span>
+                            <button class="btn btn-secondary">go</button>
+                            <button class="btn btn-primary">清除勾選</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+			-->
+            <!-- table scroll-x -->
+           
+                <table class="tblCssDataGrid css_table">
+                    <tbody><tr class="cssDataGridHeader">
+                         <th style="text-align: center;" align="center">
+                            <span class="checkbox_box">
+                                <input id="check1" type="checkbox" name="check" value="1" >
+                                <label for="check1"></label>
+                            </span>
+                        </th>
+                        <th><a href="">序號</a></th>
+						<th><a href="">再保公司</a></th>
+						<th><a href="">未銷總金額</a></th>
+						<th><a href="">3個月內</a></th>
+						<th><a href="">3~6個月</a></th>
+						<th><a href="">6~9個月</a></th>
+						<th><a href="">9~12個月</a></th>
+						<th><a href="">12~18個月</a></th>
+						<th><a href="">18~24個月</a></th>
+						<th><a href="">24個月以上</a></th>
+						
+						
+                        
+                        
+                    </tr>
+                    <tr>
+                    	<td width="2%" align="center">
+                            <span class="checkbox_box">
+                                <input id="" type="checkbox" name="check" value="1">
+                                <label for=""></label>
+                            </span>
+                        </td>   
+                        <td width="2%" align="center">1</td>
+						<td width="5%" align="center">0034800<br /> HANNOVER RUCK SE</td>
+						
+						<td width="8%" >  4,089,487</td>
+						<td width="8%" >  4,089,487</td>
+						<td width="8%" >0</td>
+						<td width="8%" >0</td>
+						<td width="8%" >0</td>
+						<td width="8%" >0</td>
+						<td width="8%" >0</td>
+						<td width="8%" >0</td>
+						
+						
+						
+                           
+                            
+                    </tr>
+                    <tr>
+                        <td width="2%" align="center">
+                            <span class="checkbox_box">
+                                <input id="" type="checkbox" name="check" value="1">
+                                <label for=""></label>
+                            </span>
+                        </td>
+                        <td width="2%" align="center">2</td>
+						<td width="5%" align="center">0038890<br /> INDIA INTL INS</td>
+						                                                                                 
+						<td width="8%" >-327,123</td>
+						<td width="8%" >-1,324,703</td>
+						<td width="8%" >226,901</td>
+						<td width="8%" >51,044</td>
+						<td width="8%" >0</td>
+						<td width="8%" >54,203</td>
+						<td width="8%" >654,528</td>
+						<td width="8%" >10,902</td>
+						
+						
+						
+                        
+                    </tr>
+					<tr>
+                        <td width="2%" align="center">
+                            <span class="checkbox_box">
+                                <input id="" type="checkbox" name="check" value="1">
+                                <label for=""></label>
+                            </span>
+                        </td>
+                        <td width="2%" align="center">3</td>
+						<td width="5%" align="center">0051760<br /> XL (UK)</td>
+						                                                                                       
+						<td width="8%" >238,623</td>
+						<td width="8%" >-19,910</td>
+						<td width="8%" >0</td>
+						<td width="8%" > 15,547  </td>
+						<td width="8%" >170,692 </td>
+						<td width="8%" >0</td>
+						<td width="8%" >73,410 </td>
+						<td width="8%" >-1,117</td>
+						
+						
+                        
+                    </tr>
+                </tbody></table>
+            </div>
+    </div><!-- content end  -->
+	</div>
+</section>
+
+</body>
+
+
+</html>

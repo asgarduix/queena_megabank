@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<!--TODO 1.將「div class="row-group"」區塊改為純顯示-->
+
+<head>
+    <meta charset="utf-8" lang="zh-Hant-TW">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+    <title>分進/帳單作業</title>
+    <!-- jQuery -->
+    <script src="../../shigen/plugin/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+    <!-- fontawsome -->
+    <script defer src="../../shigen/fonts/js/all.min.js"></script>
+    <link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+    <!-- 共用樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/base.css">
+    <!-- menu 樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+    <link rel="stylesheet" href="../../shigen/css/menu.css">
+    <!-- 主要樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/type.css">
+
+    <!-- 自訂JS樣式 -->
+    <script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+        <div class="ajax-section-main"></div>
+        <div class="container-fluid content">
+
+            <div class="bread-crumbs">
+                <a href="#">分出作業</a> &gt; <a href="#">分出作業</a>
+            </div>
+            <div class="big_title title s1">帳單作業</div>
+            <div class="col-12">
+                <button class="btn btn-edit" onclick="location.href='RF007_A(3).html'">
+                    帳單臨時檔登錄
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF005.html'">
+                    帳單臨時檔查詢與維護
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF006.html'">
+                    帳單臨時檔資料列印
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF007.html'">
+                    帳單臨時檔併入主檔及補傳
+                </button>
+                <button class="btn btn-edit" onclick="location.href='FRIF311.html'">
+                    帳單主檔查詢(單筆)
+                </button>
+            
+            </div>
+            <div class="item_title title s2">帳單臨時檔資料列印</div>
+            
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">User<br>創建人代碼</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Entry Date<br>輸入日期</div>
+                    <div class="col-4 col-border">
+                        <input type="text" style="max-width: 30%;" placeholder="" required>
+                        ~
+                        <input type="text" style="max-width: 30%;" placeholder="" required>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-title col-2 col-border">Treaty Code<br>合約卷號</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Representative Treaty Code<br>代表號</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="Y" selected>Y</option>
+                            <option value="N">N</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+                <div class="row">
+                    <button class="btn btn-primary">列印</button>
+                </div>
+            
+           
+        </div><!-- content end  -->
+    </section>
+
+</body>
+
+
+</html>

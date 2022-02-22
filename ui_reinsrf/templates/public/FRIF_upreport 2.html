@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<!--TODO 1.將「div class="row-group"」區塊改為純顯示-->
+
+<head>
+    <meta charset="utf-8" lang="zh-Hant-TW">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+    <title>分進/再保賠款帳單明細</title>
+    <!-- jQuery -->
+    <script src="../../shigen/plugin/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+    <!-- fontawsome -->
+    <script defer src="../../shigen/fonts/js/all.min.js"></script>
+    <link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+    <!-- 共用樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/base.css">
+    <!-- menu 樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+    <link rel="stylesheet" href="../../shigen/css/menu.css">
+    <!-- 主要樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/type.css">
+
+    <!-- 自訂JS樣式 -->
+    <script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+   
+
+     
+         
+         <div class="container-fluid content">
+         <div style="border: 1px solid #F18A47;padding: 10px; background-color: #fcfaf0;">
+           
+            <div class="row-group form-row-group" style="background-color: #ffffff;">
+                <div class="item_title title s2">合約條件變動</div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">U/W Year<br>承保年度</div>
+                    <div class="col-5 col-border">
+                        <input type="text" placeholder="YYYY" required >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Department<br>部門名稱</div>
+                    <div class="col-5 col-border">
+                        <select name="" id="">
+                            <option value="" selected>全部</option>
+                            <option value="" >火災保險部</option>
+                            <option value="" >海上保險部</option>
+                            <option value="" >意外保險部</option>
+                            <option value="" >個人保險部</option>
+                            <option value="" >駐關島代表處</option>
+                            <option value="" >國外部</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Treaty Name<br>合約名稱</div>
+                    <div class="col-8 col-border">
+                        <select name="" id="">
+                            <option value="" selected>一般自用汽車財產損失保險</option>
+                            <option value="" selected>一年期住宅火災保險</option>
+                            <option value="" selected>長期住宅火災保險</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-border">
+                    <button class="btn btn-primary">新增</button>
+                    <button class="btn btn-primary">查詢</button>
+                    <button class="btn btn-primary">匯出</button>
+                    <button class="btn btn-primary">取消</button>
+                    </div>
+                    </div>
+            </div>
+            <div class="row-group">
+                <div class="col-12" style="border: 1px solid #ccc; padding: 3px;">
+                    <div class="filterBar">
+                        <div class="row-group">
+                            <div class="row">
+                                <div class="col-3">
+                                    <button class="btn btn-primary">新增</button>
+                                    <a href="#" id="" class="pages_icon to_left">⊻</a>
+                                    <a href="#" id="" class="pages_icon">＜</a>
+                                    <a href="#" id="" class="pages_icon">＞</a>
+                                    <a href="#" id="" class="pages_icon to_right">⊼</a>
+                                </div>
+                                <div class="col-2">
+                                    <span id="" class="">總共</span>
+                                    <span id="" class="">0</span>
+                                    <span id="" class="">筆</span>
+                                </div>
+                                <div class="col-2">
+                                    <span id="" class="">每頁</span>
+                                    <select name="" id="" style="min-width: 40px;">
+                                        <option value="">10</option>
+                                        <option value="">50</option>
+                                        <option value="">100</option>
+                                        <option value="">200</option>
+                                    </select>
+                                    <span id="" class="">筆</span>
+                                    <button class="btn btn-primary">確認</button>
+                                </div>
+                                <div class="col-2">
+                                    <span id="" class="">總共</span>
+                                    <span id="" class="">1</span>
+                                    <span id="" class="">頁</span>
+                                </div>
+                                <div class="col-3">
+                                    <span id="" class="">目前第</span>
+                                    <input name="" type="text" value="1" id="" class="" style="width:32px;">
+                                    <span id="" class="">頁</span>
+                                    <button class="btn btn-primary">確認</button>
+                                    <!-- <button class="btn btn-primary">暫存</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <table class="tblCssDataGrid css_table" style="table-layout:fixed">
+                        <tbody>
+                            <tr class="cssDataGridHeader">
+                                <th style="width:4%;">
+                                    <span class="checkbox_box ml-2">
+                                        <input id="check1" type="checkbox" name="check">
+                                        <label for="check1"></label>
+                                    </span>
+                                </th>
+                                <th style="width:22%;">Treaty Name<br>合約簡稱</th>
+                                <th style="width:30%;">Item Change<br>條件變動項目</th>
+                                <th style="width:22%;">YYYY-1 Terms<br>YYYY-1年條件</th>
+                                <th style="width:22%;">YYYY Terms<br>YYYY年條件</th>
+                            </tr>
+                            <tr class="cssDataGridHeader">
+                                <td>
+                                    <span class="checkbox_box ml-2">
+                                        <input id="check1" type="checkbox" name="check">
+                                        <label for="check1"></label>
+                                    </span>
+                                </td>
+                                <td></td>
+                                <td>100字，自動帶入。</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col-12 col-border">
+                            <button class="btn btn-primary">暫存</button>
+                            <button class="btn btn-primary">修改</button>
+                            <button class="btn btn-primary">刪除</button>
+                            <button class="btn btn-primary">送出</button>
+                            <button class="btn btn-primary">覆核</button>
+                            <button class="btn btn-primary">退回</button>
+                            <button class="btn btn-primary">匯出</button>
+                            <button class="btn btn-primary">列印</button>
+                            <button class="btn btn-primary">離開</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div><!-- content end  -->
+        </div>
+
+</body>
+
+
+</html>
