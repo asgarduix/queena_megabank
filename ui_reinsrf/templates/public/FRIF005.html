@@ -37,13 +37,13 @@
             <div class="bread-crumbs">
                 <a href="#">分出作業</a> &gt; <a href="#">分出作業</a>
             </div>
-            <div class="big_title title s1">帳單臨時檔查詢與列印</div>
+            <div class="big_title title s1">帳單輸入作業查詢與列印</div>
             <div class="col-12">
                 <button class="btn btn-edit" onclick="location.href='RF007_A(3).html'">
-                    帳單臨時檔登錄與維護
+                    帳單登錄與維護
                 </button>
                 <button class="btn btn-edit" onclick="location.href='FRIF007.html'">
-                    帳單臨時檔併入主檔及補傳
+                    帳單傳送
                 </button>
             </div>
             <div class="item_title title s2">帳單臨時檔查詢</div>
@@ -66,10 +66,14 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">User<br>創建人代碼</div>
                     <div class="col-4 col-border">
-                        <select name="" id="">
+                        <select style="min-width: 40%;" name="" id="">
                             <option value="A">A</option>
                             <option value="B">B</option>
                             <option value="C">C</option>
+                        </select>
+                        <select style="min-width: 40%; margin-left: 1%;" name="" id="">
+                            <option value="A" selected>已傳送</option>
+                            <option value="B">為傳送</option>
                         </select>
                     </div>
                 </div>
@@ -122,6 +126,7 @@
                 <div class="row">
                     <button class="btn btn-primary">查詢</button>
                     <button class="btn btn-primary">列印</button>
+                    <button class="btn btn-primary">註銷</button>
                 </div>
             </div>
 
@@ -176,13 +181,15 @@
                         <label for="check1"></label>
                     </span>
                 </a></th>
-                <th style="width:13%;"><a href="">Our Statement No<br>帳單編號</a></th>
-                <th style="width:13%;"><a href="">Treaty Code<br>合約卷號</a></th>
-                <th style="width:13%;"><a href="">Currency<br>幣別</a></th>
-                <th style="width:13%;"><a href="">U/W Year<br>承保年度</a></th>
-                <th style="width:13%;"><a href="">Period<br>帳單類型</a></th>
-                <th style="width:18%;"><a href="">Period<br>帳單期間</a></th>
-                <th style="width:13%;"><a href="">Entry Date<br>輸入日期</a></th>
+                <th><a href="">Our Statement No<br>帳單編號</a></th>
+                <th><a href="">Treaty Code<br>合約卷號</a></th>
+                <th><a href="">Currency<br>幣別</a></th>
+                <th><a href="">U/W Year<br>承保年度</a></th>
+                <th><a href="">Period<br>帳單類型</a></th>
+                <th><a href="">Period<br>帳單期間</a></th>
+                <th><a href="">Entry Date<br>輸入日期</a></th>
+                <th><a href="">Sent<br>已傳送</a></th>
+                <th><a href="">State<br>狀態</a></th>
             </tr>
             <tr>
                 <td>
@@ -191,6 +198,8 @@
                         <label for="check1"></label>
                     </span>
                 </td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>

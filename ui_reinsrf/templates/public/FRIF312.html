@@ -74,11 +74,7 @@
                     </div>
                     <div class="input-title col-2 col-border">Paid Loss Original Amount (100%)<br>已決賠款原幣 (100%)</div>
                     <div class="col-4 col-border">
-                        <select style="min-width: 15%;" name="" id="">
-                            <option value="">USD</option>
-                            <option value="">TWD</option>
-                        </select>
-                        <input style="max-width:65%;" type="text" placeholder="" required>
+                        <input style="max-width:80%;" type="text" placeholder="" required>
                     </div>
                 </div>
                 <div class="row">
@@ -88,11 +84,7 @@
                     </div>
                     <div class="input-title col-2 col-border">Paid Loss Original Amount (Our Share)<br>已決賠款原幣 (分入成分)</div>
                     <div class="col-4 col-border">
-                        <select style="min-width: 15%;" name="" id="">
-                            <option value="">USD</option>
-                            <option value="">TWD</option>
-                        </select>
-                        <input style="max-width:65%;" type="text" placeholder="" required>
+                        <input style="max-width:80%;" type="text" placeholder="" required>
                     </div>
                 </div>
                 <div class="row">
@@ -102,11 +94,7 @@
                     </div>
                     <div class="input-title col-2 col-border">OS Loss Original (100%)<br>未決賠款台幣 (100%)</div>
                     <div class="col-4 col-border">
-                        <select style="min-width: 15%;" name="" id="">
-                            <option value="">USD</option>
-                            <option value="">TWD</option>
-                        </select>
-                        <input style="max-width:65%;" type="text" placeholder="" required>
+                        <input style="max-width:80%;" type="text" placeholder="" required>
                     </div>
                 </div>
                 <div class="row">
@@ -120,54 +108,32 @@
                     </div>
                     <div class="input-title col-2 col-border">OS Loss Original (Our Share)<br>未決賠款台幣 (分入成分)</div>
                     <div class="col-4 col-border">
-                        <select style="min-width: 15%;" name="" id="">
-                            <option value="">USD</option>
-                            <option value="">TWD</option>
-                        </select>
-                        <input style="max-width:65%;" type="text" placeholder="" required>
+                        <input style="max-width:80%;" type="text" placeholder="" required>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">Accounting Code<br>會計險別代號</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="5碼-中文名稱" required>
-                    </div>
-                    <div class="input-title col-2 col-border">As At<br>資料基準日</div>
+                    <div class="input-title col-2 col-border">Currency<br>幣別</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
+                            <option value="">US</option>
+                            <option value="">TWD</option>
+                            <option value="">HK</option>
                         </select>
-                    </div>
-                </div>
-
-                <h3 class="accordion"><a href="#">查詢欄位</a></h3>
-            <div class="row-group form-row-group" >
-                <div class="row">
-                    <div class="input-title col-2 col-border">Representative Treaty Code<br>代表號</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
                     </div>
                     <div class="input-title col-2 col-border">Entry Date<br>輸入日期</div>
                     <div class="col-4 col-border">
-                        <input style="max-width: 39%;" type="text" placeholder="" required>
-                        ~
-                        <input style="max-width: 39%;" type="text" placeholder="" required>
+                        <input style="max-width:80%;" type="text" placeholder="" required>
                     </div>
                 </div>
-            </div>
-
-                
-
             </div>
             <div class="row-group">
                 <div class="row">
                     <div class="col-12 d-flex ">
                         <button class="btn btn-secondary">新增</button>
-                        <button class="btn btn-primary">查詢</button>
-                        <button class="btn btn-primary">匯出</button>
+                        <button class="btn btn-primary">儲存</button>
+                        <button class="btn btn-primary">刪除</button>
                         <button class="btn btn-primary">歷程</button>
+                        <button class="btn btn-primary">離開</button>
                     </div>
                 </div>
             </div>
@@ -209,7 +175,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div> 
             <div class="x_scroll">
                 <table class="tblCssDataGrid css_table">
@@ -227,12 +192,11 @@
                             <th><a href="">Treaty Code<br>合約卷號</a></th>
                             <th><a href="">U/W Year<br>承保年度</a></th>
                             <th><a href="">Layer/Section</a></th>
-                            <th><a href="">Accounting Code<br>會計險別代號</a></th>
                             <th><a href="">Our Share (%)<br>分入比例 (%)</a></th>
+                            <th><a href="">Currency<br>幣別</a></th>
                             <th colspan="2"><a href="">Paid Loss (Our Share)<br>已決賠款 (分入成分)</a></th>
                             <th colspan="2"><a href="">OS Loss (Our Share)<br>未決賠款 (分入成分)</a></th>
                             <th colspan="2"><a href="">Incurred Loss (Our Share)<br>已發生賠款 (分入成分)</a></th>
-                            <th><a href="">As At<br>資料基準日</a></th>
                             <th><a href="">Entry Date<br>輸入日期</a></th>
                         </tr>
                         <tr class="cssDataGridHeader">
@@ -251,7 +215,6 @@
                             <td>Original原幣</td>
                             <td>TWD台幣</td>
                             <td></td>
-                            <td></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -269,14 +232,12 @@
                             <td>TWD1,000</td>
                             <td>1,000</td>
                             <td></td>
-                            <td></td>
                         </tr>
                     </tr>
                     </tbody>
                 </table>
             </div>
-
-                    <div class="row-group">
+                    <!-- <div class="row-group">
                         <div class="row">
                             <div class="col-12 d-flex ">
                                 <button class="btn btn-primary">複製</button>
@@ -288,7 +249,7 @@
                                 <button class="btn btn-primary">離開</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
     </div><!-- content end  -->
 </section>
 <script>

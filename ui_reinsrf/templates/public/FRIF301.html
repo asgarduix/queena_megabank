@@ -94,7 +94,8 @@
                     </div>
                 <div class="row">
                 <div class="col-4 col-border">
-                <button class="btn btn-primary">新增</button>
+                <button class="btn btn-primary">新增比例</button>
+                <button class="btn btn-primary">新增非比例</button>
                 <button class="btn btn-primary">查詢</button>
                 </div>
                 </div>
@@ -135,77 +136,11 @@
                             <button class="btn btn-primary">查詢</button>
                             <button class="btn btn-primary">匯出</button>
                             <button class="btn btn-edit" onclick="window.open('FRIF533_pop.html', 'newwindow', config='height=750,width=1280,toolbar=no');">
-                                查詢/新增合約型態作業
+                                成份作業
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="filterBar">
-                    <div class="row-group">
-                        <div class="row">
-                            <!-- <div class="col-1"><button class="btn btn-primary">新增項目</button></div> -->
-                            <div class="col-2">
-                                <a href="#" id="" class="pages_icon to_left">⊻</a>
-                                <a href="#" id="" class="pages_icon">＜</a>
-                                <a href="#" id="" class="pages_icon">＞</a>
-                                <a href="#" id="" class="pages_icon to_right">⊼</a>
-                            </div>
-                            <div class="col-2">
-                                <span id="" class="">總共</span>
-                                <span id="" class="">0</span>
-                                <span id="" class="">筆</span>
-                            </div>
-                            <div class="col-2">
-                                <span id="" class="">每頁</span>
-                                <select name="" id="" style="min-width: 40px;">
-                                    <option value="">10</option>
-                                    <option value="">50</option>
-                                    <option value="">100</option>
-                                    <option value="">200</option>
-                                </select>
-                                <span id="" class="">筆</span>
-                                <button class="btn btn-primary">go</button>
-                            </div>
-                            <div class="col-2">
-                                <span id="" class="">總共</span>
-                                <span id="" class="">1</span>
-                                <span id="" class="">頁</span>
-                            </div>
-                            <div class="col-3">
-                                <span id="" class="">目前第</span>
-                                <input name="" type="text" value="1" id="" class="" style="width:32px;">
-                                <span id="" class="">頁</span>
-                                <button class="btn btn-primary">go</button>
-                                <!-- <button class="btn btn-primary">暫存</button> -->
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                    <table class="tblCssDataGrid css_table">
-                            <tbody><tr class="cssDataGridHeader">
-                                <th style=""><a href=""></a></th>
-                                <th><a href="">部門</a></th>
-                                <th><a href="">合約名稱</a></th>
-                                <th><a href="">合約簡稱</a></th>
-                                <th><a href="">承保年度</a></th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <button type="button" class="btn btn-edit">修改</button>
-                                    <button type="button" class="btn btn-delete">刪除</button>
-                                </td>
-                                <td>火災保險部</td>
-                                <td>FIRE FIRST SURPLUS REINSURANCE TREATY</td>
-                                <td>FFS</td>
-                                <td>1983</td>
-                            </tr>
-                            
-                            
-                            
-                            
-                    </tbody>
-                    </table>
             </div>
             <!-- 合約代碼及名稱作業結束 -->
             <div class="divSpace"></div>
@@ -505,12 +440,16 @@
             </div>
             
             <div class="divSpace"></div>
-
             <div class="row-group">
                 <div class="col-12" style="border: 1px solid #ccc; padding: 3px;">
                     <table class="tblCssDataGrid css_table" style="table-layout:fixed">
                         <tbody>
                             <tr class="cssDataGridHeader">
+                                <th style="width: 50px;"></th>
+                                <th><a href="">部門</a></th>
+                                <th><a href="">合約名稱</a></th>
+                                <th><a href="">合約簡稱</a></th>
+                                <th><a href="">承保年度</a></th>
                                 <th>section</th>
                                 <th>Treaty Limit (QS 100%)<br>合約限額</th>
                                 <th>Treaty Limit (QS 100%) Remark<br>合約限額備註</th>
@@ -519,6 +458,16 @@
                                 <th>Retention<br>自留額</th>
                             </tr>
                             <tr class="cssDataGridHeader">
+                                <td>
+                                    <span class="checkbox_box">
+                                        <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                        <label for="check1"></label>
+                                    </span>
+                                </td>
+                                <td>火災保險部</td>
+                                <td>FIRE FIRST SURPLUS REINSURANCE TREATY</td>
+                                <td>FFS</td>
+                                <td>1983</td>
                                 <td>
                                    2021
                                 </td>
@@ -545,16 +494,12 @@
                 
             </div>
             <div class="col-12 d-flex">
+                <button class="btn btn-primary">整批</button>
                 <button class="btn btn-primary">複製</button>
-                <button class="btn btn-primary">暫存</button>
+                <button class="btn btn-primary">儲存</button>
                 <button class="btn btn-primary">修改</button>
                 <button class="btn btn-primary">刪除</button>
-                <button class="btn btn-primary">送出</button>
-                <button class="btn btn-primary">覆核</button>
-                <button class="btn btn-primary">退回</button>
                 <button class="btn btn-primary">匯出</button>
-                <button class="btn btn-primary">列印</button>
-                <button class="btn btn-primary">離開</button>
                 <button class="btn btn-edit" onclick="window.open('FRIF301_pop.html', 'newwindow', config='height=750,width=1280,toolbar=no');">
                     新增合約型態
                 </button>

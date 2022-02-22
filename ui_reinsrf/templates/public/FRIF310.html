@@ -85,37 +85,25 @@
                     <div class="col-4 col-border">
                         <input type="text" placeholder="YYYY/MM/DD" required>
                     </div>
-                    <div class="input-title col-2 col-border">Original Amount (100%)<br>原幣金額 (100%)</div>
+                    <div class="input-title col-2 col-border">Currency<br>幣別</div>
                     <div class="col-4 col-border">
-                        <select style="min-width: 15%;" name="" id="">
-                            <option value="">USD</option>
+                        <select name="" id="">
+                            <option value="">US</option>
                             <option value="">TWD</option>
                         </select>
-                        <input style="max-width: 65%;" type="text" placeholder="" required>
                     </div>
                 </div>
                 <div class="row">
-                 <div class="input-title col-2 col-border"></div>
+                    <div class="input-title col-2 col-border">Original Amount (100%)<br>原幣金額 (100%)</div>
                     <div class="col-4 col-border">
+                        <input style="max-width: 80%;" type="text" placeholder="" required>
                     </div>
                     <div class="input-title col-2 col-border">Original Amount (Our share)<br>原幣金額 (分入成分)</div>
                     <div class="col-4 col-border">
-                        <select style="min-width: 15%;" name="" id="">
-                            <option value="">USD</option>
-                            <option value="">TWD</option>
-                        </select>
-                        <input style="max-width: 65%;" type="text" placeholder="" required>
+                        <input style="max-width: 80%;" type="text" placeholder="" required>
                     </div>
                 </div>
-            </div>
-            <!-- 新增群組區塊 -->
-            <h3 class="accordion"><a href="#">查詢欄位</a></h3>
-            <div class="row-group form-row-group" >
                 <div class="row">
-                    <div class="input-title col-2 col-border">Representative Treaty Code<br>代表號</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required></input>
-                    </div>
                     <div class="input-title col-2 col-border">OS Loss Amount<br>未決賠款</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
@@ -124,23 +112,15 @@
                             <option value=""></option>
                         </select>
                     </div>
-                </div>
-                <div class="row">
                     <div class="input-title col-2 col-border">Company / Broker Code<br>再保人代碼</div>
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required></input>
                     </div>
-                    <div class="input-title col-2 col-border">Entry Date<br>輸入日期</div>
-                    <div class="col-4 col-border">
-                        <input type="text" style="max-width: 39%;" placeholder="YYYY/MM/DD" required></input>
-                        ~
-                        <input type="text" style="max-width: 39%;" placeholder="YYYY/MM/DD" required></input>
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">Business Code<br>預算險別代號</div>
+                    <div class="input-title col-2 col-border">Entry Date<br>輸入日期</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required></input>
+                        <input type="text" style="max-width: 80%;" placeholder="YYYY/MM/DD" required></input>
                     </div>
                 </div>
             </div>
@@ -148,10 +128,10 @@
                 <div class="row">
                     <div class="col-12 d-flex">
                         <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">新增</button>
-                        <button class="btn btn-primary">查詢</button>
-                        <button class="btn btn-primary">匯出</button>
-                        <button class="btn btn-primary">匯入</button>
+                        <button class="btn btn-primary">儲存</button>
+                        <button class="btn btn-primary">刪除</button>
                         <button class="btn btn-primary">歷程</button>
+                        <button class="btn btn-primary">離開</button>
                     </div>
                 </div>
             </div>
@@ -166,6 +146,7 @@
                             </th>
                             <th>Treaty Code<br>合約卷號</th>
                             <th>U/W Year<br>承保年度</th>
+                            <th>Currency<br>幣別</th>
                             <th><a href="">Original Amount (100%)<br>原幣金額 (100%)</a></th>
                             <th><a href="">TWD Amount (100%)<br>台幣金額 (100%)</a></th>
                             <th><a href="">Our Share (%)<br>分入成分 (%)</a></th>
@@ -183,6 +164,7 @@
                             </td>
                             <td></td>
                             <td>2008</td>
+                            <td></td>
                             <td>00</td>
                             <td>0.00</td>
                             <td>0.00</td>
@@ -200,6 +182,7 @@
                             </td>
                             <td>2008</td>
                             <td>73</td>
+                            <td></td>
                             <td>00</td>
                             <td>0.00</td>
                             <td>0.00</td>
@@ -218,17 +201,6 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="row">
-                    <div class="col-6 col-border">
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModalTwo">複製</button>
-                    <button class="btn btn-primary">修改</button>
-                    <button class="btn btn-primary">刪除</button>
-                    <button class="btn btn-primary">儲存</button>
-                    <button class="btn btn-primary">匯出</button>
-                    <button class="btn btn-primary">列印</button>
-                    <button class="btn btn-primary">離開</button>
-                    </div>
-                </div>
     </div>
     <!-- content end  -->
     <!-- 彈跳視窗1 -->
