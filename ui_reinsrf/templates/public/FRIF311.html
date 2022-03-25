@@ -45,7 +45,7 @@
             <!-- <div class="item_title title s2">Period</div> -->
             <div class="row-group form-row-group">
                 <div class="row">
-                    <div class="input-title col-2 col-border">查詢類別</div>
+                    <div class="input-title col-2 col-border"></div>
                     <div class="col-4 col-border">
                         <span class="checkbox_box">
                             <input id="radio01_1" type="radio" name="radio01" value="1" checked="">
@@ -58,59 +58,86 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">Our Statement No<br>帳單編號</div>
+                    <div class="input-title col-2 col-border">*Our Statement No<br>帳單編號</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Treaty Code<br>合約卷號</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                <!-- 縮放選單 -->
+                <p class="filterBar accordion" id="accordionFinias" onclick="showFunction('accordionFinias');">進階查詢</p>
+                <div class="row-group form-row-group">
+                    <div class="row">
+                        <div class="input-title col-2 col-border">Treaty Code<br>合約卷號</div>
+                        <div class="col-4 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="input-title col-2 col-border">U/W Year<br>承保年度</div>
+                        <div class="col-4 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
                     </div>
-                    <div class="input-title col-2 col-border">U/W Year<br>承保年度</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                    <div class="row">
+                        <div class="input-title col-2 col-border">Our Statement No<br>帳單編號</div>
+                        <div class="col-4 col-border">
+                            <input style="max-width: 38%;" type="text" placeholder="" required>
+                            ～
+                            <input style="max-width: 38%;" type="text" placeholder="" required>
+                        </div>
+                        <div class="input-title col-2 col-border">Period<br>帳單類型</div>
+                        <div class="col-4 col-border">
+                            <select name="" id="">
+                                <option value="">A11</option>
+                                <option value="">General</option>
+                                <option value="">Profit</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Our Statement No<br>帳單編號</div>
-                    <div class="col-4 col-border">
-                        <input style="max-width: 38%;" type="text" placeholder="" required>
-                        ～
-                        <input style="max-width: 38%;" type="text" placeholder="" required>
+                    <div class="row">
+                        <div class="input-title col-2 col-border">Entry Date<br>輸入日期</div>
+                        <div class="col-4 col-border">
+                            <input style="max-width: 38%;" type="text" placeholder="" required>
+                            ～
+                            <input style="max-width: 38%;" type="text" placeholder="" required>
+                        </div>
+                        <div class="input-title col-2 col-border">Currency<br>幣別</div>
+                        <div class="col-4 col-border">
+                            <select name="" id="">
+                                <option value="">全部</option>
+                                <option value="">台幣-TWD</option>
+                                <option value="">美金-USD</option>
+                                <option value="">港幣-HKD</option>
+                                <option value="">韓幣-KRW</option>
+                                <option value="">新加坡幣-SGD</option>
+                                <option value="">日圓-JPY</option>
+                                <option value="">英鎊-GBP</option>
+                                <option value="">歐元-EUR</option>
+                                <option value="">人民幣-CNY</option>
+                                <option value="">印度盧比-INR</option>
+                                <option value="">加幣-CAD</option>
+                                <option value="">瑞士法郎-CHF</option>
+                                <option value="">澳幣-AUD</option>
+                                <option value="">丹麥幣-DKK</option>
+                                <option value="">印尼幣-IDR</option>
+                                <option value="">馬來幣-MYR</option>
+                                <option value="">紐西蘭幣-NZD</option>
+                                <option value="">菲律賓幣-PHP</option>
+                                <option value="">瑞典幣-SEK</option>
+                                <option value="">泰幣-THB</option>
+                                <option value="">南非幣-ZAR</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="input-title col-2 col-border">Period<br>帳單類型</div>
-                    <div class="col-4 col-border">
-                        <select name="" id="">
-                            <option value="">A11</option>
-                            <option value="">General</option>
-                            <option value="">Profit</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Entry Date<br>輸入日期</div>
-                    <div class="col-4 col-border">
-                        <input style="max-width: 38%;" type="text" placeholder="" required>
-                        ～
-                        <input style="max-width: 38%;" type="text" placeholder="" required>
-                    </div>
-                    <div class="input-title col-2 col-border">Currency<br>幣別</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Settle Date<br>收付日期</div>
-                    <div class="col-4 col-border">
-                        <input style="max-width: 38%;" type="text" placeholder="" required>
-                        ～
-                        <input style="max-width: 38%;" type="text" placeholder="" required>
+                    <div class="row">
+                        <div class="input-title col-2 col-border">Settle Date<br>收付日期</div>
+                        <div class="col-4 col-border">
+                            <input style="max-width: 38%;" type="text" placeholder="" required>
+                            ～
+                            <input style="max-width: 38%;" type="text" placeholder="" required>
+                        </div>
                     </div>
                 </div>
             </div>
-           <div class="row-group">
+            <div class="row-group">
                 <div class="row">
                     <div class="col-12 d-flex">
                         <button class="btn btn-primary">查詢</button>
@@ -209,7 +236,18 @@
             
     </div><!-- content end  -->
 </section>
+<script>
+    
 
+    $('.accordion').click(function(){
+        $('.accordion').stop(true, true).toggleClass('plus');
+        if($('.accordion').hasClass('plus')==false) {
+            $(this).next().stop(true, true).show();
+        }else {
+            $(this).next().stop(true, true).hide();
+        }
+    });
+</script>
 </body>
 
 

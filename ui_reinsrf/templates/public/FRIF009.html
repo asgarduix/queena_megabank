@@ -40,6 +40,47 @@
             <div class="divSpace"></div>
             <div class="col-12">
                 <input style="width: 50%;" type="text" placeholder="請輸入再保人代碼/保發代碼/英文名稱" required="">
+                <!-- 縮放選單 -->
+                <p class="filterBar accordion" id="accordionFinias" onclick="showFunction('accordionFinias');">進階查詢</p>
+                <div class="row-group form-row-group">
+                    <div class="row">
+                        <div class="input-title col-2 col-border">保經代碼</div>
+                        <div class="col-4 col-border">
+                            <select name="" id="">
+                                <option value="0" selected>全部</option>
+                                <option value="1">再保人</option>
+                                <option value="2">經紀人</option>
+                            </select>
+                        </div>
+                        <div class="input-title col-2 col-border">狀態</div>
+                        <div class="col-4 col-border">
+                            <select name="" id="">
+                                <option value="0" selected>全部</option>
+                                <option value="1">使用中</option>
+                                <option value="2">暫停使用</option>
+                                <option value="3">已停用</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-title col-2 col-border">大陸地區</div>
+                        <div class="col-4 col-border">
+                            <select name="" id="">
+                                <option value="0" selected>全部</option>
+                                <option value="1">Y</option>
+                                <option value="2">N</option>
+                            </select>
+                        </div>
+                        <div class="input-title col-2 col-border">適格性</div>
+                        <div class="col-4 col-border">
+                            <select name="" id="">
+                                <option value="0" selected>全部</option>
+                                <option value="1">適格</option>
+                                <option value="2">未適格</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><!-- row-group end -->
                 <button class="btn btn-primary">新增</button>
                 <button class="btn btn-primary">查詢</button>
                 <button class="btn btn-primary">匯出Rating List</button>
@@ -88,18 +129,20 @@
                 </div>
                 <table class="tblCssDataGrid css_table">
                     <tbody><tr class="cssDataGridHeader">
-                        <th style="width:4%;">
+                        <th style="width:3%;">
                             <span class="checkbox_box">
                             <input id="check1" type="checkbox" name="check" value="1" checked="">
                             <label for="check1"></label>
                             </span>
                         </th>
-                        <th style="width: 9%;"><a href="">再保人代碼</a></th>
-                        <th style="width: 9%;"><a href="">保發中心代碼</a></th>
-                        <th style="width: 9%;"><a href="">保經代碼</a></th>
-                        <th style="width: 9%;"><a href="">狀態</a></th>
-                        <th style="width: 30%;"><a href="">英文全名</a></th>
-                        <th style="width: 30%;"><a href="">中文全名</a></th>
+                        <th style="width:8%;"><a href="">再保人代碼</a></th>
+                        <th style="width:10%;"><a href="">保發中心代碼</a></th>
+                        <th style="width:5%;"><a href="">適格性</a></th>
+                        <th style="width:13%;"><a href="">保經代碼</a></th>
+                        <th style="width:13%;"><a href="">狀態</a></th>
+                        <th style="width:25%;"><a href="">英文全名</a></th>
+                        <th style="width:18%;"><a href="">中文全名</a></th>
+                        <th style="width:5%;"><a href="">大陸地區</a></th>
                     </tr>
                     <tr>
                         <td>
@@ -110,9 +153,11 @@
                         </td>
                         <td>0044400</td>
                         <td>001KRKR001</td>
+                        <td></td>
                         <td>0-再保人</td>
                         <td>使用中</td>
                         <td>Korean Reinsurance Company Limited</td>
+                        <td></td>
                         <td></td>
                     </tr>
                 </tbody>
@@ -123,8 +168,6 @@
     <!-- content end  -->
 </section>
 <script>
-    
-
     $('.accordion').click(function(){
         $('.accordion').stop(true, true).toggleClass('plus');
         if($('.accordion').hasClass('plus')==false) {

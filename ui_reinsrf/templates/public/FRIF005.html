@@ -46,11 +46,11 @@
                     帳單傳送
                 </button>
             </div>
-            <div class="item_title title s2">帳單臨時檔查詢</div>
+            <div class="item_title title s2">帳單查詢</div>
             
             <div class="row-group form-row-group">
                 <div class="row">
-                    <div class="input-title col-2 col-border">查詢類別</div>
+                    <div class="input-title col-2 col-border"></div>
                     <!-- 進入此頁時只需檢視帳單編號input欄位，選到多筆時全出現 -->
                     <div class="col-4 col-border">
                         <span class="checkbox_box">
@@ -72,15 +72,10 @@
                             <option value="C">C</option>
                         </select>
                         <select style="min-width: 40%; margin-left: 1%;" name="" id="">
-                            <option value="A" selected>已傳送</option>
-                            <option value="B">為傳送</option>
+                            <option value="A" selected>全部</option>
+                            <option value="B" >已傳送</option>
+                            <option value="C">未傳送</option>
                         </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Our Statement No<br>帳單編號</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
                     </div>
                 </div>
                 <div class="row">
@@ -89,38 +84,46 @@
                         <input type="text" placeholder="單筆使用" required>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Our Statement No<br>帳單編號</div>
-                    <div class="col-4 col-border">
-                        <input type="text" style="max-width:30%;" placeholder="多筆使用" required>
-                        ～
-                        <input type="text" style="max-width:30%;" placeholder="多筆使用" required>
+                <!-- 縮放選單 -->
+                <p class="filterBar accordion" id="accordionFinias" onclick="showFunction('accordionFinias');">進階查詢</p>
+                <div class="row-group form-row-group">
+                    <div class="row">
+                        <div class="input-title col-2 col-border">Our Statement No<br>帳單編號</div>
+                        <div class="col-4 col-border">
+                            <input type="text" style="max-width:30%;" placeholder="多筆使用" required>
+                            ～
+                            <input type="text" style="max-width:30%;" placeholder="多筆使用" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Period<br>帳單類型</div>
-                    <div class="col-4 col-border">
-                        <select name="" id="">
-                            <option value="A">All</option>
-                            <option value="B">General</option>
-                            <option value="C">Profit Commission</option>
-                            <option value="C">Cash Call / Date of Loss</option>
-                            <option value="C">Commission Adjustment</option>
-                        </select>
+                    <div class="row">
+                        <div class="input-title col-2 col-border">Period<br>帳單類型</div>
+                        <div class="col-4 col-border">
+                            <select name="" id="">
+                                <option value="A">All</option>
+                                <option value="B">General</option>
+                                <option value="C">Profit Commission</option>
+                                <option value="C">Cash Call/Date of Loss</option>
+                                <option value="C">Portfolio Transfer</option>
+                                <option value="">Commission Adjustment</option>
+                                <option value="">Commutation/Cut-Off</option>
+                                <option value="">CLetter of Credit (LOC)</option>
+                                <option value="">Outstanding Claim Advance (OCA) </option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Treaty Code<br>合約卷號</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                    <div class="row">
+                        <div class="input-title col-2 col-border">Treaty Code<br>合約卷號</div>
+                        <div class="col-4 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Entry Date<br>輸入日期</div>
-                    <div class="col-4 col-border">
-                        <input type="text" style="max-width:30%;" placeholder="YYYY/MM/DD" required>
-                        ～
-                        <input type="text" style="max-width:30%;" placeholder="YYYY/MM/DD" required>
+                    <div class="row">
+                        <div class="input-title col-2 col-border">Entry Date<br>輸入日期</div>
+                        <div class="col-4 col-border">
+                            <input type="text" style="max-width:30%;" placeholder="YYYY/MM/DD" required>
+                            ～
+                            <input type="text" style="max-width:30%;" placeholder="YYYY/MM/DD" required>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -188,7 +191,6 @@
                 <th><a href="">Period<br>帳單類型</a></th>
                 <th><a href="">Period<br>帳單期間</a></th>
                 <th><a href="">Entry Date<br>輸入日期</a></th>
-                <th><a href="">Sent<br>已傳送</a></th>
                 <th><a href="">State<br>狀態</a></th>
             </tr>
             <tr>
@@ -205,8 +207,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>已傳送</td>
             </tr>
         </tbody>
     </table>
@@ -216,7 +217,16 @@
     <button class="btn btn-primary">儲存</button> -->
 </div>
     </section>
-
+    <script>
+        $('.accordion').click(function(){
+            $('.accordion').stop(true, true).toggleClass('plus');
+            if($('.accordion').hasClass('plus')==false) {
+                $(this).next().stop(true, true).show();
+            }else {
+                $(this).next().stop(true, true).hide();
+            }
+        });
+    </script>
 </body>
 
 

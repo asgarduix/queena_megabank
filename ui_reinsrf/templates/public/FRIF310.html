@@ -39,20 +39,14 @@
             </div>
             <!-- A(3)Period的勾選結果 -->
             <div class="big_title title s1">未決賠款作業</div>
-            <!-- <div class="col-12">
+            <div class="col-12">
                 <button class="btn btn-edit" onclick="location.href='FRIF310.html'">
-                    未決賠款登錄與維護
+                    未決賠款登錄
                 </button>
                 <button class="btn btn-edit" onclick="location.href='FRIF312.html'">
-                    重大賠款登錄與維護
+                    重大賠款登錄
                 </button>
-                <button class="btn btn-edit" onclick="location.href='FRIF314.html'">
-                    未決賠款資料查詢
-                </button>
-                <button class="btn btn-edit" onclick="location.href='FRIF315.html'">
-                    未決賠款異動明細表
-                </button>
-            </div> -->
+            </div>
             <div class="row-group">
                 <div class="item_title title s2">未決賠款登錄與維護</div>
             </div>
@@ -60,7 +54,7 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">Treaty Code<br>合約卷號</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                     <div class="input-title col-2 col-border">Layer/Section</div>
                     <div class="col-4 col-border">
@@ -73,23 +67,44 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">U/W Year<br>承保年度</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                     <div class="input-title col-2 col-border">Our Share (%)<br>分入成分 (%)</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">As At<br>資料基準日</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="YYYY/MM/DD" required>
+                        <input type="text" placeholder="必填YYYY/MM/DD" required>
                     </div>
                     <div class="input-title col-2 col-border">Currency<br>幣別</div>
-                    <div class="col-4 col-border">
+                    <div class="col-4 col-border" required>
                         <select name="" id="">
-                            <option value="">US</option>
-                            <option value="">TWD</option>
+                            <option value="">必填</option>
+                            <option value="">全部</option>
+                            <option value="">台幣-TWD</option>
+                            <option value="">美金-USD</option>
+                            <option value="">港幣-HKD</option>
+                            <option value="">韓幣-KRW</option>
+                            <option value="">新加坡幣-SGD</option>
+                            <option value="">日圓-JPY</option>
+                            <option value="">英鎊-GBP</option>
+                            <option value="">歐元-EUR</option>
+                            <option value="">人民幣-CNY</option>
+                            <option value="">印度盧比-INR</option>
+                            <option value="">加幣-CAD</option>
+                            <option value="">瑞士法郎-CHF</option>
+                            <option value="">澳幣-AUD</option>
+                            <option value="">丹麥幣-DKK</option>
+                            <option value="">印尼幣-IDR</option>
+                            <option value="">馬來幣-MYR</option>
+                            <option value="">紐西蘭幣-NZD</option>
+                            <option value="">菲律賓幣-PHP</option>
+                            <option value="">瑞典幣-SEK</option>
+                            <option value="">泰幣-THB</option>
+                            <option value="">南非幣-ZAR</option>
                         </select>
                     </div>
                 </div>
@@ -104,38 +119,23 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">OS Loss Amount<br>未決賠款</div>
-                    <div class="col-4 col-border">
-                        <select name="" id="">
-                            <option value="">註記：是否要顯示為零之資料</option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
-                    </div>
-                    <div class="input-title col-2 col-border">Company / Broker Code<br>再保人代碼</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required></input>
-                    </div>
-                </div>
-                <div class="row">
                     <div class="input-title col-2 col-border">Entry Date<br>輸入日期</div>
                     <div class="col-4 col-border">
-                        <input type="text" style="max-width: 80%;" placeholder="YYYY/MM/DD" required></input>
+                        <input style="max-width: 80%;" type="text" placeholder="自動帶入當天日期" required>
                     </div>
                 </div>
             </div>
             <div class="row-group">
                 <div class="row">
                     <div class="col-12 d-flex">
-                        <button class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">新增</button>
+                        <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModalTwo">新增</button>
+                        <button class="btn btn-primary">修改</button>
                         <button class="btn btn-primary">儲存</button>
                         <button class="btn btn-primary">刪除</button>
-                        <button class="btn btn-primary">歷程</button>
                         <button class="btn btn-primary">離開</button>
                     </div>
                 </div>
             </div>
-            
                     <table class="tblCssDataGrid css_table">
                         <tbody><tr class="cssDataGridHeader">
                             <th>
@@ -200,7 +200,7 @@
                             <td colspan="10">1,000,000TWD</td>
                         </tr>
                     </tbody>
-                </table>
+                    </table>
     </div>
     <!-- content end  -->
     <!-- 彈跳視窗1 -->
@@ -236,9 +236,9 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
-                  複製
-              </h5>
+                <h5 class="modal-title" id="exampleModalLabel">
+                複製
+                </h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>

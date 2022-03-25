@@ -54,6 +54,10 @@
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
                     </div>
+                    <div class="input-title col-2 col-border">Company / Broker Code<br>再保人代碼</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">Representative Treaty Code<br>代表號</div>
@@ -61,6 +65,13 @@
                         <select name="" id="">
                             <option value="Y">Y</option>
                             <option value="N" selected >N</option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">OS Loss Amount<br>未決賠款</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="Y">是</option>
+                            <option value="N" selected >否</option>
                         </select>
                     </div>
                 </div>
@@ -71,9 +82,7 @@
                         ～
                         <input style="max-width: 30%;" type="text" placeholder="YYYY/MM/DD" required>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Indemnity Type<br>賠款類型</div>
+                    <div class="input-title col-2 col-border">Loss Type<br>賠款類型</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
                             <option value="all" selected>全部</option>
@@ -85,7 +94,8 @@
                 <div class="row">
                     <button class="btn btn-primary">查詢</button>
                     <button class="btn btn-primary">匯出</button>
-                    <button class="btn btn-primary">進入</button>
+                    <button class="btn btn-primary">匯入</button>
+                    <button class="btn btn-primary">歷程</button>
                 </div>
                 <table class="tblCssDataGrid css_table">
                     <tbody>
@@ -99,11 +109,10 @@
                         <th>Treaty Code<br>合約卷號</th>
                         <th>U/W Year<br>承保年度</th>
                         <th>Currency<br>幣別</th>
-                        <th><a href="">Original Amount (100%)<br>原幣金額</a></th>
+                        <th><a href="">Original Amount (100%)<br>原幣金額 (100%)</a></th>
                         <th>As At<br>資料基準日</th>
-                        <th>Entry Date<br>輸入日</th>
-                        <th>Indemnity Type<br>賠款類型</th>
-                        <th><a href=""><br>重大賠案名稱</a></th>
+                        <th>Entry Date<br>輸入日期</th>
+                        <th>Loss Type<br>賠款類型</th>
                     </tr>
                     <tr>
                         <td>
@@ -118,8 +127,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td>全部</td>
-                        <td>產物險</td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>

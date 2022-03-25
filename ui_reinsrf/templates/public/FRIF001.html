@@ -42,39 +42,40 @@
 			<h3 class="filterBar accordion" id="accordionForeign" onclick="showFunction('accordionForeign');">國外部權限</h3>
             <div class="row-group form-row-group">
                 <div class="row">
-                    <div class="input-title col-2 col-border">再保人代碼</div>
+                    <div class="input-title col-2 col-border">*再保人代碼</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
-					<div class="input-title col-2 col-border">更新日期</div>
+					<div class="input-title col-2 col-border">*更新日期</div>
                     <div class="col-4 col-border">
-                        20201010
+                        <input type="text" placeholder="系統帶入" required>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">收付代碼</div>
+                    <div class="input-title col-2 col-border">*收付代碼</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
 					<div class="input-title col-2 col-border">歸戶</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="系統帶入可修改" required>
                     </div>
 				</div>
 				<div class="row">
-                    <div class="input-title col-2 col-border">保發中心代碼</div>
+                    <div class="input-title col-2 col-border">*保發中心代碼</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
 					<div class="input-title col-2 col-border">歸戶後保發代碼</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="系統帶資料" required>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">行業別</div>
+                    <div class="input-title col-2 col-border">*行業別</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
+                            <option value="">必填</option>
                             <option value="">財產保險業_民營(16520)</option>
 							<option value="">再保險業_民營(16530)</option>
 							<option value="">保險代理及經紀業_民營(16551)</option>
@@ -87,16 +88,7 @@
                     </div>
 					<div class="input-title col-2 col-border">歸戶後行業別</div>
                     <div class="col-4 col-border">
-                        <select name="" id="">
-                            <option value="">財產保險業_民營(16520)</option>
-							<option value="">再保險業_民營(16530)</option>
-							<option value="">保險代理及經紀業_民營(16551)</option>
-							<option value="">其他保險輔助業_民營(16559)</option>
-							<option value="">財產保險業_公營(26520)</option>
-							<option value="">再保險業_公營(26530)</option>
-							<option value="">保險代理及經紀業_公營(26551)</option>
-							<option value="">其他保險輔助業_公營(26559)</option>
-                        </select>
+                        <input type="text" placeholder="系統帶資料" required>
                     </div>
                 </div>
                 <div class="row">
@@ -104,22 +96,24 @@
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
                     </div>
-					<div class="input-title col-2 col-border">國內/外</div>
+					<div class="input-title col-2 col-border">*國內/外</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
+                            <option value="0">必填</option>
                             <option value="1">國內</option>
                             <option value="2">國外</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">英文簡稱</div>
+                    <div class="input-title col-2 col-border">*英文簡稱</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
-					<div class="input-title col-2 col-border">國別</div>
+					<div class="input-title col-2 col-border">*國別</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
+                            <option value="">必填</option>
                             <option value="">JP-日本</option>
                             <option value="">KN-聖克里斯多福及尼維斯</option>
 							<option value="">PA-巴拿馬</option>
@@ -143,10 +137,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">英文全名</div>
+                    <div class="input-title col-2 col-border">*英文全名</div>
                     <div class="col-10 col-border">
-                        <textarea cols="50" rows="1" style="border: 1px solid #eeeeee;height: 15px; border-radius: 5px; background-color: #fff;">
-輸入你想要寫的內容...
+                        <textarea cols="50" rows="1" style="border: 1px solid #eeeeee;height: 15px; border-radius: 5px; background-color: #fff;" required>
+必填...
                             </textarea>
                     </div>
                 </div>
@@ -159,12 +153,13 @@
                     </div>
                 </div>
 				<div class="row">
-					<div class="input-title col-2 col-border">保經代碼</div>
+					<div class="input-title col-2 col-border">*保經代碼</div>
                     <div class="col-4 col-border">
                         <div class="col-4 col-border">
                             <select name="" id="">
-                                <option value="0">0-再保人</option>
-                                <option value="1">1-經紀人</option>
+                                <option value="0">必填</option>
+                                <option value="1">0-再保人</option>
+                                <option value="2">1-經紀人</option>
                             </select>
                         </div>
                     </div>
@@ -191,7 +186,7 @@
                     </div>
 				</div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">狀態</div>
+                    <div class="input-title col-2 col-border">*狀態</div>
                     <div class="col-4 col-border">
                         <span class="checkbox_box">
                             <input id="radio01_1" type="radio" name="radio01" value="1" checked>
@@ -223,8 +218,8 @@
 							<option value="">中華信評</option>
                         </select>
                     </div>
-                 </div>
-                 <div class="row">
+                </div>
+                <div class="row">
                     <div class="input-title col-2 col-border">信評等級</div>
                     <div class="col-10 col-border">
                         <select style="min-width: 50%;" name="" id="">
@@ -289,10 +284,10 @@
                         <input type="text" placeholder="" required>
                     </div>
                 </div>
-                
+
                 <div class="item_title title s2" style="background-color: #b4dae8; color: #fff;">異動資料</div>
                 <div class="row">
-				    <div class="col-10 offset-2 col-border"><button class="btn btn-edit">新增</button></div>
+				<div class="col-10 offset-2 col-border"><button class="btn btn-edit">新增</button></div>
                     
                     <div class="col-10 offset-2 col-border">
                         <table style="margin-bottom: 15px;" class="tblCssDataGrid table_style2">
@@ -387,8 +382,7 @@
                     </div>
             
             </div><!-- row-group -->
-            
-            
+
             <h3 class="filterBar accordion" id="accordionFinias" onclick="showFunction('accordionFinias');">財管部權限</h3>
             <div class="row-group form-row-group">
 			    <div class="item_title title s2" style="background-color: #b4dae8; color: #fff;">匯款資訊</div>
@@ -695,8 +689,6 @@
                     </div>
                 </div>
             </div><!-- row-group end -->
-			
-			
     </div><!-- content end  -->
 </section>
 <script>

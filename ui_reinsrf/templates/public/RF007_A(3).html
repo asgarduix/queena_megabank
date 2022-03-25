@@ -118,9 +118,10 @@
                     <div class="col-4 col-border">
                         <input type="text" placeholder="YYYY" required>
                     </div>
-                    <div class="input-title col-2 col-border">Account Type<br>帳單類型</div>
+                    <div class="input-title col-2 col-border">*Account Type<br>帳單類型</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
+                            <option value="">必填</option>
                             <option value="">一般 General</option>
                             <option value="">補充 Supplementary</option>
                             <option value="">調整 Adjustment</option>
@@ -134,9 +135,9 @@
             <div style="border: 1px solid #ccc; padding: 3px;">
             <div class="row-group form-row-group">
                 <div class="row">
-                    <div class="input-title col-2 col-border">Treaty Code<br>合約卷號</div>
+                    <div class="input-title col-2 col-border">*Treaty Code<br>合約卷號</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                     <div class="input-title col-2 col-border">Entry Date<br>日期</div>
                     <div class="col-4 col-border">
@@ -147,11 +148,11 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">Our Statement No<br>帳單編號</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="系統自動編碼" required>
                     </div>
-                    <div class="input-title col-2 col-border">U/W Year<br>核保年度</div>
+                    <div class="input-title col-2 col-border">*U/W Year<br>核保年度</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="YYYY" required>
+                        <input type="text" placeholder="YYYY必填" required>
                     </div>
                 </div>
                 <div class="row">
@@ -159,21 +160,43 @@
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
                     </div>
-                    <div class="input-title col-2 col-border">Input Share<br>分入比例</div>
+                    <div class="input-title col-2 col-border">*Input Share<br>分入成分</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">Currency<br>幣別</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <select name="" id="">
+                            <option value="">全部</option>
+                            <option value="">台幣-TWD</option>
+                            <option value="">美金-USD</option>
+                            <option value="">港幣-HKD</option>
+                            <option value="">韓幣-KRW</option>
+                            <option value="">新加坡幣-SGD</option>
+                            <option value="">日圓-JPY</option>
+                            <option value="">英鎊-GBP</option>
+                            <option value="">歐元-EUR</option>
+                            <option value="">人民幣-CNY</option>
+                            <option value="">印度盧比-INR</option>
+                            <option value="">加幣-CAD</option>
+                            <option value="">瑞士法郎-CHF</option>
+                            <option value="">澳幣-AUD</option>
+                            <option value="">丹麥幣-DKK</option>
+                            <option value="">印尼幣-IDR</option>
+                            <option value="">馬來幣-MYR</option>
+                            <option value="">紐西蘭幣-NZD</option>
+                            <option value="">菲律賓幣-PHP</option>
+                            <option value="">瑞典幣-SEK</option>
+                            <option value="">泰幣-THB</option>
+                            <option value="">南非幣-ZAR</option>
+                        </select>
                     </div>
                     <div class="input-title col-2 col-border">Our Retent<br>自留額</div>
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
                     </div>
-                  
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">Risk Code<br>標的風險所在地</div>
@@ -226,56 +249,23 @@
                             <input type="text" placeholder="" required>
                         </div>
                         <div class="input-title col-2 col-border">
-                            <i class="fas fa-minus picWord" style="color:#0088A8"></i>
-                            Adjust Commission<br>梯次佣金費用調整
-                        </div>
-                        <div class="col-4 col-border">
-                            <input type="text" placeholder="" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-title col-2 col-border">
                             <i class="fas fa-minus picWord" style="color:#FF8888"></i>
                             Commission, Deduction<br>佣金費用，折扣
                         </div>
                         <div class="col-4 col-border">
                             <input type="text" placeholder="" required>
                         </div>
-                        <div class="input-title col-2 col-border">
-                            <i class="fas fa-minus picWord" style="color:#0088A8"></i>
-                            Profit Commission<br>盈餘佣金費用
-                        </div>
-                        <div class="col-4 col-border">
-                            <input type="text" placeholder="" required>
-                        </div>
                     </div>
                     <div class="row">
                         <div class="input-title col-2 col-border">
-                            <i class="fas fa-minus picWord" style="color:#FF8888"></i>
-                            Overriding Commission<br>轉再保手續費
+                            <i class="fas fa-minus picWord" style="color:#FF8888"></i>Overriding Commission<br>轉再保手續費
                         </div>
                         <div class="col-4 col-border">
                             <input type="text" placeholder="" required>
                         </div>
-                        <div class="input-title col-2 col-border">
-                            <i class="fas fa-minus picWord" style="color:#0088A8"></i>
-                            Handling Fee<br>手續費用
-                        </div>
-                        <div class="col-4 col-border">
-                            <input type="text" placeholder="" required>
-                        </div>
-                    </div>
-                    <div class="row">
                         <div class="input-title col-2 col-border">
                             <i class="fas fa-minus picWord" style="color:#FF8888"></i>
                             Brokerage<br>經紀人佣金
-                        </div>
-                        <div class="col-4 col-border">
-                            <input type="text" placeholder="" required>
-                        </div>
-                        <div class="input-title col-2 col-border">
-                            <i class="fas fa-minus picWord" style="color:#0088A8"></i>
-                            Tax (F.E.T.)<br>稅捐
                         </div>
                         <div class="col-4 col-border">
                             <input type="text" placeholder="" required>
@@ -289,77 +279,41 @@
                         <div class="col-4 col-border">
                             <input type="text" placeholder="" required>
                         </div>
+                        <div class="input-title col-2 col-border"></div>
+                        <div class="col-4 col-border"></div>
+                    </div>
+                    <!-- -------------------- -->
+                    <div class="row">
                         <div class="input-title col-2 col-border">
-                            <i class="fas fa-minus picWord" style="color:#0088A8"></i>
-                            Interest Tax<br>利息所得稅
+                            <i class="fas fa-minus picWord" style="color:#55AA00"></i>
+                            Premium Reserve Deposit<br>保費準備提存
+                        </div>
+                        <div class="col-4 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="input-title col-2 col-border">
+                            <i class="fas fa-plus picWord" style="color:#55AA00"></i>
+                            Premium Portfolio In<br>保費責任金轉進
                         </div>
                         <div class="col-4 col-border">
                             <input type="text" placeholder="" required>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">
-                        <i class="fas fa-minus picWord" style="color:#55AA00"></i>
-                        Premium Reserve Deposit<br>保費準備提存
-                    </div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
-                    </div>
-                    <div class="input-title col-2 col-border">
-                        <i class="fas fa-minus picWord" style="color:#0088A8"></i>
-                        Other Charge<br>其他費用
-                    </div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">
-                        <i class="fas fa-plus picWord" style="color:#55AA00"></i>
-                        Premium Reserve Release<br>保費準備收回
-                    </div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
-                    </div>
-                    <div class="input-title col-2 col-border">
-                        <i class="fas fa-minus picWord" style="color:#FFAA33"></i>
-                        Loss Expense/LAE<br>理賠費用
-                    </div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">
-                        <i class="fas fa-plus picWord" style="color:#55AA00"></i>
-                        Premium Portfolio In<br>保費責任金轉進
-                    </div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
-                    </div>
-                    <div class="input-title col-2 col-border">
-                        <i class="fas fa-minus picWord" style="color:#FFAA33"></i>
-                        Claim Reserve Deposit<br>未決賠款準備提存
-                    </div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">
-                        <i class="fas fa-minus picWord" style="color:#55AA00"></i>
-                        Premium Portfolio Out<br>保費責任金轉出
-                    </div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
-                    </div>
-                    <div class="input-title col-2 col-border">
-                        <i class="fas fa-plus picWord" style="color:#FFAA33"></i>
-                        Claim Reserve Release<br>未決賠款準備收回
-                    </div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                    <div class="row">
+                        <div class="input-title col-2 col-border">
+                            <i class="fas fa-plus picWord" style="color:#55AA00"></i>
+                            Premium Reserve Release<br>保費準備收回
+                        </div>
+                        <div class="col-4 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="input-title col-2 col-border">
+                            <i class="fas fa-minus picWord" style="color:#55AA00"></i>
+                            Premium Portfolio Out<br>保費責任金轉出
+                        </div>
+                        <div class="col-4 col-border">
+                            <input type="text" placeholder="" required>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -371,24 +325,8 @@
                         <input type="text" placeholder="" required>
                     </div>
                     <div class="input-title col-2 col-border">
-                        <i class="fas fa-plus picWord" style="color:#FFAA33"></i>
-                        Loss Portfolio In<br>賠款責任金轉進
-                    </div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">
                         <i class="fas fa-plus picWord" style="color:#55AA00"></i>
                         Minimum & Deposit Premium<br>最低預付保費
-                    </div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
-                    </div>
-                    <div class="input-title col-2 col-border">
-                        <i class="fas fa-minus picWord" style="color:#FFAA33"></i>
-                        Loss Portfolio Out<br>賠款責任金轉出
                     </div>
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
@@ -403,8 +341,8 @@
                         <input type="text" placeholder="" required>
                     </div>
                     <div class="input-title col-2 col-border">
-                        <i class="fas fa-minus picWord" style="color:#FFAA33"></i>
-                        Cash Call (Refund)<br>現金賠款
+                        <i class="fas fa-plus picWord" style="color:#55AA00"></i>
+                        Reinstate Premium<br>復效保費
                     </div>
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
@@ -412,8 +350,116 @@
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">
-                        <i class="fas fa-plus picWord" style="color:#55AA00"></i>
-                        Reinstate Premium<br>復效保費
+                        <i class="fas fa-minus picWord" style="color:#55AA00"></i>
+                        XL Protection Premium<br>超賠保障保費
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="input-title col-2 col-border"></div>
+                    <div class="col-4 col-border"></div>
+                </div>
+                <!-- --------------------- -->
+                <div class="row">
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-minus picWord" style="color:#6abccb"></i>
+                        Adjust Commissiont<br>梯次佣金費用調整
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-minus picWord" style="color:#6abccb"></i>
+                        Commission Portfolio Out<br>佣金責任金轉出
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-minus picWord" style="color:#6abccb"></i>
+                        Profit Commission<br>盈餘佣金費用
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-minus picWord" style="color:#6abccb"></i>
+                        Commission Portfolio In<br>佣金責任金轉進
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-minus picWord" style="color:#6abccb"></i>
+                        Tax (F.E.T.)<br>稅捐
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-minus picWord" style="color:#6abccb"></i>
+                        Handling Fee<br>手續費用
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-minus picWord" style="color:#6abccb"></i>
+                        Interest Tax<br>利息所得稅
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-minus picWord" style="color:#6abccb"></i>
+                        Other Charge<br>其他費用
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-minus picWord" style="color:#FFAA33"></i>
+                        Claim Reserve Deposit<br>未決賠款準備提存
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-plus picWord" style="color:#FFAA33"></i>
+                        Loss Portfolio In<br>賠款責任金轉進
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-plus picWord" style="color:#FFAA33"></i>
+                        Claim Reserve Release<br>未決賠款準備收回
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-minus picWord" style="color:#FFAA33"></i>
+                        Loss Portfolio Out<br>賠款責任金轉出
+                    </div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">
+                        <i class="fas fa-minus picWord" style="color:#FFAA33"></i>
+                        Loss Expense/LAE<br>理賠費用
                     </div>
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
@@ -428,8 +474,8 @@
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">
-                        <i class="fas fa-minus picWord" style="color:#55AA00"></i>
-                        XL Protection Premium<br>超賠保障保費
+                        <i class="fas fa-minus picWord" style="color:#FFAA33"></i>
+                        Cash Call (Refund)<br>現金賠款
                     </div>
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
