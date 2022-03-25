@@ -61,9 +61,10 @@
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required style="text-transform:uppercase;" >
                     </div>
-                    <div class="input-title col-2 col-border">Status<br>狀態</div>
+                    <div class="input-title col-2 col-border">*Status<br>狀態</div>
                     <div class="col-4 col-border">
-                        <select name="" id="">
+                        <select name="狀態" id="" required>
+                            <option value="">必填</option>
                             <option value="">全部</option>
                             <option value="">有效</option>
                             <option value="">無效</option>
@@ -71,16 +72,18 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">*Representative Treaty Code<br>代表號</div>
+                    <div class="input-title col-2 col-border">*General Treaty Code<br>代表號</div>
                     <div class="col-4 col-border">
-                        <select name="" id="">
+                        <select name="" id="" required>
+                            <option value="Y">必填</option>
                             <option value="Y">Y</option>
                             <option value="N">N</option>
                         </select>
                     </div>
                     <div class="input-title col-2 col-border">*國內/外</div>
                     <div class="col-4 col-border">
-                        <select name="" id="">
+                        <select name="" id="" required>
+                            <option value="1">必填</option>
                             <option value="1">國內</option>
                             <option value="2">國外</option>
                             <option value="2">全部</option>
@@ -94,7 +97,8 @@
                     </div>
                     <div class="input-title col-2 col-border">*Business Code<br>大險別</div>
                     <div class="col-4 col-border">
-                        <select name="" id="">
+                        <select name="" id="" required>
+                            <option value="1">必填</option>
                             <option value="1">火險</option>
                             <option value="2">車險</option>
                             <option value="2">意外險</option>
@@ -107,14 +111,16 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">*Currency<br>幣別</div>
                     <div class="col-4 col-border">
-                        <select name="" id="">
+                        <select name="" id="" required>
+                            <option value="1">必填</option>
                             <option value="1">原幣</option>
                             <option value="2">台幣</option>
                         </select>
                     </div>
                     <div class="input-title col-2 col-border">*Report<br>報表列印</div>
                     <div class="col-4 col-border">
-                        <select name="" id="">
+                        <select name="" id="" required>
+                            <option value="1">必填</option>
                             <option value="1">合併列印報表</option>
                             <option value="2">依代表號合併列印報表</option>
                             <option value="3">依再保人合併列印報表</option>
@@ -129,9 +135,10 @@
                         ~
                         <input style="max-width: 39%;" type="text" placeholder="YYYY" required>
                     </div>
-                    <div class="input-title col-2 col-border">Statistics<br>報表格式</div>
+                    <div class="input-title col-2 col-border">*Statistics<br>報表格式</div>
                     <div class="col-4 col-border">
-                        <select name="" id="">
+                        <select name="" id="" required>
+                            <option value="1">必填</option>
                             <option value="1">四欄表</option>
                             <option value="2">三角表</option>
                             <option value="3">十欄表</option>
@@ -141,9 +148,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">Period<br>期間</div>
+                    <div class="input-title col-2 col-border">*Period<br>期間</div>
                     <div class="col-4 col-border">
-                        <select style="min-width: 80%;" name="" id="">
+                        <select style="min-width: 80%;" name="" id="" required>
+                            <option value="">必填</option>
                             <option value="">All</option>
                             <option value="">Voucher Date</option>
                             <option value="">General</option>
@@ -157,7 +165,7 @@
                             <option value="">Outstanding Cliam Advance(OCA)</option>
                         </select>
                     </div>
-                    <div class="input-title col-2 col-border">Period<br>傳票日期</div>
+                    <div class="input-title col-2 col-border">Voucher Date<br>傳票日期</div>
                     <div class="col-4 col-border">
                         <input type="text" style="width: 40%;" placeholder="YYYY/MM/DD" required >
                         ~
@@ -165,7 +173,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">Period<br>輸入日期</div>
+                    <div class="input-title col-2 col-border">Entry Date<br>輸入日期</div>
                     <div class="col-4 col-border">
                         <input type="text" style="width: 39%;" placeholder="YYYY/MM/DD" required >
                         ~

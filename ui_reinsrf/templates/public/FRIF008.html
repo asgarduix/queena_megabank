@@ -42,7 +42,7 @@
             <!-- <div class="item_title title s2">合約交易對象查詢與列印</div> -->
             <div class="row-group form-row-group">
                 <div class="row">
-                    <div class="input-title col-2 col-border">Combined Guam Office Data<br>匯入駐關島代表處資料</div>
+                    <div class="input-title col-2 col-border">*Combined Guam Office Data<br>匯入駐關島代表處資料</div>
                     <div class="col-6 col-border">
                         <input style="max-width: 70%;" type="text" placeholder="" required>
                         <button class="btn btn-primary">瀏覽</button>
@@ -50,27 +50,29 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">Voucher Date<br>傳票期間</div>
+                    <div class="input-title col-2 col-border">*Voucher Date<br>傳票期間</div>
                     <div class="col-4 col-border">
-                        <input style="max-width:39%;" type="text" placeholder="YYYY/MM/DD" required="">
+                        <input style="max-width:39%;" type="text" placeholder="必填YYYY/MM/DD" required>
                         ～
-                        <input style="max-width:39%;" type="text" placeholder="YYYY/MM/DD" required="">
+                        <input style="max-width:39%;" type="text" placeholder="必填YYYY/MM/DD" required>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">Details<br>明細</div>
+                    <div class="input-title col-2 col-border">*Details<br>明細</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
+                            <option value="Y">必填</option>
                             <option value="Y">Y</option>
                             <option value="N">N</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">Report<br>報表格式</div>
+                    <div class="input-title col-2 col-border">*Report<br>報表格式</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
-                            <option value="" selected>全部</option>
+                            <option value="" selected>必填</option>
+                            <option value="" >全部</option>
                             <option value="">再保人已拆分進業務</option>
                             <option value="">再保人已拆分出業務</option>
                             <option value="">再保人未拆分進業務</option>
