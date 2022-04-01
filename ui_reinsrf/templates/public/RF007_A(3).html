@@ -39,6 +39,9 @@
             <!-- A(3)Period的勾選結果 -->
             <div class="big_title title s1">帳單作業</div>
             <div class="col-12">
+                <button class="btn btn-edit" onclick="location.href='FRIF005.html'">
+                    帳單查詢
+                </button>
                 <button class="btn btn-edit" onclick="location.href='RF007_A(3).html'">
                     帳單登錄與維護
                 </button>
@@ -66,7 +69,7 @@
                             <option value="5">1st Half Year</option>
                             <option value="6">2nd Half Year</option>
                             <option value="7">Year</option>
-                            <option value="8">Other</option>
+                            <option value="8" selected>Other</option>
                         </select>
                         <input style="min-width: 30%;" type="text" placeholder="YYYY/MM/DD" required>
                         ～
@@ -77,7 +80,6 @@
                         <input type="text" placeholder="YYYY" required>
                     </div>
                 </div>
-            
                 <div class="row">
                     <div class="input-title col-2 col-border">*Profit Commission<br>盈餘佣金</div>
                     <div class="col-4 col-border">
@@ -102,6 +104,7 @@
                     <div class="input-title col-2 col-border">*Portfolio Transfer<br>責任移轉</div>
                     <div class="col-4 col-border">
                         <select style="min-width: 30%;" name="" id="">
+                            <option value="0" selected></option>
                             <option value="1">Out/Withdrawal</option>
                             <option value="2">In/Entry</option>
                         </select>
@@ -193,7 +196,7 @@
                             <option value="">南非幣-ZAR</option>
                         </select>
                     </div>
-                    <div class="input-title col-2 col-border">Our Retent<br>自留額</div>
+                    <div class="input-title col-2 col-border">*Our Retent<br>自留額</div>
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
                     </div>
@@ -369,7 +372,7 @@
                         <input type="text" placeholder="" required>
                     </div>
                     <div class="input-title col-2 col-border">
-                        <i class="fas fa-minus picWord" style="color:#6abccb"></i>
+                        <i class="fas fa-plus picWord" style="color:#6abccb"></i>
                         Commission Portfolio Out<br>佣金責任金轉出
                     </div>
                     <div class="col-4 col-border">

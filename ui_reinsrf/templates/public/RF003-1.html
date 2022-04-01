@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" lang="zh-Hant-TW">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+<title>兆豐</title>
+<!-- jQuery -->
+<script src="../../shigen/plugin/jquery.min.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+<!-- fontawsome -->
+<script defer src="../../shigen/fonts/js/all.min.js"></script>
+<link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+<!--load all styles -->
+<!-- 共用樣式 -->
+<link rel="stylesheet" href="../../shigen/css/base.css">
+<!-- menu 樣式 -->
+<link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+<link rel="stylesheet" href="../../shigen/css/menu.css">
+<!-- 主要樣式 -->
+<link rel="stylesheet" href="../../shigen/css/type.css">
+
+<!-- 自訂JS樣式 -->
+<script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+    <div class="ajax-section-main"></div>
+    <div class="container-fluid content">
+        
+            <div class="bread-crumbs">
+                <a href="#">分進作業</a> &gt; <a href="#">合約作業</a>
+            </div>
+            <div class="big_title title s1">合約作業</div>
+            <div class="col-12">
+            </div>
+            <div class="item_title title s2">代表號EPI</div>
+            <!-- 下拉選單為Proportional比例出現的欄位 -->
+            <!-- <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">Type Code<br>合約型態</div>
+                    <div class="col-4 col-border">
+                        <select style="min-width: 30%;" name="" id="">
+                            <option value="" selected>Proportional比例</option>
+                            <option value="">Non-Proportional非比例</option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">Section<br></div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">General Treaty Code<br>代表號</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="YYYY" required>
+                    </div>
+                    <div class="input-title col-2 col-border">EPI (100%)<br>預估再保費</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="YYYY" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*U/W Year<br>承保年度</div>
+                    <div class="col-4 col-border">
+                        <input style="max-width: 50%;"  type="text" placeholder="必填" required>
+                    </div>
+                    <div class="input-title col-2 col-border">Resvised EPI (100%)<br>修正後預估再保費</div>
+                    <div class="col-4 col-border">
+                        <select style="min-width: 30%;" name="" id="">
+                            <option value="1">USD</option>
+                            <option value="2">TWD</option>
+                            <option value="3">CNY</option>
+                        </select>
+                        <input style="max-width: 50%;"  type="text" placeholder="" required>
+                    </div>
+                </div>
+            </div> -->
+            <!-- 下拉選單為Non-Proportional非比例)出現的欄位 -->
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">Type Code<br>合約型態</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="">Proportional比例</option>
+                            <option value="" selected>Non-Proportional非比例</option>
+                        </select>
+                    </div>
+                    <div class="input-title col-2 col-border">Layer<br></div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">General Treaty Code<br>代表號</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="YYYY" required>
+                    </div>
+                    <div class="input-title col-2 col-border">Section</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="YYYY" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*U/W Year<br>承保年度</div>
+                    <div class="col-4 col-border">
+                        <input style="max-width: 50%;"  type="text" placeholder="必填" required>
+                    </div>
+                    <div class="input-title col-2 col-border">MDP (100%)<br>最低預收保費</div>
+                    <div class="col-4 col-border">
+                        <select style="min-width: 30%;" name="" id="">
+                            <option value="1">USD</option>
+                            <option value="2">TWD</option>
+                            <option value="3">CNY</option>
+                        </select>
+                        <input style="max-width: 50%;"  type="text" placeholder="" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary">儲存</button>
+                    <button class="btn btn-primary">取消</button>
+                </div>
+            </div>
+            </div>
+            
+            
+    </div><!-- content end  -->
+</section>
+
+</body>
+
+
+</html>

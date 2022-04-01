@@ -79,23 +79,23 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">*Treaty Code<br>合約卷號</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
-                    <div class="input-title col-2 col-border">*Representative Treaty Code<br>代表號</div>
+                    <div class="input-title col-2 col-border">*General Treaty Code<br>代表號</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">*Treaty Name<br>合約名稱</div>
                     <div class="col-10 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">*Ceding Company Code<br>分保公司代碼</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                     <div class="input-title col-2 col-border">*Type Code<br>合約型態</div>
                     <div class="col-4 col-border">
@@ -113,13 +113,13 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">Ceding Company Name<br>分保公司全名</div>
                     <div class="col-10 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="自動帶出分保公司代碼對應英文全名" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">*Inception Date<br>起保日</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="YYYY/MM/DD" required>
+                        <input type="text" placeholder="必填YYYY/MM/DD" required>
                     </div>
                     <div class="input-title col-2 col-border">*Attachment Point<br>再保險契約起賠額</div>
                     <div class="col-4 col-border">
@@ -127,18 +127,19 @@
                             <option value="" selected>幣別</option>
                             <option value="" >USD</option>
                         </select>
-                        <input style="max-width:50%;" type="text" placeholder="金額" required>
+                        <input style="max-width:50%;" type="text" placeholder="金額必填" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">Cancel Date<br>註銷日期</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="YYYY/MM/DD" required>
+                        <input type="text" placeholder="YYYY/MM/DD" >
                     </div>
                     <div class="input-title col-2 col-border">*Attachment of Liability<br>責任歸屬</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
-                        <option value="" selected>Risk Attaching</option>
+                        <option value="" selected>必填</option>
+                        <option value="">Risk Attaching</option>
                         <option value="" >Loss Occurance</option>
                         </select>
                     </div>
@@ -146,12 +147,13 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">PNOC<br>暫時註銷通知</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="MM/DD" required>
+                        <input type="text" placeholder="必填MM/DD" required>
                     </div>
                     <div class="input-title col-2 col-border">*國內/國外</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
-                            <option value="" selected>國內</option>
+                            <option value="" selected>必填</option>
+                            <option value="">國內</option>
                             <option value="">國外</option>
                         </select>
                     </div>
@@ -170,10 +172,13 @@
                     </div>
                 </div>
                 <div class="row">
-                   
                     <div class="input-title col-2 col-border">Commutation Date<br>結束日期</div>
                     <div class="col-4 col-border">
                         <input type="text" placeholder="YYYY/MM/DD" required>
+                    </div>
+                    <div class="input-title col-2 col-border">Accounting Code<br>會計險別代碼</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="必填" required>
                     </div>
                 </div>
             </div>
@@ -186,26 +191,28 @@
             <div class="x_scroll ">
                 <table class="calculateBox">
                     <tr class="calculateBoxHead">
-                        <td>U/W Year<br>承保年</td>
+                        <td>*U/W Year<br>承保年</td>
                         <td>*Status<br>合約狀態</td>
                         <td>*Portfolio Transfer<br>責任轉移</td>
                         <td>Clean-Cut Date<br>結清日</td>
                     </tr>
                     <tr>
-                        <td><input type="text" placeholder="YYYY" required></td>
+                        <td><input type="text" placeholder="必填YYYY" required></td>
                         <td>
                             <select name="" id="">
+                                <option value="">必填</option>
                                 <option value="O">Open</option>
                                 <option value="C">Close</option>
                             </select>
                         </td>
                         <td>
                             <select name="" id="">
+                                <option value="">必填</option>
                                 <option value="R">Run-Off</option>
                                 <option value="C">Clean-Cut</option>
                             </select>
                         </td>
-                        <td><input type="text" placeholder="YYYY/MM/DD" required></td>
+                        <td><input type="text" placeholder="必填YYYY/MM/DD" required></td>
                     </tr>
                     <tr class="calculateBoxHead">
                         <td>Broker Code<br>經紀人代碼</td>
@@ -218,6 +225,7 @@
                         <td><input type="text" placeholder="文件寫自動帶入" required></td>
                         <td>
                             <select name="" id="">
+                                <option value="">必填</option>
                                 <option value="R">相同</option>
                                 <option value="C">自留</option>
                                 <option value="C">指定</option>
@@ -276,12 +284,14 @@
                     <tr>
                         <td>
                             <select name="" id="">
+                                <option value="">必填</option>
                                 <option value="Y">Y</option>
                                 <option value="N">N</option>
                             </select>
                         </td>
                         <td>
                             <select name="" id="">
+                                <option value="">必填</option>
                                 <option value="Y">Y</option>
                                 <option value="N">N</option>
                             </select>
@@ -290,7 +300,7 @@
                             <select style="min-width:30%;" name="" id="">
                                 <option value="">幣別</option>
                             </select>
-                            <input style="max-width:50%;" type="text" placeholder="金額" required>
+                            <input style="max-width:50%;" type="text" placeholder="必填金額" required>
                         </td>
                         <td>
                             <select style="min-width:30%;" name="" id="">
@@ -305,8 +315,8 @@
                         <td colspan="2">*Last Updated Date<br>最後修改日</td>
                     </tr>
                     <tr>
-                        <td><input type="text" placeholder="自動帶入可修改" required></td>
-                        <td><input type="text" placeholder="自動帶入可修改" required></td>
+                        <td><input type="text" placeholder="必填" required></td>
+                        <td><input type="text" placeholder="必填" required></td>
                         <td colspan="2"><input type="text" placeholder="自動帶入" required></td>
                     </tr>
                     <tr class="calculateBoxHead">
@@ -336,7 +346,6 @@
             <div class="divSpace"></div>
             <div class="col-12 d-flex">
                 <button class="btn btn-primary">複製</button>
-                <button class="btn btn-primary">暫存</button>
                 <button class="btn btn-primary">修改</button>
                 <button class="btn btn-primary">儲存</button>
                 <button class="btn btn-primary">匯出</button>
@@ -351,33 +360,22 @@
                     <table class="tblCssDataGrid css_table" style="table-layout:fixed">
                         <tbody>
                             <tr class="cssDataGridHeader">
+                                <th>Treaty Code<br>合約卷號</th>
                                 <th>U/W Year<br>承保年度</th>
-                                <th>Section</th>
-                                <th>Type Code<br>合約型態</th>
-                                <th>Our Share (%)<br>分入成分(%)</th>
+                                <th>Company Code<br>再保人代碼</th>
+                                <th>Broker Code<br>經紀人代碼</th>
+                                <th>Status<br>狀態</th>
                                 <th>EPI (Our Share)<br>預估再保費</th>
                                 <th>Revised EPI (Our Share)<br>修正後預估再保費</th>
                             </tr>
                             <tr class="cssDataGridHeader">
-                                <td>
-                                   2021
-                                </td>
-                                <td>
-                                   1
-                                </td>
-                                <td>
-                                   QS
-                                </td>
-                                <td>
-                                    2%
-                                </td>
-                                <td>
-                                   TWD$200,000,000
-                                </td>
-                                <td>
-                                    TWD$200,000,000
-                                </td>
-                                
+                                <td>202110001</td>
+                                <td>2021</td>
+                                <td>123</td>
+                                <td>2334</td>
+                                <td> 是</td>
+                                <td>TWD$200,000,000</td>
+                                <td>TWD$200,000,000</td>
                             </tr>
                         </tbody>
                     </table>

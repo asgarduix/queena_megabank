@@ -40,18 +40,6 @@
             </div>
             <div class="big_title title s1">合約作業</div>
             <div class="col-12">
-                <!-- <button class="btn btn-edit" onclick="location.href='RF002_A.html'">
-                    比例合約
-                </button>
-                <button class="btn btn-edit" onclick="location.href='RF004_A.html'">
-                    非比例合約
-                </button>
-                <button class="btn btn-edit" onclick="location.href='RF003.html'">
-                    代表號EPI
-                </button>
-                <button class="btn btn-edit" onclick="location.href='RF001_A.html'">
-                    合約查詢與列印
-                </button> -->
                 <div class="row-group form-row-group">
                     <div class="row">
                         <div class="input-title col-2 col-border">Treaty Code<br>合約卷號</div>
@@ -80,7 +68,7 @@
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
                     </div>
-                    <div class="input-title col-2 col-border">*Representative Treaty Code<br>代表號</div>
+                    <div class="input-title col-2 col-border">*General Treaty Code<br>代表號</div>
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
                     </div>
@@ -157,6 +145,12 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="input-title col-2 col-border">Accounting Code<br>會計代碼</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="input-title col-2 col-border">*Treaty Reference Code<br>相關合約卷號</div>
                     <div class="col-10 col-border">
                         <div class="fileList">
@@ -180,8 +174,17 @@
             <!-- table scroll-x -->
             <div class="tableGray">
                 <div class="item_title title s2">各年度資訊</div>
-                <!-- table scroll-x -->
-                <div class="x_scroll ">
+                <div class="col-12 d-flex">
+                    <button class="btn btn-primary">複製</button>
+                    <button class="btn btn-primary">暫存</button>
+                    <button class="btn btn-primary">修改</button>
+                    <button class="btn btn-primary">儲存</button>
+                    <button class="btn btn-primary">匯出</button>
+                    <button class="btn btn-primary">列印</button>
+                    <button class="btn btn-edit" onclick="window.open('RF004_A_pop.html', 'newwindow', config='height=750,width=1280,toolbar=no');">
+                        新增合約型態
+                    </button>
+                </div>
                     <table class="calculateBox">
                         <tr class="calculateBoxHead">
                             <td>U/W Year<br>承保年</td>
@@ -192,10 +195,11 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="text" placeholder="YYYY" required>
+                                <input type="text" placeholder="必填YYYY" required>
                             </td>
                             <td>
                                 <select name="" id="">
+                                    <option value="">必填</option>
                                     <option value="O">Open</option>
                                     <option value="C">Close</option>
                                 </select>
@@ -217,6 +221,7 @@
                             <td><input type="text" placeholder="0.00%" required></td>
                             <td>
                                 <select name="" id="">
+                                    <option value="">必填</option>
                                     <option value="">相同</option>
                                     <option value="">自留</option>
                                     <option value="">指定</option>
@@ -318,54 +323,31 @@
                             </td>
                         </tr>
                     </table>
-                </div>
             </div>
             <div class="divSpace"></div>
-
-                
-                <div class="col-12 d-flex">
-                    <button class="btn btn-primary">複製</button>
-                    <button class="btn btn-primary">暫存</button>
-                    <button class="btn btn-primary">修改</button>
-                    <button class="btn btn-primary">儲存</button>
-                    <button class="btn btn-primary">匯出</button>
-                    <button class="btn btn-primary">列印</button>
-                    <button class="btn btn-edit" onclick="window.open('RF004_A_pop.html', 'newwindow', config='height=750,width=1280,toolbar=no');">
-                        新增合約型態
-                    </button>
-                </div>
-                <div class="divSpace"></div>
                 <div class="row-group">
                     <div class="col-12" style="border: 1px solid #ccc; padding: 3px;">
                         <table class="tblCssDataGrid css_table" style="table-layout:fixed">
                             <tbody>
                                 <tr class="cssDataGridHeader">
+                                    <th>Treaty Code<br>合約卷號</th>
                                     <th>U/W Year<br>承保年度</th>
-                                    <th>Layer<br>層數</th>
+                                    <th>Company Code<br>再保人代碼</th>
+                                    <th>Broker Code<br>經紀人代碼</th>
+                                    <th>Layer<br>總層數</th>
                                     <th>Our Share (%)<br>分入成分 (%)</th>
                                     <th>Rate On Line (%)<br>責任額費率</th>
                                     <th>Attachment Point (Our Share)<br>再保險契約起賠額</th>
                                     <th>MDP (Our Share)<br>最低預收保費</th>
                                 </tr>
                                 <tr class="cssDataGridHeader">
-                                    <td>
-                                       2021
-                                    </td>
-                                    <td>
-                                       1
-                                    </td>
-                                    <td>
-                                        2%
-                                    </td>
-                                    <td>
-                                       TWD$200,000,000
-                                    </td>
-                                    <td>
-                                        TWD$200,000,000
-                                    </td>
-                                    <td>
-                                        TWD$2,000,000
-                                    </td>
+                                    <td>202110031</td>
+                                    <td>2021</td>
+                                    <td>1</td>
+                                    <td>2% </td>
+                                    <td>TWD$200,000,000</td>
+                                    <td>TWD$200,000,000</td>
+                                    <td>TWD$2,000,000</td>
                                 </tr>
                             </tbody>
                         </table>

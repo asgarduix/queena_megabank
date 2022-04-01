@@ -38,18 +38,6 @@
             </div>
             <div class="big_title title s1">合約作業</div>
             <div class="col-12">
-                <!-- <button class="btn btn-edit" onclick="location.href='RF002_A.html'">
-                    比例合約
-                </button>
-                <button class="btn btn-edit" onclick="location.href='RF004_A.html'">
-                    非比例合約
-                </button>
-                <button class="btn btn-edit" onclick="location.href='RF003.html'">
-                    代表號EPI
-                </button>
-                <button class="btn btn-edit" onclick="location.href='RF001_A.html'">
-                    合約查詢與列印
-                </button> -->
             <div class="item_title title s2">合約查詢與列印</div>
             <div class="row-group form-row-group">
                 <div class="row">
@@ -57,9 +45,14 @@
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
                     </div>
-                    <div class="input-title col-2 col-border">Type Code<br>合約型態</div>
+                    <div class="input-title col-2 col-border">*Type Code<br>合約型態</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <select name="" id="">
+                            <option value="">必填</option>
+                            <option value="">全部</option>
+                            <option value="">比例</option>
+                            <option value="">非比例</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row">
@@ -73,16 +66,21 @@
                     </div>
                     <div class="input-title col-2 col-border">Business Code<br>預算險別代號</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <select name="" id="">
+                            <option value="1">國內</option>
+                            <option value="2">國外</option>
+                            <option value="3">全部</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">Status<br>狀態</div>
+                    <div class="input-title col-2 col-border">*Status<br>狀態</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
-                            <option value="1">有效</option>
-                            <option value="2">無效</option>
-                            <option value="3">全部</option>
+                            <option value="1">必填</option>
+                            <option value="2">有效</option>
+                            <option value="3">無效</option>
+                            <option value="4">全部</option>
                         </select>
                     </div>
                     <div class="input-title col-2 col-border">Accounting Code<br>會計險別代號</div>
@@ -114,7 +112,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">Representative Treaty EPI<br>代表號預估再保費</div>
+                    <div class="input-title col-2 col-border">General Treaty EPI<br>代表號預估再保費</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
                             <option value="Y">Y</option>
@@ -124,9 +122,10 @@
                     <div class="input-title col-2 col-border">Report Format<br>報表格式</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
-                            <option value="1">預估再保費及成分 (依公司排序)</option>
-                            <option value="2">預估再保費及成分 (依合約排序)</option>
-                            <option value="3">合約內容細項</option>
+                            <option value="1">必填</option>
+                            <option value="2">預估再保費及成分 (依公司排序)</option>
+                            <option value="3">預估再保費及成分 (依合約排序)</option>
+                            <option value="4">合約內容細項</option>
                         </select>
                     </div>
                 </div>
@@ -135,6 +134,7 @@
                 <div class="col-12">
                     <button class="btn btn-primary">查詢</button>
                     <button class="btn btn-primary">匯出</button>
+                    <button class="btn btn-edit">整批複製</button>
                 </div>
             </div>
             <!-- TABLE 報表格式選預估再保及成分(依公司)會出現 -->
@@ -185,20 +185,21 @@
             </div>
             <table class="tblCssDataGrid css_table">
                 <tbody><tr class="cssDataGridHeader">
-                    <th style="width: 50px;">
+                    <th style="width: 4%;">
                         <span class="checkbox_box">
                         <input id="check1" type="checkbox" name="check" value="1" checked="">
                         <label for="check1"></label>
                         </span>
                     </th>
-                    <th style="width: 8%;"><a href="">Company Code<br>分保公司代碼</a></th>
-                    <th style="width: 17%;"><a href="">Company Name<br>分保公司簡稱</a></th>
-                    <th style="width: 8%;"><a href="">Broker Code<br>經紀人代碼</a></th>
-                    <th style="width: 17%;"><a href="">Broker Name<br>經紀人簡稱</a></th>
-                    <th style="width: 11%;"><a href="">Treaty Code<br>合約卷號</a></th>
-                    <th style="width: 7%;"><a href="">U/W Year<br>承保年度</a></th>
-                    <th style="width: 11%;"><a href="">EPI<br>預估再保費</a></th>
-                    <th style="width: 11%;"><a href="">Revised EPI<br>修正後預估再保費</a></th>
+                    <th style="width: 10%;"><a href="">Company Code<br>分保公司代碼</a></th>
+                    <th style="width: 13%;"><a href="">Company Name<br>分保公司名稱</a></th>
+                    <th style="width: 10%;"><a href="">Broker Code<br>經紀人代碼</a></th>
+                    <th style="width: 10%;"><a href="">Broker Name<br>經紀人名稱</a></th>
+                    <th style="width: 10%;"><a href="">Treaty Code<br>合約卷號</a></th>
+                    <th style="width: 10%;"><a href="">Type Code<br>合約型態</a></th>
+                    <th style="width: 6%;"><a href="">U/W Year<br>承保年度</a></th>
+                    <th style="width: 10%;"><a href="">EPI/GNPI<br>預估再保費</a></th>
+                    <th style="width: 10%;"><a href="">Revised EPI/GNPI<br>修正後預估再保費</a></th>
                     <th style="width: 7%;"><a href="">Our Share (%)<br>分入成分</a></th>
                 </tr>
                 <tr>

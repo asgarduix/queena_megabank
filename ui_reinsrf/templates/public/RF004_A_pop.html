@@ -38,7 +38,6 @@
                 <a href="#">非比例合約</a> &gt; <a href="#">新增合約形態內容</a>
             </div>
             <div style="border: 1px solid #F18A47;padding: 10px; background-color: #fcfaf0;">
-                
                 <button style="font-size: 15px;" class="btn btn-primary">刪除</button>
                 <button style="font-size: 15px;" class="btn btn-primary">儲存</button>
                 <button style="font-size: 15px;" class="btn btn-primary">離開</button>
@@ -51,67 +50,72 @@
                     <table class="calculateBox">
                         <tr class="calculateBoxHead">
                             <td>*Layer<br>層數</td>
-                            <td>section<br></td>
-                            <td>Our Share (%)<br>分入成分 (%)</td>
+                            <td>*Section<br></td>
+                            <td>*Our Share (%)<br>分入成分 (%)</td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>
                                 <select name="" id="">
+                                    <option value="">必填</option>
                                     <option value="">1</option>
                                     <option value="">2</option>
                                 </select>
                             </td>
                             <td>
                                 <select name="" id="">
-                                    <option value="">Quota Share</option>
-                                    <option value="">Surplus</option>
-                                    <option value="">Quota Share & Surplus</option>
-                                    <option value="">Facultative</option>
-                                    <option value="">Open Cover</option>
-                                    <option value="">Pool</option>
-                                    <option value="">Binding Authority</option>
+                                    <option value="">必填</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
                                 </select>
                             </td>
                             <td>
-                                <input type="text" style="max-width: 30%;" placeholder="" required>%
+                                <input type="text" style="max-width: 30%;" placeholder="必填" required>%
                             </td>
                             <td></td>
                         </tr>
                         <tr class="calculateBoxHead" style="vertical-align: middle;">
                             <td>
-                                Limit (100%)<br>再保契約再保責任險 (限額)
+                                Limit (100%)<br>再保契約再保責任額 (限額)
                             </td>
                             <td >
-                                Limit (Our Share)<br>再保契約再保責任險 (限額)
+                                Limit (Our Share)<br>再保契約再保責任額 (限額)
                             </td>
-                            <td>Attachment Point (100%)<br>再保額契約期種類</td>
-                            <td>Attachment Point (Our Share)<br>再保額契約期種類</td>
+                            <td>Attachment Point (100%)<br>再保額契約起賠額</td>
+                            <td>Attachment Point (Our Share)<br>再保額契約起賠額</td>
                         </tr>
                         <tr>
                             <td>
                             <select style="min-width:48%;"name="" id="">
                                     <option value="">幣別</option>
                             </select>
-                                    <input style="max-width:48%;" type="text" placeholder="金額" required="">
+                                    <input style="max-width:48%;" type="text" placeholder="必填" required="">
                             </td>
                             <td >
                                 <select style="min-width:48%;"name="" id="">
                                     <option value="">幣別</option>
                             </select>
-                                    <input style="max-width:48%;" type="text" placeholder="金額" required="">
+                                    <input style="max-width:48%;" type="text" placeholder="自動計算" required="">
                             </td>
                             <td>
                                 <select style="min-width:48%;"name="" id="">
                                     <option value="">幣別</option>
                             </select>
-                                    <input style="max-width:48%;" type="text" placeholder="金額" required="">
+                                    <input style="max-width:48%;" type="text" placeholder="必填" required="">
                             </td>
                             <td>
                                 <select style="min-width:48%;"name="" id="">
                                     <option value="">幣別</option>
                             </select>
-                                    <input style="max-width:48%;" type="text" placeholder="金額" required="">
+                                    <input style="max-width:48%;" type="text" placeholder="自動計算" required="">
                             </td>
                         </tr>
                         <tr class="calculateBoxHead" style="vertical-align: middle;">
@@ -137,47 +141,48 @@
                                 <select style="min-width:48%;"name="" id="">
                                     <option value="">幣別</option>
                             </select>
-                                    <input style="max-width:48%;" type="text" placeholder="金額" required="">
+                                    <input style="max-width:48%;" type="text" placeholder="必填" required="">
                             </td>
                             <td>
                                 <select style="min-width:48%;"name="" id="">
                                     <option value="">幣別</option>
                             </select>
-                                    <input style="max-width:48%;" type="text" placeholder="金額" required="">
+                                    <input style="max-width:48%;" type="text" placeholder="自動計算" required="">
                             </td>
                         </tr>
                         <tr class="calculateBoxHead" style="vertical-align: middle;">
-                            <td>Reinstatemet (time)<br>復效次數</td>
-                            <td>Reinstatement (%)<br>復效比例 (full=100%)</td>
-                            <td>Additional Premium (%)<br>復效保費</td>
+                            <td>*Reinstatemet (time)<br>復效次數</td>
+                            <td>*Reinstatement (%)<br>復效比例 (full=100%)</td>
+                            <td>*Additional Premium (%)<br>復效保費</td>
                             <td>Limit in all<br>總限額</td>
                         </tr>
                         <tr>
                             <td>
-                            <input style="max-width:48%;" type="text" placeholder="0" required="">
+                            <input style="max-width:48%;" type="text" placeholder="必填" required="">
                             </td>
                             <td >
-                                <input style="max-width:48%;" type="text" placeholder="100%" required="">
+                                <input style="max-width:48%;" type="text" placeholder="必填" required="">
                             </td>
                             <td>
-                                <input style="max-width:48%;" type="text" placeholder="100%" required="">
+                                <input style="max-width:48%;" type="text" placeholder="必填" required="">
                             </td>
                             <td>
                                 <select style="min-width:48%;"name="" id="">
                                     <option value="">幣別</option>
                             </select>
-                                    <input style="max-width:48%;" type="text" placeholder="金額" required="">
+                                    <input style="max-width:48%;" type="text" placeholder="自動計算" required="">
                             </td>
                         </tr>
                         <tr class="calculateBoxHead" style="vertical-align: middle;">
-                            <td>Accounting Code<br>會計險別代號</td>
+                            <td>*Accounting Code<br>會計險別代號</td>
                             <td>Actuarial Code<br>精算損益險別代號</td>
-                            <td>Business Code<br>預算顯別代號</td>
+                            <td>Business Code<br>預算險別代號</td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>
                             <select name="" id="">
+                                <option value="">必填</option>
                                 <option value="">ol,一年期住宅火災保險</option>
                             </select>
                             </td>
@@ -212,20 +217,22 @@
                             <td> </td>
                         </tr>
                         <tr class="calculateBoxHead" style="vertical-align: middle;">
-                            <td>Earthquake<br>地震</td>
-                            <td>Windstorm/Flood<br>颱風/洪水</td>
+                            <td>*Earthquake<br>地震</td>
+                            <td>*Windstorm/Flood<br>颱風/洪水</td>
                             <td>Remark<br>備註</td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>
                                 <select name="" id="">
-                                    <option value=""></option>
+                                    <option value="Y">Y</option>
+                                    <option value="N">N</option>
                                 </select>
                             </td>
                             <td >
                                 <select name="" id="">
-                                    <option value=""></option>
+                                    <option value="Y">Y</option>
+                                    <option value="N">N</option>
                                 </select>
                             </td>
                             <td>
@@ -254,7 +261,7 @@
                                     <option value="">Interest Abroad</option>
                                     <option value="">Non-Interest Abroad</option>
                                 </select>
-                                    <input style="max-width:50%;" type="text" placeholder="" required="">
+                                    <input style="max-width:50%;" type="text" placeholder="必填" required="">
                                     <a onclick="window.open('territoryCode.html', 'newwindow', config='height=900,width=1000,toolbar=no');">
                                         <i class="fas fa-folder-plus" style="font-size: 20px; margin-left: 5px; color:#5B5B5B;"></i>
                                     </a>
@@ -268,7 +275,7 @@
                                     <option value="">Interest Abroad</option>
                                     <option value="">Non-Interest Abroad</option>
                                 </select>
-                                    <input style="max-width:50%;" type="text" placeholder="" required="">
+                                    <input style="max-width:50%;" type="text" placeholder="必填" required="">
                                     <a onclick="window.open('territoryCode.html', 'newwindow', config='height=900,width=1000,toolbar=no');">
                                         <i class="fas fa-folder-plus" style="font-size: 20px; margin-left: 5px; color:#5B5B5B;"></i>
                                     </a>
