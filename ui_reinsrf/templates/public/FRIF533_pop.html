@@ -33,13 +33,11 @@
 
     <div class="ajax-section-main"></div>
     <div class="container-fluid content">
-        
             <div class="bread-crumbs">
                 <a href="#">非比例合約</a> &gt; <a href="#">新增合約型態</a>
             </div>
             <div style="border: 1px solid #F18A47;padding: 10px; background-color: #fcfaf0;">
                 <div class="container-fluid">
-
                     <div class="bread-crumbs">
                         <a href="#">分出作業</a> &gt; <a href="#">分出作業</a>
                     </div>
@@ -47,24 +45,6 @@
         
                     <div class="item_title title s2">合約成分作業</div>
                     <div class="row-group form-row-group" style="background-color: #ffffff;">
-                        <div class="row">
-                            <div class="input-title col-2 col-border">Department<br>部門名稱</div>
-                            <div class="col-4 col-border">
-                                <select name="" id="">
-                                    <option value="1">國內部</option>
-                                    <option value="2" selected>國外部</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-title col-2 col-border">Type Code<br>合約型態</div>
-                            <div class="col-4 col-border">
-                                <select name="" id="">
-                                    <option value="1" selected>Propotianal-Quota Share</option>
-                                    <option value="2">test</option>
-                                </select>
-                            </div>
-                        </div>
                         <div class="row">
                             <div class="input-title col-2 col-border">U/W Year<br>承保年度</div>
                             <div class="col-4 col-border">
@@ -77,39 +57,22 @@
                                 <input type="text" placeholder="模糊搜尋比照高風險國家名單" required >
                             </div>
                         </div>
-                       
-                        <div class="row">
-                            <div class="input-title col-2 col-border">Layer<br>合約層數</div>
-                            <div class="col-4 col-border">
-                                <input type="text" placeholder="1~10" required >
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2 col-border"></div>
-                            <div class="col-2 col-border">
-                                <button class="btn btn-primary">新增</button>
-                                <button class="btn btn-primary">查詢</button>
-                            </div>
-                        </div>
                     </div>
-        
                     <div class="row-group">
                         <div class="col-12"  style="border: 1px solid #ccc; padding: 3px; background-color: #ffffff;">
                             <div class="row">
                                 <div class="col-12 col-border">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                        新增
+                                        新增空白欄位
                                       </button>
                                     <!-- 彈跳視窗內容 -->
                                     <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModalone">
                                         複製
                                     </button>
-                                    <button class="btn btn-primary">暫存</button>
+                                    <button class="btn btn-primary">儲存</button>
+                                    <button class="btn btn-primary">複製</button>
                                     <button class="btn btn-primary">修改</button>
                                     <button class="btn btn-primary">刪除</button>
-                                    <button class="btn btn-primary">送出</button>
-                                    <button class="btn btn-primary">覆核</button>
-                                    <button class="btn btn-primary">退回</button>
                                     <button class="btn btn-primary">離開</button>
                                 </div>
                             </div>
@@ -138,9 +101,17 @@
                                         </td>
                                         <td>
                                             <select name="" id="">
-                                                <option value="" selected>First</option>
-                                                <option value="" selected>Two</option>
-                                                <option value="" selected>Three</option>
+                                                <option value="" selected></option>
+                                                <option value="">First</option>
+                                                <option value="">Two</option>
+                                                <option value="">Three</option>
+                                                <option value="">Fourth</option>
+                                                <option value="">Fifth</option>
+                                                <option value="">Sixth</option>
+                                                <option value="">Seventh</option>
+                                                <option value="">Eighth</option>
+                                                <option value="">Ninth</option>
+                                                <option value="">Tenth</option>
                                             </select>
                                         </td>
                                         <td>
@@ -155,8 +126,8 @@
                                         <td>
                                             <select name="" id="">
                                                 <option value="" selected>相同</option>
-                                                <option value="" selected>自留</option>
-                                                <option value="" selected>指定</option>
+                                                <option value="">自留</option>
+                                                <option value="">指定</option>
                                             </select>
                                         </td>
                                         <td>
@@ -178,29 +149,32 @@
     <!-- Modal -->
     <div class="modal fade" id="exampleModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
+            <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
-                  請輸入需新增之層數
-              </h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h5 class="modal-title" style="font-size: 1.2em;" id="exampleModalLabel">
+                請輸入需新增之層數
+                </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-              </button>
+            </button>
             </div>
             <div class="modal-body">
                 <div class="row-group">
                 <div class="row">
-                    <div class="input-title col-4 col-border justify-content-end">Section</div>
-                    <div class="col-8 col-border">
-                        <input type="text" placeholder="" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-4 col-border justify-content-end">Type</div>
+                    <div class="input-title col-4 col-border justify-content-end">Layer</div>
                     <div class="col-8 col-border">
                         <select name="" id="">
-                            <option value="">Quota Share</option>
-                            <option value="">Surplus</option>
+                            <option value="" selected></option>
+                            <option value="">First</option>
+                            <option value="">Two</option>
+                            <option value="">Three</option>
+                            <option value="">Fourth</option>
+                            <option value="">Fifth</option>
+                            <option value="">Sixth</option>
+                            <option value="">Seventh</option>
+                            <option value="">Eighth</option>
+                            <option value="">Ninth</option>
+                            <option value="">Tenth</option>
                         </select>
                     </div>
                 </div>
@@ -210,9 +184,9 @@
             <button type="button" class="btn btn-primary">確認</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
             </div>
-          </div>
         </div>
-      </div>
+        </div>
+    </div>
 
 
 </body>

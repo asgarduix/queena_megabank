@@ -27,13 +27,11 @@
 <!-- 自訂JS樣式 -->
 <script src="../../shigen/js/global.js"></script>
 </head>
-
 <body>
     <div class="ajax-aside-nav"></div>
 <section>
     <div class="ajax-section-main"></div>
     <div class="container-fluid content">
-        
             <div class="bread-crumbs">
                 <a href="#">分進作業</a> &gt; <a href="#">分進合約作業</a> &gt; <a>合約條件摘要</a>
             </div>
@@ -47,10 +45,9 @@
                     非比例合約
                 </button>
             </div>
-            
             <!-- 合約條件摘要-比例與非比例共用此選擇區塊 -->
-          <!-- 合約條件摘要-比例與非比例共用此選擇區塊 -->
-          <div class="col-12 col-border">
+        <!-- 合約條件摘要-比例與非比例共用此選擇區塊 -->
+        <div class="col-12 col-border">
             <div class="row-group form-row-group">
                 <div class="row">
                     <div class="input-title col-2 col-border">*Department<br>部門名稱</div>
@@ -115,7 +112,7 @@
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
                     </div>
-                    <div class="input-title col-2 col-border">*Department<br>部門</div>
+                    <div class="input-title col-2 col-border">*Department<br>部門名稱</div>
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
                         <a href="" data-toggle="modal" data-target="#exampleModalone">
@@ -137,7 +134,7 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">*Inception Data<br>再保契約責任始期</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="YYYY/MM/DD" required>
+                        <input type="text" placeholder="YYYY/MM/DD必填" required>
                     </div>
                     <div class="input-title col-2 col-border">Coverage<br>代碼Phase I</div>
                     <div class="col-4 col-border">
@@ -148,7 +145,7 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">*Expiration Data<br>再保契約責任終期</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="YYYY/MM/DD" required>
+                        <input type="text" placeholder="YYYY/MM/DD必填" required>
                         
                     </div>
                     <div class="input-title col-2 col-border">Coverage<br>代碼Phase II</div>
@@ -208,11 +205,12 @@
                         <div id="addColumn">
                             <button class="btn btn-edit">刪除</button>
                             <select name="" id="">
+                                <option value="">必填</option>
                                 <option value="">Territory</option>
                                 <option value="">Interest Abroad</option>
                                 <option value="">Non-Interest Abroad</option>
                             </select>
-                            <input type="text" placeholder="0.0000%" required="">
+                            <input type="text" placeholder="" required="">
                             <a onclick="window.open('territoryCode.html', 'newwindow', config='height=900,width=1000,toolbar=no');">
                                 <i class="fas fa-folder-plus" style="font-size: 23px; position: relative; top: 5px; color:#5B5B5B;"></i>
                             </a>
@@ -224,7 +222,7 @@
                                 <option value="">Interest Abroad</option>
                                 <option value="">Non-Interest Abroad</option>
                             </select>
-                            <input type="text" placeholder="0.0000%" required="">
+                            <input type="text" placeholder="" required="">
                             <a onclick="window.open('territoryCode.html', 'newwindow', config='height=900,width=1000,toolbar=no');">
                                 <i class="fas fa-folder-plus" style="font-size: 23px; position: relative; top: 5px; color:#5B5B5B;"></i>
                             </a>
@@ -234,13 +232,11 @@
                 </div>
             </div>
             </div>
-
-            <div class="divSpace"></div>
             <div class="divSpace"></div>
 
-           <!-- 新增群組區塊 -->
-           <div class="tableGray">
-           <div class="row-group form-row-group">
+        <!-- 新增群組區塊 -->
+        <div class="tableGray">
+        <div class="row-group form-row-group">
             <div class="row">
                 <div class="item_title title s2">
                     合約條件摘要
@@ -249,15 +245,37 @@
             <div class="row">
                 <div class="input-title col-2 col-border">Buiness Tax (%)<br>稅捐</div>
                 <div class="col-4 col-border">
-                    <input type="text" placeholder="0.00%" required>
+                    <input type="text" placeholder="必填" required>
                 </div>
                 <div class="input-title col-2 col-border">*Estimated GNPI<br>預估毛淨保費</div>
                 <div class="col-4 col-border">
-                    <select style="min-width:15%;" name="" id="">
-                        <option value="">US</option>
-                        <option value="">TWD</option>
+                    <select style="min-width:30%;" name="" id="">
+                        <option value="" selected="">幣別</option>
+                        <option value="">全部</option>
+                        <option value="">TWD&nbsp;&nbsp;台幣</option>
+                        <option value="">USD&nbsp;&nbsp;美金</option>
+                        <option value="">HKD&nbsp;&nbsp;港幣</option>
+                        <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                        <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                        <option value="">JPY&nbsp;&nbsp;日圓</option>
+                        <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                        <option value="">EUR&nbsp;&nbsp;歐元</option>
+                        <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                        <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                        <option value="">CAD&nbsp;&nbsp;加幣</option>
+                        <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                        <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                        <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                        <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                        <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                        <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                        <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                        <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                        <option value="">THB&nbsp;&nbsp;泰幣</option>
+                        <option value="">VND&nbsp;&nbsp;越南幣</option>
+                        <option value="">ZAR&nbsp;&nbsp;南非幣</option>
                     </select>
-                    <input type="text" placeholder="" required>
+                    <input type="text" placeholder="必填" required>
                 </div>
             </div>
             <div class="row">
@@ -265,15 +283,39 @@
                 <div class="col-4 col-border">
                     <select name="" id="">
                         <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <option value="">Monthly</option>
+                        <option value="">Quarterly</option>
+                        <option value="">Half-yearly</option>
+                        <option value="">Yearly</option>
                     </select>
                 </div>
                 <div class="input-title col-2 col-border">*Revised GNPI<br>修正後毛淨保費</div>
                 <div class="col-4 col-border">
-                    <select style="min-width:15%;" name="" id="">
-                        <option value="">US</option>
-                        <option value="">TWD</option>
+                    <select style="min-width:30%;" name="" id="">
+                        <option value="" selected="">幣別</option>
+                        <option value="">全部</option>
+                        <option value="">TWD&nbsp;&nbsp;台幣</option>
+                        <option value="">USD&nbsp;&nbsp;美金</option>
+                        <option value="">HKD&nbsp;&nbsp;港幣</option>
+                        <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                        <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                        <option value="">JPY&nbsp;&nbsp;日圓</option>
+                        <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                        <option value="">EUR&nbsp;&nbsp;歐元</option>
+                        <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                        <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                        <option value="">CAD&nbsp;&nbsp;加幣</option>
+                        <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                        <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                        <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                        <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                        <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                        <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                        <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                        <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                        <option value="">THB&nbsp;&nbsp;泰幣</option>
+                        <option value="">VND&nbsp;&nbsp;越南幣</option>
+                        <option value="">ZAR&nbsp;&nbsp;南非幣</option>
                     </select>
                     <input type="text" placeholder="" required>
                 </div>
@@ -287,17 +329,31 @@
                 </div>
             </div>
             <div class="row">
-                <div class="input-title col-2 col-border">*Slip/Wording<br>合約文件</div>
+                <div class="input-title col-2 col-border">*Slip<br>合約摘要表</div>
                     <div class="col-8 col-border">
                         <div class="fileList">
-                        <input type="text" placeholder="" required>
-                        <input type="text" placeholder="" required>
-                        <input type="text" placeholder="" required>
-                        <input type="text" placeholder="" required>
-                        <input type="text" placeholder="" required>
-                        <input type="text" placeholder="" required>
-                        <input type="text" placeholder="" required>
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="可上傳多個檔案" required>
+                        <input type="text" placeholder="可上傳多個檔案" required>
+                        <input type="text" placeholder="可上傳多個檔案" required>
+                        <input type="text" placeholder="可上傳多個檔案" required>
+                        </div>
+                    </div>
+                <div class="col-2 col-border">
+                    <a href="#">
+                        <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i>
+                    </a>
+                    <button class="btn btn-edit">瀏覽</button>
+                    <button class="btn btn-primary">上傳</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-title col-2 col-border">*Wording<br>合約條款</div>
+                    <div class="col-8 col-border">
+                        <div class="fileList">
+                        <input type="text" placeholder="可上傳多個檔案" required>
+                        <input type="text" placeholder="可上傳多個檔案" required>
+                        <input type="text" placeholder="可上傳多個檔案" required>
+                        <input type="text" placeholder="可上傳多個檔案" required>
                         </div>
                     </div>
                 <div class="col-2 col-border">
@@ -325,33 +381,30 @@
                     <table class="tblCssDataGrid css_table" style="table-layout:fixed">
                         <tbody>
                             <tr class="cssDataGridHeader">
-                                <th>Layer<br>層數</th>
+                                <th style="width: 5%;">Layer<br>層數</th>
+                                <th>Layer Limit<br>限額</th>
+                                <th>Attachment Point<br>起賠額</th>
                                 <th>MDP<br>最低預付保費</th>
-                                <th>MDP (% of Yeild)<br>最低預付保費折扣</th>
-                                <th>Adjustable Rate (%)<br>費率 (%)</th>
+                                <th>MDP (% of Yelid)<br>最低預付保費折扣</th>
+                                <th>Adjustable Rate (%)<br>費率</th>
+                                <th>Rate on Line (%)<br>責任額費率</th>
+                                <th>Limit in All<br>總限額</th>
+                                <th>Reinstatement (time)<br>復效次數</th>
                                 <th>Reinstatement (%)<br>復效比例 (full=100%)</th>
                                 <th>Additional Premium (%)<br>復效保費</th>
                             </tr>
                             <tr class="cssDataGridHeader">
-                                <td>
-                                   2021
-                                </td>
-                                <td>
-                                   1
-                                </td>
-                                <td>
-                                   QS
-                                </td>
-                                <td>
-                                    2%
-                                </td>
-                                <td>
-                                   TWD$200,000,000
-                                </td>
-                                <td>
-                                    TWD$200,000,000
-                                </td>
-                                
+                                <td>first</td>
+                                <td>1</td>
+                                <td>QS</td>
+                                <td>2%</td>
+                                <td>TWD$200,000,000</td>
+                                <td>TWD$200,000,000</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
@@ -360,18 +413,15 @@
             </div>
         <div class="row">
             <div class="col-12 col-border">
-            <button class="btn btn-primary">複製</button>
-            <button class="btn btn-primary">暫存</button>
+            <button class="btn btn-primary">儲存</button>
             <button class="btn btn-primary">修改</button>
             <button class="btn btn-primary">刪除</button>
-            <button class="btn btn-primary">送出</button>
-            <button class="btn btn-primary">覆核</button>
-            <button class="btn btn-primary">退回</button>
             <button class="btn btn-primary">匯出</button>
-            <button class="btn btn-primary">列印</button>
-            <button class="btn btn-primary">離開</button>
-            <button class="btn btn-edit" onclick="window.open('FRIF302_pop.html', 'newwindow', config='height=750,width=1280,toolbar=no');">
+            <button class="btn btn-edit" onclick="window.open('FRIF302_pop.html', 'newwindow', config='height=550,width=1280,toolbar=no');">
                 新增合約型態
+            </button>
+            <button class="btn btn-edit" onclick="window.open('FRIF_upreport.html', 'newwindow', config='height=550,width=1280,toolbar=no');">
+                合約條件變動
             </button>
             </div>
         </div>

@@ -12,6 +12,7 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+    <script src="../../shigen/plugin/bootstrap/bootstrap.min.js"></script>
     <!-- fontawsome -->
     <script defer src="../../shigen/fonts/js/all.min.js"></script>
     <link href="../../shigen/fonts/css/all.css" rel="stylesheet">
@@ -23,14 +24,13 @@
     <link rel="stylesheet" href="../../shigen/css/menu.css">
     <!-- 主要樣式 -->
     <link rel="stylesheet" href="../../shigen/css/type.css">
-
+    
     <!-- 自訂JS樣式 -->
     <script src="../../shigen/js/global.js"></script>
 </head>
 
 <body>
         <div class="container-fluid content">
-
             <div class="bread-crumbs">
                 <a href="#">分出作業</a> &gt; <a href="#">合約名稱作業</a>
             </div>
@@ -40,13 +40,13 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">Treaty Name<br>合約名稱</div>
                     <div class="col-10 col-border">
-                        <input type="text" placeholder="模糊搜尋比照高風險警示國家名單" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">Treaty Name<br>合約簡稱</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                     <div class="input-title col-2 col-border">Status<br>狀態</div>
                     <div class="col-4 col-border">
@@ -59,28 +59,25 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">Department<br>部門名稱</div>
                     <div class="col-4 col-border">
-                        <select style="min-width: 30%;" name="" id="">
-                            <option value="">火險</option>
-                            <option value="">在保</option>
-                        </select>
-                        <a href="#">
-                            <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i>
-                        </a>
+                        <input type="text" placeholder="必填" required>
+                        <a href="" data-toggle="modal" data-target="#exampleModalthree">
+                            <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i></a>
                     </div>
                     <div class="input-title col-2 col-border">Business Code<br>預算險別代號</div>
                     <div class="col-4 col-border">
-                        <select name="" id="">
-                            <option value="Y"></option>
-                            <option value="N"></option>
-                        </select>
+                        <input type="text" placeholder="必填" required>
+                        <a href="" data-toggle="modal" data-target="#exampleModaltwo">
+                            <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">Type Code<br>合約型態</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
-                            <option value="Y"></option>
-                            <option value="N"></option>
+                            <option value="" selected>必填</option>
+                            <option value="Y">Y</option>
+                            <option value="N">N</option>
                         </select>
                     </div>
                     
@@ -94,12 +91,11 @@
                 </div>
                 <div class="row">
                     <div class="col-4 col-border">
-                        <button class="btn btn-primary">新增</button>
+                        <button class="btn btn-primary">儲存</button>
                         <button class="btn btn-primary">查詢</button>
-                        <button class="btn btn-primary">匯出</button>
                         <button class="btn btn-primary">修改</button>
                         <button class="btn btn-primary">刪除</button>
-                        <button class="btn btn-primary">儲存</button>
+                        <button class="btn btn-primary">匯出</button>
                     </div>
                 </div>
             </div>
@@ -143,18 +139,16 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
-            
             <table class="tblCssDataGrid css_table">
                 <tbody>
                     <tr class="cssDataGridHeader">
-                    <th><a href="">Department<br>部門</a></th>
-                    <th><a href="">Treaty Name<br>合約簡稱</a></th>
+                    <th><a href="">Department<br>部門名稱</a></th>
                     <th><a href="">Treaty Name<br>合約名稱</a></th>
+                    <th><a href="">Treaty Name<br>合約簡稱</a></th>
                     <th><a href="">Type Code<br>合約型態</a></th>
-                    <th><a href="">Status<br>狀態</a></th>
-                    <th><a href="">Business Code<br>預算險別代號</a></th>
+                    <th><a href="">Business Code<br>預算險別代號<a href="" data-toggle="modal" data-target="#exampleModaltwo">
+                        <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i></a></a></th>
                     <th><a href="">CRC Treaty<br>中央再保合約</a></th>
                 </tr>
                 <tr>
@@ -162,13 +156,166 @@
                     <td>Fire ist Surp Treaty</td>
                     <td>FIRE FIRST SURPLUS REINSURANCE TREATY</td>
                     <td>Surplus</td>
-                    <td>有效</td>
                     <td>火險</td>
                     <td>Ｎ</td>
                 </tr>
             </tbody>
             </table>
         </div><!-- content end  -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModaltwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                      請選取要加入的預算險別
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row-group">
+                    <div class="row">
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">火險-火災保險</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">水險-貨運保險</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_1" type="checkbox" name="radio01" value="1" checked="">
+                                <label for="radio01_1">水險-船舶保險</label>
+                            </span>
+                        </div>
+                        
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">水險-航空保險</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">意外險-工程保險</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">意外險-核能保險</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">意外險-其他保險</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">車險-汽車保險</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">健傷險-健康保險</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">健傷險-傷害保險</label>
+                            </span>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary">加入</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalthree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                      請選取要加入部門別
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row-group">
+                    <div class="row">
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_1" type="checkbox" name="radio01" value="1" checked="">
+                                <label for="radio01_1">火災保險</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">海上保險部</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">意外保險部</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">個人保險部</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">駐關島代表處</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">國外部</label>
+                            </span>
+                        </div>
+                        <div class="col-3 col-border">
+                            <span class="checkbox_box">
+                                <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                                <label for="radio01_2">全部</label>
+                            </span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary">加入</button>
+                </div>
+              </div>
+            </div>
+            </div>
 
 </body>
 

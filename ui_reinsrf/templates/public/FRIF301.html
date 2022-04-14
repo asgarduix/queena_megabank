@@ -33,7 +33,6 @@
 <section>
     <div class="ajax-section-main"></div>
     <div class="container-fluid content">
-        
             <div class="bread-crumbs">
                 <a href="#">分進作業</a> &gt; <a href="#">分進合約作業</a> &gt; <a>比例合約</a>
             </div>
@@ -94,38 +93,32 @@
                     </div>
                 <div class="row">
                 <div class="col-4 col-border">
+                    <button class="btn btn-secondary" onclick="window.open('FRIF527.html', 'newwindow', config='height=750,width=1280,toolbar=no');">
+                        合約名稱作業
+                    </button>
                 <button class="btn btn-primary">新增比例</button>
                 <button class="btn btn-primary">新增非比例</button>
                 <button class="btn btn-primary">查詢</button>
+                <button class="btn btn-primary">整批複製</button>
                 </div>
                 </div>
             </div>
             </div>
 
             <div class="item_title title s2">比例合約</div>
-            <!-- 合約代碼及名稱作業開始 -->
+            <!-- 合約年度及成分作業 -->
             <div class="divSpace"></div>
             <div class="container-fluid">
-                <div class="item_title title s2">合約代碼及名稱作業</div>
+                <div class="item_title title s2">合約年度及成分作業</div>
                 <div class="row-group form-row-group">
                     <div class="row">
-                        <div class="input-title col-2 col-border">部門名稱：</div>
+                        <div class="input-title col-2 col-border">Treaty Name<br>合約名稱</br></div>
                         <div class="col-4 col-border">
-                            <input type="text" placeholder="" required>
+                            <input type="text" placeholder="必填" required>
                         </div>
-                        <div class="input-title col-2 col-border">合約名稱：</div>
+                        <div class="input-title col-2 col-border">U/W Year<br>承保年度</br></div>
                         <div class="col-4 col-border">
-                            <input type="text" placeholder="" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-title col-2 col-border">合約代碼：</div>
-                        <div class="col-4 col-border">
-                            <input type="text" placeholder="" required>
-                        </div>
-                        <div class="input-title col-2 col-border">承保年度：</div>
-                        <div class="col-4 col-border">
-                            <input type="text" placeholder="" required>
+                            <input type="text" placeholder="必填" required>
                         </div>
                     </div>
                 </div>
@@ -133,19 +126,13 @@
                     <div class="row">
                         <div class="col-12 d-flex justify-content-end">
                             <button class="btn btn-secondary">新增</button>
-                            <button class="btn btn-primary">查詢</button>
-                            <button class="btn btn-primary">匯出</button>
-                            <button class="btn btn-edit" onclick="window.open('FRIF533_pop.html', 'newwindow', config='height=750,width=1280,toolbar=no');">
-                                成份作業
-                            </button>
-                            <button class="btn btn-edit" onclick="window.open('FRIF527.html', 'newwindow', config='height=750,width=1280,toolbar=no');">
-                                合約名稱作業
+                            <button class="btn btn-edit" onclick="window.open('FRIF533_pop.html', 'newwindow', config='height=750,width=1280,toolbar=no');">成份作業
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- 合約代碼及名稱作業結束 -->
+            <!-- 合約基本資料 -->
             <div class="divSpace"></div>
             <div class="tableGray">
             <div class="row-group form-row-group">
@@ -160,11 +147,9 @@
                             <option value=""></option>
                         </select>
                     </div>
-                    <div class="input-title col-2 col-border">*Department<br>部門</div>
+                    <div class="input-title col-2 col-border">*Department<br>部門名稱</div>
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
-                        <a href="" data-toggle="modal" data-target="#exampleModalthree">
-                        <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i></a>
                     </div>
                 </div>
                 <div class="row">
@@ -211,8 +196,6 @@
                     <div class="input-title col-2 col-border">*Business Code<br>預算險別代號</div>
                     <div class="col-4 col-border">
                         <input type="text" placeholder="" required>
-                        <a href="" data-toggle="modal" data-target="#exampleModaltwo">
-                        <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i></a>
                     </div>
                 </div>
                 <div class="row">
@@ -268,12 +251,11 @@
                             <option value="">該承保年度所有中再合約清單</option>
                         </select>
                         <button class="btn btn-edit">中再合約</button>
-                         <!-- 若系統判斷是中再合約出現下面這段 -->
-                        <input style="max-width:30%;" type="text" placeholder="0.0000%" required="">
+                        <!-- 若系統判斷是中再合約出現下面這段 -->
+                        <input style="max-width:30%;" type="text" placeholder="" required="">
                     </div>
                 </div>
                 <div class="row">
-                    
                         <div class="input-title col-2 col-border">
                             <a href="#"> 
                                 <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i>
@@ -285,6 +267,7 @@
                                 <div id="addColumn">
                                 <button class="btn btn-edit">刪除</button>
                                 <select name="" id="">
+                                    <option value="">必填</option>
                                     <option value="">Territory</option>
                                     <option value="">Interest Abroad</option>
                                     <option value="">Non-Interest Abroad</option>
@@ -301,7 +284,7 @@
                                         <option value="">Interest Abroad</option>
                                         <option value="">Non-Interest Abroad</option>
                                     </select>
-                                    <input type="text" placeholder="0.0000%" required="">
+                                    <input type="text" placeholder="" required="">
                                     <a onclick="window.open('territoryCode.html', 'newwindow', config='height=900,width=1000,toolbar=no');">
                                         <i class="fas fa-folder-plus" style="font-size: 23px; position: relative; top: 5px; color:#5B5B5B;"></i>
                                     </a>
@@ -314,12 +297,7 @@
                 </div>
             </div>
             </div>
-
             <div class="divSpace"></div>
-
-
-            <div class="divSpace"></div>
-
             <div class="tableGray">
             <div class="row-group form-row-group" >
                 <div class="item_title title s2">
@@ -329,7 +307,8 @@
                     <div class="input-title col-2 col-border">Type of R/I Commission<br>佣金型態</div>
                     <div class="col-4 col-border">
                         <select style="min-width:80%;" name="" id="">
-                            <option value="" selected="">Flat 固定</option>
+                            <option value="" selected>必填</option>
+                            <option value="">Flat 固定</option>
                             <option value="">Sliding Scale 梯次</option>
                         </select>
                     </div>
@@ -361,7 +340,7 @@
                             <option value="">VND&nbsp;&nbsp;越南幣</option>
                             <option value="">ZAR&nbsp;&nbsp;南非幣</option>
                         </select>
-                        <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                        <input style="max-width:50%;" type="text" placeholder="金額必填" required="">
                     </div>
                 </div>
                 <div class="row">
@@ -441,9 +420,9 @@
                     <div class="col-4 col-border">
                         <select style="min-width:30%;" name="" id="">
                             <option value="Y">Y</option>
-                            <option value="N">N</option>
+                            <option value="N" selected>N</option>
                         </select>
-                        <input style="max-width:50%;" type="text" placeholder="0.00%" required="">
+                        <input style="max-width:50%;" type="text" placeholder="" required="">
                 </div>
                     <div class="input-title col-2 col-border">Cash Loss (100%)<br>現金攤賠</div>
                     <div class="col-4 col-border">
@@ -479,37 +458,17 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">Management Expenses (%)<br>管理費用</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="0.00%" required>
+                        <input type="text" placeholder="" required>
                     </div>
                     <div class="input-title col-2 col-border">Account<br>會計帳</div>
                     <div class="col-4 col-border">
-                        <select style="min-width:30%;" name="" id="">
-                            <option value="" selected="">幣別</option>
-                            <option value="">全部</option>
-                            <option value="">TWD&nbsp;&nbsp;台幣</option>
-                            <option value="">USD&nbsp;&nbsp;美金</option>
-                            <option value="">HKD&nbsp;&nbsp;港幣</option>
-                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                            <option value="">JPY&nbsp;&nbsp;日圓</option>
-                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                            <option value="">EUR&nbsp;&nbsp;歐元</option>
-                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                            <option value="">CAD&nbsp;&nbsp;加幣</option>
-                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                            <option value="">THB&nbsp;&nbsp;泰幣</option>
-                            <option value="">VND&nbsp;&nbsp;越南幣</option>
-                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                        <select name="" id="">
+                            <option value="" selected=""></option>
+                            <option value="">Monthly</option>
+                            <option value="">Quarterly</option>
+                            <option value="">Half-yearly</option>
+                            <option value="">Yearly</option>
                         </select>
-                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
                     </div>
                 </div>
                 <div class="row">
@@ -525,17 +484,27 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-2 col-border">Slip/Wording<br>摘要表</div>
+                    <div class="input-title col-2 col-border">Slip<br>合約摘要表</div>
                     <div class="col-10 col-border">
                         <div class="fileList">
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
+                            <input type="text" placeholder="可上傳多個檔案" required>
+                            <input type="text" placeholder="可上傳多個檔案" required>
+                            <input type="text" placeholder="可上傳多個檔案" required>
+                            <input type="text" placeholder="可上傳多個檔案" required>
+                            </div>
+                        <a href="#"> 
+                        <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Wording<br>合約條款</div>
+                    <div class="col-10 col-border">
+                        <div class="fileList">
+                            <input type="text" placeholder="可上傳多個檔案" required>
+                            <input type="text" placeholder="可上傳多個檔案" required>
+                            <input type="text" placeholder="可上傳多個檔案" required>
+                            <input type="text" placeholder="可上傳多個檔案" required>
                             </div>
                         <a href="#"> 
                         <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i>
@@ -554,24 +523,28 @@
                 </div>
             </div>
             </div>
-            
             <div class="divSpace"></div>
             <div class="row-group">
                 <div class="col-12" style="border: 1px solid #ccc; padding: 3px;">
                     <table class="tblCssDataGrid css_table" style="table-layout:fixed">
                         <tbody>
                             <tr class="cssDataGridHeader">
-                                <th style="width: 50px;"></th>
-                                <th><a href="">部門</a></th>
-                                <th><a href="">合約名稱</a></th>
-                                <th><a href="">合約簡稱</a></th>
-                                <th><a href="">承保年度</a></th>
-                                <th>section</th>
-                                <th>Treaty Limit (QS 100%)<br>合約限額</th>
-                                <th>Treaty Limit (QS 100%) Remark<br>合約限額備註</th>
-                                <th>Reinsurance Cession (%)<br>再保比例</th>
-                                <th>Retention (%)<br>自留比例</th>
-                                <th>Retention<br>自留額</th>
+                                <th style="width: 50px;">
+                                    <span class="checkbox_box">
+                                        <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                        <label for="check1"></label>
+                                    </span>
+                                </th>
+                                <th><a href="">Department<br>部門名稱</a></th>
+                                <th><a href="">Treaty Name<br>合約名稱</a></th>
+                                <th><a href="">U/W Year<br>承保年度</a></th>
+                                <th><a href="">Status<br>合約狀態</a></th>
+                                <th><a>Treaty Limit (100%)<br>合約限額</a></th>
+                                <th><a>Retention<br>自留額</a></th>
+                                <th><a>EPI/GNPI<br>預估再保費/毛淨保費</a></th>
+                                <th><a>Revised EPI/GNPI<br>修正後預估再保費/毛淨保費</a></th>
+                                <th><a>Slip<br>合約摘要表</a></th>
+                                <th><a>Wording<br>合約條款</a></th>
                             </tr>
                             <tr class="cssDataGridHeader">
                                 <td>
@@ -584,24 +557,12 @@
                                 <td>FIRE FIRST SURPLUS REINSURANCE TREATY</td>
                                 <td>FFS</td>
                                 <td>1983</td>
-                                <td>
-                                   2021
-                                </td>
-                                <td>
-                                   1
-                                </td>
-                                <td>
-                                   QS
-                                </td>
-                                <td>
-                                    2%
-                                </td>
-                                <td>
-                                   TWD$200,000,000
-                                </td>
-                                <td>
-                                    TWD$200,000,000
-                                </td>
+                                <td>2021</td>
+                                <td>1</td>
+                                <td>QS</td>
+                                <td>2%</td>
+                                <td><button class="btn btn-edit">下載</button></td>
+                                <td><button class="btn btn-edit">下載</button></td>
                                 
                             </tr>
                         </tbody>
@@ -610,16 +571,14 @@
                 
             </div>
             <div class="col-12 d-flex">
-                <button class="btn btn-primary">整批</button>
-                <button class="btn btn-primary">複製</button>
                 <button class="btn btn-primary">儲存</button>
                 <button class="btn btn-primary">修改</button>
                 <button class="btn btn-primary">刪除</button>
                 <button class="btn btn-primary">匯出</button>
-                <button class="btn btn-edit" onclick="window.open('FRIF301_pop.html', 'newwindow', config='height=750,width=1280,toolbar=no');">
+                <button class="btn btn-edit"data-toggle="modal" data-target="#exampleModalone">
                     新增合約型態
                 </button>
-                <button class="btn btn-edit" onclick="window.open('FRIF_upreport.html', 'newwindow', config='height=750,width=1280,toolbar=no');">
+                <button class="btn btn-edit" onclick="window.open('FRIF_upreport.html', 'newwindow', config='height=550,width=1280,toolbar=no');">
                     合約條件變動
                 </button>
             </div>
@@ -627,42 +586,44 @@
         
     </div><!-- content end  -->
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal1 -->
+        <div class="modal fade" id="exampleModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
+            <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
-                  請輸入需新增之層數
-              </h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h5 class="modal-title" style="font-size: 1.2em;" id="exampleModalLabel">
+                請輸入需新增之合約型態內容
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-              </button>
+                </button>
             </div>
             <div class="modal-body">
                 <div class="row-group">
                 <div class="row">
                     <div class="input-title col-4 col-border justify-content-end">Section</div>
                     <div class="col-8 col-border">
-                       <select name="" id="">
-                           <option value="1">1</option>
-                           <option value="2">2</option>
-                           <option value="3">3</option>
-                           <option value="4">4</option>
-                           <option value="5">5</option>
-                           <option value="6">6</option>
-                           <option value="7">7</option>
-                           <option value="8">8</option>
-                           <option value="9">9</option>
-                           <option value="10">10</option>
-                       </select>
+                        <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-title col-4 col-border justify-content-end">Type</div>
+                    <div class="input-title col-4 col-border justify-content-end">Type Code<br>合約型態</div>
                     <div class="col-8 col-border">
                         <select name="" id="">
-                            <option value="">Quota Share</option>
+                            <!-- 選Quota Share彈出視窗是FRIF301_pop.html -->
+                            <option value="" selected>Quota Share</option>
+                            <!-- 選Quota Share彈出視窗是FRIF301_poptwo.html -->
                             <option value="">Surplus</option>
                         </select>
                     </div>
@@ -670,13 +631,16 @@
                 </div>
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-primary">確認</button>
+            <button class="btn btn-primary" onclick="window.open('FRIF301_pop.html', 'newwindow', config='height=550,width=1280,toolbar=no');">
+                確認
+            </button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
             </div>
-          </div>
+            </div>
         </div>
-      </div>
-      <div class="modal fade" id="exampleModaltwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        </div>
+    <!-- Modal2 -->
+        <div class="modal fade" id="exampleModaltwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -760,10 +724,11 @@
             <div class="modal-footer">
             <button type="button" class="btn btn-primary">加入</button>
             </div>
-          </div>
+            </div>
         </div>
-      </div>
-      <div class="modal fade" id="exampleModalthree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        </div>
+    <!-- Modal3 -->
+        <div class="modal fade" id="exampleModalthree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -827,7 +792,7 @@
             </div>
           </div>
         </div>
-      </div>
+        </div>
 </section>
 
 </body>
