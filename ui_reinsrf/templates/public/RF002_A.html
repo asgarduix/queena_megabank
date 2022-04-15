@@ -23,9 +23,10 @@
 <link rel="stylesheet" href="../../shigen/css/menu.css">
 <!-- 主要樣式 -->
 <link rel="stylesheet" href="../../shigen/css/type.css">
-
 <!-- 自訂JS樣式 -->
 <script src="../../shigen/js/global.js"></script>
+<!-- tabulator_4.9 -->
+<link rel="stylesheet" href="../../shigen/css/tabulator.css">
 </head>
 
 <body>
@@ -517,7 +518,7 @@
             <div class="divSpace"></div>
             <div class="row-group">
                 <div class="col-12" style="border: 1px solid #ccc; padding: 3px;">
-                    <table class="tblCssDataGrid css_table" style="table-layout:fixed">
+                    <!-- <table class="tblCssDataGrid css_table" style="table-layout:fixed">
                         <tbody>
                             <tr class="cssDataGridHeader">
                                 <th>Treaty Code<br>合約卷號</th>
@@ -538,7 +539,9 @@
                                 <td>TWD$200,000,000</td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table> -->
+                    <div id="table01"></div>
+                    <div class="table-footer">table-footer</div>
                 </div>
                 
             </div>
@@ -549,14 +552,14 @@
     <!-- Modal -->
     <div class="modal fade" id="exampleModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
+            <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
-                  請輸入需新增之層數
-              </h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h5 class="modal-title" id="exampleModalLabel">
+                請輸入需新增之層數
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-              </button>
+                </button>
             </div>
             <div class="modal-body">
                 <div class="row-group">
@@ -581,12 +584,66 @@
             <button type="button" class="btn btn-primary">確認</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
             </div>
-          </div>
+        </div>
         </div>
     </div>
 </section>
 
 </body>
-
+<script src="../../shigen/js/tabulator.min.js"></script>
+<link rel="stylesheet" href="../../shigen/js/layout.js">
+<script>
+    let table01Data = [{
+        id: "b1",
+        銀行帳號: "設計文字",
+        交易時間: "設計文字",
+        交易序號: "設計文字",
+        交易金額: "設計文字",
+        收費序號: "設計文字",
+        流水號: "設計文字",
+        幣別: "設計文字",
+        列印人: "007790"+"高慧君",
+    }, ];
+    var table01 = new Tabulator("#table01", {
+        data: table01Data,
+        //autoColumns: true,
+        layout: "fitColumns",
+        height: "255px",
+        pagination: "local",
+        paginationSize: 5,
+        paginationSizeSelector: [5, 10, 30, 50, true],
+        movableColumns: true,
+        resizableRows: true,
+        tooltips: true,
+        tooltipsHeader: true,
+        tooltipGenerationMode: "hover",
+        selectable: true,
+        columns: [{
+                formatter: "rowSelection",
+                titleFormatter: "rowSelection",
+                headerHozAlign: "center",
+                hozAlign: "center",
+                headerSort: false,
+                maxWidth: 30,
+                minWidth: 30,
+                cellClick: function(e, cell) {
+                    cell.getRow().toggleSelect();
+                }
+            },
+            { title: "銀行帳號", field: "銀行帳號" },
+            { title: "交易時間", field: "交易時間" },
+            { title: "交易序號", field: "交易序號" },
+            { title: "交易金額", field: "交易金額" },
+            { title: "收費序號", field: "收費序號" },
+            { title: "流水號", field: "流水號" },
+            { title: "幣別", field: "幣別" },
+            { title: "列印人", field: "列印人" },
+        ],
+    });
+    // 選擇預設勾選row
+    table01.selectRow("b1");
+    // 使用filter能精準指定欄位
+    //table.selectRow(table.setFilter("id","=","a1"));
+</script>
 
 </html>
