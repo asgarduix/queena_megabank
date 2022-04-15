@@ -667,6 +667,13 @@ input, select, option, label, textarea, button, placeholder, span, .placeholder 
     height: 50%;
     top: 25%;
     left: 25%;
+  } 
+
+  .modalAn{
+    width: 90vw;
+    height: 90vh;
+    top: 5%;
+    left: 5%;
   }
 
   .modal-header{
@@ -674,15 +681,15 @@ input, select, option, label, textarea, button, placeholder, span, .placeholder 
     color: #fff;
   }
 
- .modal-footer{
-   border-top: none;
-   margin: 0 auto;
- }
+  .modal-footer{
+  border-top: none;
+  margin: 0 auto;
+  }
 
- .picWord{
-   position: absolute;
-   left: 0;
-   color:#FF8888;
+  .picWord{
+  position: absolute;
+  left: 0;
+  color:#FF8888;
   }
   
   .tableGray{
@@ -696,4 +703,3 @@ input, select, option, label, textarea, button, placeholder, span, .placeholder 
     background-color: #fff;
     margin-bottom: 15px;
   }
-   
