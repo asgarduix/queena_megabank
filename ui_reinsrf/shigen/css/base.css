@@ -663,10 +663,10 @@ input, select, option, label, textarea, button, placeholder, span, .placeholder 
 
   /* 20210323 */
   .modal{
-    width: 50%;
-    height: 50%;
-    top: 25%;
-    left: 25%;
+    width: 70%;
+    height: 60%;
+    top: 20%;
+    left: 15%;
   } 
 
   .modalAn{

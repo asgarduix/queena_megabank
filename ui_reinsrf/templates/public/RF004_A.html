@@ -2,30 +2,34 @@
 <html>
 
 <head>
-<meta charset="utf-8" lang="zh-Hant-TW">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
-<title>兆豐</title>
-<!-- jQuery -->
-<script src="../../shigen/plugin/jquery.min.js"></script>
-<!-- bootstrap -->
-<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
-<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
-<script src="../../shigen/plugin/bootstrap/bootstrap.min.js"></script>
-<!-- fontawsome -->
-<script defer src="../../shigen/fonts/js/all.min.js"></script>
-<link href="../../shigen/fonts/css/all.css" rel="stylesheet">
-<!--load all styles -->
-<!-- 共用樣式 -->
-<link rel="stylesheet" href="../../shigen/css/base.css">
-<!-- menu 樣式 -->
-<link rel="stylesheet" href="../../shigen/css/section_main_top.css">
-<link rel="stylesheet" href="../../shigen/css/menu.css">
-<!-- 主要樣式 -->
-<link rel="stylesheet" href="../../shigen/css/type.css">
-
-<!-- 自訂JS樣式 -->
-<script src="../../shigen/js/global.js"></script>
+        <meta charset="utf-8" lang="zh-Hant-TW">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+        <title>兆豐</title>
+        <!-- jQuery -->
+        <script src="../../shigen/plugin/jquery.min.js"></script>
+        <script src="../../shigen/js/jquery-ui.js"></script>
+        <link rel="stylesheet" href="../../shigen/css/jquery-ui.css">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+        <script src="../../shigen/plugin/bootstrap/bootstrap.min.js"></script>
+        <!-- fontawsome -->
+        <script defer src="../../shigen/fonts/js/all.min.js"></script>
+        <link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+        <!--load all styles -->
+        <!-- 共用樣式 -->
+        <link rel="stylesheet" href="../../shigen/css/base.css">
+        <!-- menu 樣式 -->
+        <link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+        <link rel="stylesheet" href="../../shigen/css/menu.css">
+        <!-- 主要樣式 -->
+        <link rel="stylesheet" href="../../shigen/css/type.css">
+        <!-- 自訂JS樣式 -->
+        <script src="../../shigen/js/global.js"></script>
+        <!-- tabulator_4.9 -->
+        <link rel="stylesheet" href="../../shigen/css/tabulator.css">
+        
 </head>
 
 <body>
@@ -65,27 +69,28 @@
                 <div class="row">
                     <div class="input-title col-2 col-border">*Treaty Code<br>合約卷號</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                     <div class="input-title col-2 col-border">*General Treaty Code<br>代表號</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">*Treaty Name<br>合約名稱</div>
                     <div class="col-10 col-border">
-                        <input style="width: 92%;" type="text" placeholder="" required>
+                        <input style="width: 92%;" type="text" placeholder="必填" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">*Ceding Company Code<br>分保公司代碼</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder="必填" required>
                     </div>
                     <div class="input-title col-2 col-border">*Type Code<br>合約型態</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
+                            <option value="" selected>必填</option>
                             <option value="">Per Risk/Policy</option>
                             <option value="">Per Event/Catastrophe</option>
                             <option value="">Annual Aggregate</option>
@@ -103,16 +108,16 @@
                     <div class="col-10 col-border">
                         <input type="text" placeholder="" required>
                     </div>
-                   
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">*Inception Date<br>起保日</div>
                     <div class="col-4 col-border">
-                        <input type="text" placeholder="YYYY/MM/DD" required>
+                        <input type="text" placeholder="YYYY/MM/DD必填" required>
                     </div>
                     <div class="input-title col-2 col-border">*Attachment of Liability <br>責任歸屬</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
+                            <option value="" selected>必填</option>
                             <option value="">Risk Attaching</option>
                             <option value="" selected>Loss Occurance</option>
                         </select>
@@ -126,12 +131,12 @@
                     </div>
                     <div class="input-title col-2 col-border">*國內/國外</div>
                     <div class="col-4 col-border">
-                       <select name="" id="">
-                           <option value="" selected>國內</option>
-                           <option value="" selected>國外</option>
-                       </select>
+                        <select name="" id="">
+                            <option value="" selected>必填</option>
+                            <option value="">國內</option>
+                            <option value="">國外</option>
+                        </select>
                     </div>
-                  
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">Commutation Date<br>結束日期</div>
@@ -153,17 +158,18 @@
                     <div class="input-title col-2 col-border">*Treaty Reference Code<br>相關合約卷號</div>
                     <div class="col-10 col-border">
                         <div class="fileList">
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                            <input type="text" placeholder="" required>
-                               
+                            <input type="text" placeholder="必填,可上傳多個檔案" required>
+                            <input type="text" placeholder="必填,可上傳多個檔案" required>
+                            <input type="text" placeholder="必填,可上傳多個檔案" required>
+                            <input type="text" placeholder="必填,可上傳多個檔案" required>
+                            <input type="text" placeholder="必填,可上傳多個檔案" required>
+                            <input type="text" placeholder="必填,可上傳多個檔案" required>
+                            <input type="text" placeholder="必填,可上傳多個檔案" required>
+                            <input type="text" placeholder="必填,可上傳多個檔案" required>
                         </div>
-                        <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px;"></i>
+                        <button class="btn" data-toggle="modal" data-target="#exampleModalthree">
+                        <i class="fas fa-plus-square" style="font-size: 18px;"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -180,7 +186,7 @@
                     <button class="btn btn-primary">儲存</button>
                     <button class="btn btn-primary">匯出</button>
                     <button class="btn btn-primary">列印</button>
-                    <button class="btn btn-edit" onclick="window.open('RF004_A_pop.html', 'newwindow', config='height=750,width=1280,toolbar=no');">
+                    <button class="btn btn-edit"data-toggle="modal" data-target="#exampleModaltwo">
                         新增合約型態
                     </button>
                 </div>
@@ -464,7 +470,7 @@
             <div class="divSpace"></div>
                 <div class="row-group">
                     <div class="col-12" style="border: 1px solid #ccc; padding: 3px;">
-                        <table class="tblCssDataGrid css_table" style="table-layout:fixed">
+                        <!-- <table class="tblCssDataGrid css_table" style="table-layout:fixed">
                             <tbody>
                                 <tr class="cssDataGridHeader">
                                     <th>Treaty Code<br>合約卷號</th>
@@ -487,37 +493,464 @@
                                     <td>TWD$2,000,000</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table> -->
+                        <div id="table01"></div>
+                    <div class="table-footer">table-footer</div>
                     </div>
                     
                 </div>
     </div><!-- content end  -->
-
-
-     <!-- Modal -->
-     <div class="modal fade" id="exampleModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal新增合約型態 -->
+    <div class="modal modalAn fade" id="exampleModaltwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
+            <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
-                  請輸入需新增之層數
-              </h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="big_title title s1">比例合約</div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-              </button>
+                </button>
             </div>
             <div class="modal-body">
                 <div class="row-group">
-                <div class="row">
-                    <div class="input-title col-4 col-border justify-content-end">Layer</div>
-                    <div class="col-8 col-border">
-                        <input type="text" placeholder="" required>
-                    </div>
+                    <div class="container-fluid content">
+                        <div style="border: 1px solid #F18A47;padding: 10px; background-color: #fcfaf0;">
+                            <button style="font-size: 15px;" class="btn btn-primary">刪除</button>
+                            <button style="font-size: 15px;" class="btn btn-primary">儲存</button>
+                            <button style="font-size: 15px;" class="btn btn-primary">離開</button>
+                        <div class="tableGray_b">
+                            <div class="item_title title s2">
+                                合約型態內容
+                            </div>
+                            <!-- table scroll-x -->
+                            <div class="x_scroll ">
+                                <table class="calculateBox">
+                                    <tr class="calculateBoxHead">
+                                        <td>*Section</td>
+                                        <td>Type Code<br>合約型態</td>
+                                        <td>Our Share (%)<br>分入成分 (%)</td>
+                                        <td>Our Share (100%)<br>分入成分 (100%)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">必填</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">必填</option>
+                                                <option value="">Quota Share</option>
+                                                <option value="">Surplus</option>
+                                                <option value="">Quota Share & Surplus</option>
+                                                <option value="">Facultative</option>
+                                                <option value="">Open Cover</option>
+                                                <option value="">Pool</option>
+                                                <option value="">Binding Authority</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" style="max-width: 30%;" placeholder="必填" required>%
+                                            of
+                                            <input type="text" style="max-width: 30%;" placeholder="" required>%
+                                        </td>
+                                        <td>
+                                            <input type="text" style="max-width: 30%;" placeholder="必填" required>% of 100%
+                                        </td>
+                                    </tr>
+                                    <tr class="calculateBoxHead">
+                                        <td>*EPI (100%)<br>預估再保費</td>
+                                        <td>*EPI (Our Share)<br>預估再保費</td>
+                                        <td>Revised EPI (100%)<br>修正後預估再保費</td>
+                                        <td>Revised EPI (Our Share)<br>修正後預估再保費</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select style="min-width:30%;" name="" id="">
+                                                <option value="" selected="">幣別</option>
+                                                <option value="">全部</option>
+                                                <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                <option value="">USD&nbsp;&nbsp;美金</option>
+                                                <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                            </select>
+                                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                                        </td>
+                                        <td>
+                                            <select style="min-width:30%;" name="" id="">
+                                                <option value="" selected="">幣別</option>
+                                                <option value="">全部</option>
+                                                <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                <option value="">USD&nbsp;&nbsp;美金</option>
+                                                <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                            </select>
+                                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                                        </td>
+                                        <td>
+                                            <select style="min-width:30%;" name="" id="">
+                                                <option value="" selected="">幣別</option>
+                                                <option value="">全部</option>
+                                                <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                <option value="">USD&nbsp;&nbsp;美金</option>
+                                                <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                            </select>
+                                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                                        </td>
+                                        <td>
+                                            <select style="min-width:30%;" name="" id="">
+                                                <option value="" selected="">幣別</option>
+                                                <option value="">全部</option>
+                                                <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                <option value="">USD&nbsp;&nbsp;美金</option>
+                                                <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                            </select>
+                                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                                        </td>
+                                    </tr>
+                                    <tr class="calculateBoxHead">
+                                        <td>*Accounting Code<br>會計險別代號</td>
+                                        <td>*Actuarial Code<br>精算損益險別代號</td>
+                                        <td>*Business Code<br>預算險別代號</td>
+                                        <td>Remark<br>備註</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">必填</option>
+                                                <option value="">F1P01 火普通險-自用</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">01-一年期住宅火災保險</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">火災保險</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="text" placeholder="" required></td>
+                                    </tr>
+                                    <tr class="calculateBoxHead">
+                                        <td style="line-height: 2.5rem;">Coverage 代碼Phase I</td>
+                                        <td style="line-height: 2.5rem;">Coverage 代碼Phase II</td>
+                                        <td style="line-height: 2.5rem;">Portfolio編碼</td>
+                                        <td style="line-height: 2.5rem;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" placeholder="" required></td>
+                                        <td><input type="text" placeholder="" required></td>
+                                        <td><input type="text" placeholder="" required></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="calculateBoxHead" style="vertical-align: middle;">
+                                        <td colspan="2">
+                                            <div class="tableAbuttom">
+                                                <a href="#">
+                                                <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px; "></i>
+                                                </a>
+                                            </div>
+                                            <div class="tableAbuttom">
+                                                Limit (100%)<br>再保契約再保責任額 (限額)
+                                            </div>
+                                        </td>
+                                        <td colspan="2">
+                                            Limit (Our Share)<br>再保契約再保責任額 (限額)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                        <table style="width: 100%;">
+                                            <tr>
+                                                <td>
+                                                    <button class="btn btn-edit">刪除</button>
+                                                    <select style="min-width: 30%;" name="" id="">
+                                                        <option value="">Territory</option>
+                                                        <option value="">Interest Abroad</option>
+                                                        <option value="">Non-Interest Abroad</option>
+                                                    </select>
+                                                    <select style="min-width:30%;" name="" id="">
+                                                        <option value="" selected="">幣別</option>
+                                                        <option value="">全部</option>
+                                                        <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                        <option value="">USD&nbsp;&nbsp;美金</option>
+                                                        <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                        <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                        <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                        <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                        <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                        <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                        <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                        <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                        <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                        <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                        <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                        <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                        <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                        <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                        <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                        <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                        <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                        <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                        <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                        <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                    </select>
+                                                    <input style="max-width:25%;" type="text" placeholder="金額" required="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <button class="btn btn-edit">刪除</button>
+                                                <select style="min-width: 30%;" name="" id="">
+                                                    <option value="">Territory</option>
+                                                    <option value="">Interest Abroad</option>
+                                                    <option value="">Non-Interest Abroad</option>
+                                                </select>
+                                                <select style="min-width:30%;" name="" id="">
+                                                    <option value="" selected="">幣別</option>
+                                                    <option value="">全部</option>
+                                                    <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                    <option value="">USD&nbsp;&nbsp;美金</option>
+                                                    <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                    <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                    <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                    <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                    <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                    <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                    <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                    <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                    <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                    <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                    <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                    <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                    <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                    <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                    <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                    <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                    <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                    <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                    <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                    <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                </select>
+                                                <input style="max-width:25%;" type="text" placeholder="金額" required="">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        </td>
+                                        <td colspan="2">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td>
+                                                    <button class="btn btn-edit">刪除</button>
+                                                    <select style="min-width: 30%;" name="" id="">
+                                                        <option value="">Territory</option>
+                                                        <option value="">Interest Abroad</option>
+                                                        <option value="">Non-Interest Abroad</option>
+                                                    </select>
+                                                    <select style="min-width:20%;" style="min-width:20%;" name="" id="">
+                                                            <option value="">幣別</option>
+                                                    </select>
+                                                    <input style="max-width:25%;" type="text" placeholder="金額" required="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                <td>
+                                                <button class="btn btn-edit">刪除</button>
+                                                <select style="min-width: 30%;" name="" id="">
+                                                    <option value="">Territory</option>
+                                                    <option value="">Interest Abroad</option>
+                                                    <option value="">Non-Interest Abroad</option>
+                                                </select>
+                                                <select style="min-width:20%;" name="" id="">
+                                                    <option value="" selected="">幣別</option>
+                                                    <option value="">全部</option>
+                                                    <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                    <option value="">USD&nbsp;&nbsp;美金</option>
+                                                    <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                    <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                    <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                    <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                    <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                    <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                    <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                    <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                    <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                    <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                    <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                    <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                    <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                    <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                    <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                    <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                    <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                    <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                    <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                    <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                </select>
+                                                <input style="max-width:25%;" type="text" placeholder="金額" required="">
+                                                </td>
+                                            </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr class="calculateBoxHead">
+                                        <td colspan="4">
+                                            <div class="tableAbuttom">
+                                                <a href="#">
+                                                <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px; margin-bottom: 5px;"></i>
+                                            </a> 
+                                            </div>
+                                            <div class="tableAbuttom">
+                                            Territory Code<br>1區域代碼</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <button class="btn btn-edit">刪除</button>
+                                            <select style="min-width: 30%;" name="" id="">
+                                                <option value="">Territory</option>
+                                                <option value="">Interest Abroad</option>
+                                                <option value="">Non-Interest Abroad</option>
+                                            </select>
+                                                <input style="max-width:50%;" type="text" placeholder="" required="">
+                                                <a onclick="window.open('territoryCode.html', 'newwindow', config='height=900,width=1000,toolbar=no');">
+                                                    <i class="fas fa-folder-plus" style="font-size: 20px; margin-left: 5px; color:#5B5B5B;"></i>
+                                                </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <button class="btn btn-edit">刪除</button>
+                                            <select style="min-width: 30%;" name="" id="">
+                                                <option value="">Territory</option>
+                                                <option value="">Interest Abroad</option>
+                                                <option value="">Non-Interest Abroad</option>
+                                            </select>
+                                                <input style="max-width:50%;" type="text" placeholder="" required="">
+                                                <a onclick="window.open('territoryCode.html', 'newwindow', config='height=900,width=1000,toolbar=no');">
+                                                    <i class="fas fa-folder-plus" style="font-size: 20px; margin-left: 5px; color:#5B5B5B;"></i>
+                                                </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
                 </div>
-                <div class="row">
-                    <div class="input-title col-4 col-border justify-content-end">Section</div>
-                    <div class="col-8 col-border">
-                        <input type="text" placeholder="" required>
+                <!-- content end  -->
+                <!-- Modal區域選擇 -->
+                <div class="modal fade" id="exampleModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                              1請輸入需新增之層數
+                          </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row-group">
+                            <div class="row">
+                                <div class="input-title col-4 col-border justify-content-end">Section</div>
+                                <div class="col-8 col-border">
+                                    <input type="text" placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-title col-4 col-border justify-content-end">Type</div>
+                                <div class="col-8 col-border">
+                                    <select name="" id="">
+                                        <option value="">Quota Share</option>
+                                        <option value="">Surplus</option>
+                                    </select>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">確認</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        </div>
+                      </div>
                     </div>
                 </div>
                 </div>
@@ -526,12 +959,147 @@
             <button type="button" class="btn btn-primary">確認</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
             </div>
-          </div>
         </div>
-      </div>
+        </div>
+    </div>
 </section>
+    <!-- Modal 加入合約卷號 -->
+    <div class="modal fade" id="exampleModalthree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    請選取要加入合約卷號
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row-group">
+                <div class="row">
+                    <div class="col-3 col-border">
+                        <span class="checkbox_box">
+                            <input id="radio01_1" type="checkbox" name="radio01" value="1" checked="">
+                            <label for="radio01_1">00123</label>
+                        </span>
+                    </div>
+                    <div class="col-3 col-border">
+                        <span class="checkbox_box">
+                            <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                            <label for="radio01_2">00123</label>
+                        </span>
+                    </div>
+                    <div class="col-3 col-border">
+                        <span class="checkbox_box">
+                            <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                            <label for="radio01_2">00123</label>
+                        </span>
+                    </div>
+                    <div class="col-3 col-border">
+                        <span class="checkbox_box">
+                            <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                            <label for="radio01_2">00123</label>
+                        </span>
+                    </div>
+                    <div class="col-3 col-border">
+                        <span class="checkbox_box">
+                            <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                            <label for="radio01_2">00123</label>
+                        </span>
+                    </div>
+                    <div class="col-3 col-border">
+                        <span class="checkbox_box">
+                            <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                            <label for="radio01_2">00123</label>
+                        </span>
+                    </div>
+                    <div class="col-3 col-border">
+                        <span class="checkbox_box">
+                            <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                            <label for="radio01_2">00123</label>
+                        </span>
+                    </div>
+                    <div class="col-3 col-border">
+                        <span class="checkbox_box">
+                            <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                            <label for="radio01_2">00123</label>
+                        </span>
+                    </div>
+                    <div class="col-3 col-border">
+                        <span class="checkbox_box">
+                            <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                            <label for="radio01_2">00123</label>
+                        </span>
+                    </div>
+                    <div class="col-3 col-border">
+                        <span class="checkbox_box">
+                            <input id="radio01_2" type="checkbox" name="radio01" value="2">
+                            <label for="radio01_2">00123</label>
+                        </span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary">加入</button>
+            </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
-
+<script src="../../shigen/js/tabulator.min.js"></script>
+<script>
+    let table01Data = [{
+        id: "b1",
+        合約卷號: "設計文字",
+        承保年度: "設計文字",
+        再保人代碼: "設計文字",
+        經紀人代碼: "設計文字",
+        狀態: "設計文字",
+        預估再保費: "設計文字",
+        修正後預估再保費: "設計文字",
+    }, ];
+    var table01 = new Tabulator("#table01", {
+        data: table01Data,
+        //autoColumns: true,
+        layout: "fitColumns",
+        height: "255px",
+        pagination: "local",
+        paginationSize: 5,
+        paginationSizeSelector: [5, 10, 30, 50, true],
+        movableColumns: true,
+        resizableRows: true,
+        tooltips: true,
+        tooltipsHeader: true,
+        tooltipGenerationMode: "hover",
+        selectable: true,
+        columns: [{
+                formatter: "rowSelection",
+                titleFormatter: "rowSelection",
+                headerHozAlign: "center",
+                hozAlign: "center",
+                headerSort: false,
+                maxWidth: 30,
+                minWidth: 30,
+                cellClick: function(e, cell) {
+                    cell.getRow().toggleSelect();
+                }
+            },
+            { title: "Treaty Code<br>合約帳號", field: "Treaty Code<br>合約帳號" },
+            { title: "U/W Year<br>承保年度", field: "U/W Year<br>承保年度" },
+            { title: "Company Code<br>再保人代碼", field: "Company Code<br>再保人代碼" },
+            { title: "Broker Code<br>經紀人代碼", field: "Broker Code<br>經紀人代碼" },
+            { title: "Status<br>狀態", field: "Status<br>狀態" },
+            { title: "EPI (Our Share)<br>預估再保費", field: "EPI (Our Share)<br>預估再保費" },
+            { title: "Revised EPI (Our Share)<br>修正後預估再保費", field: "Revised EPI (Our Share)<br>修正後預估再保費" },
+        ],
+    });
+    // 選擇預設勾選row
+    table01.selectRow("b1");
+    // 使用filter能精準指定欄位
+    //table.selectRow(table.setFilter("id","=","a1"));
+</script>
 </html>
