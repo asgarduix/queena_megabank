@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<!--TODO 1.將「div class="row-group"」區塊改為純顯示-->
+
+<head>
+    <meta charset="utf-8" lang="zh-Hant-TW">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+    <title>分進/再保賠款帳單明細</title>
+    <!-- jQuery -->
+    <script src="../../shigen/plugin/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+    <!-- fontawsome -->
+    <script defer src="../../shigen/fonts/js/all.min.js"></script>
+    <link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+    <!-- 共用樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/base.css">
+    <!-- menu 樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+    <link rel="stylesheet" href="../../shigen/css/menu.css">
+    <!-- 主要樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/type.css">
+
+    <!-- 自訂JS樣式 -->
+    <script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+        <div class="ajax-section-main"></div>
+        <div class="container-fluid content">
+
+            <div class="bread-crumbs">
+                <a href="#">分出作業</a> &gt; <a href="#">代號查詢</a>
+            </div>
+            <div class="big_title title s1">合約型態查詢與維護</div>
+
+            <div class="item_title title s2">查詢</div>
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">Reinsurance Type<br>再保型態</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="">Proportional比例</option>
+                            <option value="">Non-Proportional非比例</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Type Code<br>合約型態</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                </div>
+                <button class="btn btn-primary">新增</button>
+                <button class="btn btn-primary">啟用</button>
+                <button class="btn btn-primary">停用</button>
+            </div>
+            <div class="filterBar">
+                <div class="row-group">
+                    <div class="row">
+                        <div class="col-2">
+                            <a href="#" id="" class="pages_icon to_left">⊻</a>
+                            <a href="#" id="" class="pages_icon">＜</a>
+                            <a href="#" id="" class="pages_icon">＞</a>
+                            <a href="#" id="" class="pages_icon to_right">⊼</a>
+                        </div>
+                        <div class="col-2">
+                            <span id="" class="">總共</span>
+                            <span id="" class="">0</span>
+                            <span id="" class="">筆</span>
+                        </div>
+                        <div class="col-2">
+                            <span id="" class="">每頁</span>
+                            <select name="" id="" style="min-width: 40px;">
+                                <option value="">10</option>
+                                <option value="">50</option>
+                                <option value="">100</option>
+                                <option value="">200</option>
+                            </select>
+                            <span id="" class="">筆</span>
+                            <button class="btn btn-primary">確認</button>
+                        </div>
+                        <div class="col-2">
+                            <span id="" class="">總共</span>
+                            <span id="" class="">1</span>
+                            <span id="" class="">頁</span>
+                        </div>
+                        <div class="col-3">
+                            <span id="" class="">目前第</span>
+                            <input name="" type="text" value="1" id="" class="" style="width:32px;">
+                            <span id="" class="">頁</span>
+                            <button class="btn btn-primary">確認</button>
+                            <!-- <button class="btn btn-primary">暫存</button> -->
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <table class="tblCssDataGrid css_table">
+                <tbody><tr class="cssDataGridHeader">
+                    <th style="width: 50px;">
+                        <span class="checkbox_box">
+                            <input id="check1" type="checkbox" name="check" value="1" checked="">
+                            <label for="check1"></label>
+                        </span>
+                    </th>
+                    <th><a href="">Reinsurance Type<br>再保型態</a></th>
+                    <th><a href="">Type Code<br>合約型態</a></th>
+                    <th><a href="">Status<br>狀態</a></th>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="checkbox_box">
+                        <input id="check1" type="checkbox" name="check" value="1" checked="">
+                        <label for="check1"></label>
+                        </span>
+                    </td>
+                    <td>Proportional比例</td>
+                    <td>Quota Share</td>
+                    <td>使用中</td>
+
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-primary">列印</button>
+        <button class="btn btn-primary">匯出</button>
+        </div><!-- content end  -->
+    </section>
+
+</body>
+
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<!--TODO 1.將「div class="row-group"」區塊改為純顯示-->
+
+<head>
+    <meta charset="utf-8" lang="zh-Hant-TW">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+    <title>分進/再保賠款帳單明細</title>
+    <!-- jQuery -->
+    <script src="../../shigen/plugin/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+    <!-- fontawsome -->
+    <script defer src="../../shigen/fonts/js/all.min.js"></script>
+    <link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+    <!-- 共用樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/base.css">
+    <!-- menu 樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+    <link rel="stylesheet" href="../../shigen/css/menu.css">
+    <!-- 主要樣式 -->
+    <link rel="stylesheet" href="../../shigen/css/type.css">
+
+    <!-- 自訂JS樣式 -->
+    <script src="../../shigen/js/global.js"></script>
+</head>
+
+<body>
+    <div class="ajax-aside-nav"></div>
+<section>
+        <div class="ajax-section-main"></div>
+        <div class="container-fluid content">
+
+            <div class="bread-crumbs">
+                <a href="#">分出作業</a> &gt; <a href="#">代號查詢</a>
+            </div>
+            <div class="big_title title s1">預算/精算/會計險別代號查詢</div>
+
+            <div class="item_title title s2">查詢</div>
+            <div class="row-group form-row-group">
+                <div class="row">
+                    <div class="input-title col-2 col-border">Accounting Name<br>險種名稱</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="input-title col-2 col-border">Business Code<br>預算險別代號</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="">工程保險</option>
+                            <option value="">火災保險</option>
+                            <option value="">汽車保險</option>
+                            <option value="">其他保險</option>
+                            <option value="">核能保險</option>
+                            <option value="">航空保險</option>
+                            <option value="">健康保險</option>
+                            <option value="">船舶保險</option>
+                            <option value="">貨運保險</option>
+                            <option value="">傷害保險</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Accounting Code<br>會計險別代碼</div>
+                    <div class="col-4 col-border">
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="input-title col-2 col-border">Actuarial Code<br>損益分析</div>
+                    <div class="col-4 col-border">
+                        <select name="" id="">
+                            <option value="">01一年期住宅火災保險</option>
+                            <option value="">03一年期商業火災保險</option>
+                            <option value="">04長期商業火災保險</option>
+                            <option value="">05內陸運輸保險</option>
+                            <option value="">06貨物運輸保險</option>
+                            <option value="">07船體保險</option>
+                            <option value="">09航空保險</option>
+                            <option value="">10一般自用汽車財產損失保險</option>
+                            <option value="">11一般商業汽車財產損失保險</option>
+                            <option value="">12一般自用汽車責任保險</option>
+                            <option value="">13一般商業汽車責任保險</option>
+                            <option value="">14強制自用汽車責任保險</option>
+                            <option value="">15強制商業汽車責任保險</option>
+                            <option value="">16強制機車責任保險</option>
+                            <option value="">18專業責任保險</option>
+                            <option value="">19工程保險</option>
+                            <option value="">20核能保險</option>
+                            <option value="">21保證保險</option>
+                            <option value="">22信用保險</option>
+                            <option value="">30一年期健康保險</option>
+                            <option value="">31長年期健康保險</option>
+                            <option value="">171汽車延長保固險</option>
+                            <option value="">174一般責任保險-意</option>
+                            <option value="">175一般責任保險-傷害</option>
+                            <option value="">175一般責任保險-傷害</option>
+                            <option value="">231汽車延長保固險(車)</option>
+                            <option value="">234其他財產保險-意險</option>
+                            <option value="">235其他財產保險-傷害</option>
+                            <option value="">241傷害險-車險</option>
+                            <option value="">242傷害險-火險</option>
+                            <option value="">244傷害險-意外險</option>
+                            <option value="">245傷害險-傷害險</option>
+                            <option value="">262個人綜合保險-火險</option>
+                            <option value="">264個人綜合保險-意外險</option>
+                            <option value="">272商業綜合保險-火險</option>
+                            <option value="">274商業綜合保險-意外險</option>
+                            <option value="">281颱風洪水險-車險</option>
+                            <option value="">282颱風洪水險-火險</option>
+                            <option value="">2602個人綜合保險-傷害</option>
+                            <option value="">9906國外分進-海上貨物險</option>
+                            <option value="">9907國外分進-船體保險</option>
+                            <option value="">9909國外分進-機體險</option>
+                            <option value="">9917國外分進-其他意外險</option>
+                            <option value="">9920國外分進-核能險</option>
+                            <option value="">9927國外分進-火綜合險</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-primary">查詢</button>
+                <button class="btn btn-primary">匯出</button>
+            </div>
+            <div class="filterBar">
+                <div class="row-group">
+                    <div class="row">
+                        <div class="col-2">
+                            <a href="#" id="" class="pages_icon to_left">⊻</a>
+                            <a href="#" id="" class="pages_icon">＜</a>
+                            <a href="#" id="" class="pages_icon">＞</a>
+                            <a href="#" id="" class="pages_icon to_right">⊼</a>
+                        </div>
+                        <div class="col-2">
+                            <span id="" class="">總共</span>
+                            <span id="" class="">0</span>
+                            <span id="" class="">筆</span>
+                        </div>
+                        <div class="col-2">
+                            <span id="" class="">每頁</span>
+                            <select name="" id="" style="min-width: 40px;">
+                                <option value="">10</option>
+                                <option value="">50</option>
+                                <option value="">100</option>
+                                <option value="">200</option>
+                            </select>
+                            <span id="" class="">筆</span>
+                            <button class="btn btn-primary">確認</button>
+                        </div>
+                        <div class="col-2">
+                            <span id="" class="">總共</span>
+                            <span id="" class="">1</span>
+                            <span id="" class="">頁</span>
+                        </div>
+                        <div class="col-3">
+                            <span id="" class="">目前第</span>
+                            <input name="" type="text" value="1" id="" class="" style="width:32px;">
+                            <span id="" class="">頁</span>
+                            <button class="btn btn-primary">確認</button>
+                            <!-- <button class="btn btn-primary">暫存</button> -->
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <table class="tblCssDataGrid css_table">
+                <tbody><tr class="cssDataGridHeader">
+                    <th><a href="">Accounting Code<br>險種</a></th>
+                    <th><a href="">Accounting Name<br>險種名稱</a></th>
+                    <th><a href="">Actuarial Code<br>損益分析</a></th>
+                    <th><a href="">Actuarial Name<br>損益分析名稱</a></th>
+                    <th><a href="">Business Code<br>預算險別代號</a></th>
+                    <th><a href="">Status<br>狀態</a></th>
+                </tr>
+                <tr>
+                    <td>A0009</td>
+                    <td>航空保險</td>
+                    <td>9</td>
+                    <td>航空保險</td>
+                    <td>航空保險</td>
+                    <td>使用中</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-primary">列印</button>
+        <button class="btn btn-primary">匯出</button>
+        </div><!-- content end  -->
+    </section>
+
+</body>
+
+
+</html>
