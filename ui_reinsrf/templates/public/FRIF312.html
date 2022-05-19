@@ -2,29 +2,30 @@
 <html>
 
 <head>
-<meta charset="utf-8" lang="zh-Hant-TW">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
-<title>兆豐</title>
-<!-- jQuery -->
-<script src="../../shigen/plugin/jquery.min.js"></script>
-<!-- bootstrap -->
-<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
-<link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
-<!-- fontawsome -->
-<script defer src="../../shigen/fonts/js/all.min.js"></script>
-<link href="../../shigen/fonts/css/all.css" rel="stylesheet">
-<!--load all styles -->
-<!-- 共用樣式 -->
-<link rel="stylesheet" href="../../shigen/css/base.css">
-<!-- menu 樣式 -->
-<link rel="stylesheet" href="../../shigen/css/section_main_top.css">
-<link rel="stylesheet" href="../../shigen/css/menu.css">
-<!-- 主要樣式 -->
-<link rel="stylesheet" href="../../shigen/css/type.css">
-
-<!-- 自訂JS樣式 -->
-<script src="../../shigen/js/global.js"></script>
+        <meta charset="utf-8" lang="zh-Hant-TW">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../../shigen/images/general/favicon.ico">
+        <title>兆豐</title>
+        <!-- jQuery -->
+        <script src="../../shigen/plugin/jquery.min.js"></script>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="../../shigen/plugin/bootstrap/bootstrap-grid-customizing.css">
+        <script src="../../shigen/plugin/bootstrap/bootstrap.min.js"></script>
+        <!-- fontawsome -->
+        <script defer src="../../shigen/fonts/js/all.min.js"></script>
+        <link href="../../shigen/fonts/css/all.css" rel="stylesheet">
+        <!--load all styles -->
+        <!-- 共用樣式 -->
+        <link rel="stylesheet" href="../../shigen/css/base.css">
+        <!-- menu 樣式 -->
+        <link rel="stylesheet" href="../../shigen/css/section_main_top.css">
+        <link rel="stylesheet" href="../../shigen/css/menu.css">
+        <!-- 主要樣式 -->
+        <link rel="stylesheet" href="../../shigen/css/type.css">
+        
+        <!-- 自訂JS樣式 -->
+        <script src="../../shigen/js/global.js"></script>
 </head>
 
 <body>
@@ -50,7 +51,8 @@
                 </button>
             </div>
             <div class="row-group">
-                <div class="item_title title s2">重大賠案登錄與維護</div>
+                <div class="item_title title s2">重大賠案登錄與維護<button  class="btn btn-secondary" style="font-size:.8rem ; line-height:18px;"  data-toggle="modal" data-target="#exampleModalthree">重大賠案清單</button></div>
+                
             </div>
             <!-- <div class="item_title title s2">Period</div> -->
             <div class="row-group form-row-group">
@@ -255,31 +257,65 @@
                     </tbody>
                 </table>
             </div>
-                    <!-- <div class="row-group">
-                        <div class="row">
-                            <div class="col-12 d-flex ">
-                                <button class="btn btn-primary">複製</button>
-                                <button class="btn btn-primary">修改</button>
-                                <button class="btn btn-primary">刪除</button>
-                                <button class="btn btn-primary">儲存</button>
-                                <button class="btn btn-primary">匯出</button>
-                                <button class="btn btn-primary">列印</button>
-                                <button class="btn btn-primary">離開</button>
-                            </div>
-                        </div>
-                    </div> -->
     </div><!-- content end  -->
+        <!-- Modal3 請選取要加入部門別-->
+        <div class="modal fade" id="exampleModalthree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        重大賠案清單
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row-group">
+                        <div class="row">
+                            <table class="tblCssDataGrid css_table">
+                                <tbody>
+                                <tr>
+                                    <tr class="cssDataGridHeader">
+                                        <th style="min-width:40px;">
+                                            <span class="checkbox_box">
+                                            <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                            <label for="check1"></label>
+                                            </span>
+                                        </th>
+                                        <th><a href="">Major Loss Name<br>重大賠案名稱</a></th>
+                                        <th><a href="">Date of Loss<br>出險日期</a></th>
+                                    </tr>
+                                    <tr class="cssDataGridHeader">
+                                        <td><span class="checkbox_box">
+                                            <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                            <label for="check1"></label>
+                                            </span></td>
+                                        <td></td>
+                                        <td>2012/05/23</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="checkbox_box">
+                                            <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                            <label for="check1"></label>
+                                            </span></td>
+                                        <td></td>
+                                        <td>2020/05/23</td>
+                                    </tr>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary">新增</button>
+                <button type="button" class="btn btn-secondary">離開</button>
+                </div>
+                </div>
+            </div>
+        </div>
 </section>
-<script>
-    $('.accordion').click(function(){
-        $('.accordion').stop(true, true).toggleClass('plus');
-        if($('.accordion').hasClass('plus')==false) {
-            $(this).next().stop(true, true).show();
-        }else {
-            $(this).next().stop(true, true).hide();
-        }
-    });
-</script>
 
 </body>
 
