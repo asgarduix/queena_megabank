@@ -3,7 +3,7 @@
 
 .tabulator {
   position: relative;
-  border: 2px solid #A885B4;
+  border: 2px solid #B8B8B8;
   background-color: #888; 
   font-size: 14px;
   text-align: left;
@@ -27,7 +27,7 @@
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  border-bottom: 1px solid #A885B4;
+  border-bottom: 1px solid #B8B8B8;
   background-color: #FCF4FF;
   color: #333;
   font-weight: bold;
@@ -48,7 +48,7 @@
   position: relative;
   box-sizing: border-box;
   border-right: 1px solid #aaa;
-  background: #FCF4FF;
+  background: #F9E7D0;
   text-align: left;
   vertical-align: bottom;
   overflow: hidden;
@@ -145,7 +145,7 @@
 
 .tabulator .tabulator-header .tabulator-col.tabulator-sortable:hover {
   cursor: pointer;
-  background-color: #ecd9f3;
+  background-color: #FAD9C0;
 }
 
 .tabulator .tabulator-header .tabulator-col.tabulator-sortable[aria-sort="none"] .tabulator-col-content .tabulator-arrow {
@@ -266,8 +266,8 @@
   margin: 0 auto;
   padding: 10px;
   color: #ccc;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .tabulator .tabulator-tableHolder .tabulator-table {
@@ -296,8 +296,8 @@
 
 .tabulator .tabulator-footer {
   padding: 5px 10px;
-  border-top: 1px solid #A885B4;
-  background-color: #FCF4FF;
+  border-top: 1px solid #8B8B8B;
+  background-color: #F9E7D0;
   text-align: right;
   color: #333;
   font-weight: bold;
@@ -435,7 +435,7 @@
   box-sizing: border-box;
   min-height: 22px;
   background-color: #fff;
-  border-top:1px solid #A885B4;
+  border-top:1px solid #8B8B8B;
 } 
 
 .tabulator-row.tabulator-row-even {
@@ -443,12 +443,12 @@
 }
 
 .tabulator-row.tabulator-selectable:hover {
-  background-color: #f8ebfd;
+  background-color: #FFE4B8;
   cursor: pointer;
 }
 
 .tabulator-row.tabulator-selected {
-  background-color: #9ABCEA;
+  background-color: #B8AA95;
 }
 
 .tabulator-row.tabulator-selected:hover {
@@ -670,8 +670,8 @@
   border-radius: 20px;
   background: #666;
   color: #fff;
-  font-weight: bold;
-  font-size: 1.1em;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .tabulator-row .tabulator-cell .tabulator-responsive-collapse-toggle:hover {
