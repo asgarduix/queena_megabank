@@ -713,6 +713,7 @@ section {
 
 .content ul li {
   list-style-type: disc;
+  list-style: none;
 }
 
 .content ol li {
@@ -1023,4 +1024,31 @@ table.default_table tbody tr td.title.text_s {
 /* 0511 table a 對齊用 */
 .tableAbuttom{
   display: inline-block;
+}
+
+/* tab */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #3941a1;
+  text-decoration: none;
+  border-radius: .25rem;
+}
+
+.nav .nav-item .nav-link:hover{
+  background-color: #888bb5;
+}
+
+.nav .nav-item .nav-link {
+  padding: 10px;
+  background-color: #61669F;
+  color: #fff; 
+  margin-left: .75rem;
+}
+
+.nav .nav-item .nav-link > a {
+  text-decoration: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
 }

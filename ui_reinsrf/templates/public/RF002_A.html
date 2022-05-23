@@ -198,311 +198,766 @@
             </div>
             <div class="divSpace"></div>
             </div>
-            <div class="tableGray">
-            <div class="item_title title s2">各年度資訊</div>
-            <!-- table scroll-x -->
-            <div class="x_scroll ">
-                <table class="calculateBox">
-                    <tr class="calculateBoxHead">
-                        <td>*U/W Year<br>承保年</td>
-                        <td>*Status<br>合約狀態</td>
-                        <td>*Portfolio Transfer<br>責任轉移</td>
-                        <td>Clean-Cut Date<br>結清日</td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="必填YYYY" required></td>
-                        <td>
-                            <select name="" id="">
-                                <option value="">必填</option>
-                                <option value="O">Open</option>
-                                <option value="C">Close</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select name="" id="">
-                                <option value="">必填</option>
-                                <option value="R">Run-Off</option>
-                                <option value="C">Clean-Cut</option>
-                            </select>
-                        </td>
-                        <td><input type="text" placeholder="必填YYYY/MM/DD" required></td>
-                    </tr>
-                    <tr class="calculateBoxHead">
-                        <td>Broker Code<br>經紀人代碼</td>
-                        <td>Broker Name<br>經紀人簡稱</td>
-                        <td>*Trade<br>收付對象</td>
-                        <td>*Trade Code<br>收付代碼</td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="請填入七碼" required></td>
-                        <td><input type="text" placeholder="文件寫自動帶入" required></td>
-                        <td>
-                            <select name="" id="">
-                                <option value="">必填</option>
-                                <option value="R">相同</option>
-                                <option value="C">自留</option>
-                                <option value="C">指定</option>
-                            </select>
-                        </td>
-                        <td><input type="text" placeholder="1234567" required></td>
-                    </tr>
-                    <tr class="calculateBoxHead">
-                        <td colspan="7">Commission<br>佣金</td>
-                    </tr>
-                    <tr>
-                        <td colspan="7">
-                            <button class="btn btn-edit" data-toggle="modal" data-target="#exampleModalone">
-                                各項佣金
-                            </button>
-                        </td>
-                    </tr>
-                    <tr class="calculateBoxHead">
-                        <td>*EPI (100%)<br>預估再保費</td>
-                        <td>*EPI (Our Share)<br>預估再保費</td>
-                        <td>*Revised EPI (100%)<br>修正後預估再保費</td>
-                        <td>*Revised EPI (Our Share)<br>修正後預估再保費</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <select style="min-width:30%;" name="" id="">
-                                <option value="" selected="">幣別</option>
-                                <option value="">全部</option>
-                                <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                <option value="">USD&nbsp;&nbsp;美金</option>
-                                <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                            </select>
-                            <input style="max-width:50%;" type="text" placeholder="金額" required>
-                        </td>
-                        <td>
-                            <select style="min-width:30%;" name="" id="">
-                                <option value="" selected="">幣別</option>
-                                <option value="">全部</option>
-                                <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                <option value="">USD&nbsp;&nbsp;美金</option>
-                                <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                            </select>
-                            <input style="max-width:50%;" type="text" placeholder="金額" required>
-                        </td>
-                        <td>
-                            <select style="min-width:30%;" name="" id="">
-                                <option value="" selected="">幣別</option>
-                                <option value="">全部</option>
-                                <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                <option value="">USD&nbsp;&nbsp;美金</option>
-                                <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                            </select>
-                            <input style="max-width:50%;" type="text" placeholder="金額" required>
-                        </td>
-                        <td>
-                            <select style="min-width:30%;" name="" id="">
-                                <option value="" selected="">幣別</option>
-                                <option value="">全部</option>
-                                <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                <option value="">USD&nbsp;&nbsp;美金</option>
-                                <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                            </select>
-                            <input style="max-width:50%;" type="text" placeholder="金額" required>
-                        </td>
-                    </tr>
-                    <tr class="calculateBoxHead">
-                        <td>*Earthquake<br>地震</td>
-                        <td>*Windstorm/Flood<br>颱風/洪水</td>
-                        <td>Event Limit (100%)<br>事件限額</td>
-                        <td>Cash Loss (100%)<br>現金攤賠</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <select name="" id="">
-                                <option value="">必填</option>
-                                <option value="Y">Y</option>
-                                <option value="N">N</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select name="" id="">
-                                <option value="">必填</option>
-                                <option value="Y">Y</option>
-                                <option value="N">N</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select style="min-width:30%;" name="" id="">
-                                <option value="" selected="">幣別</option>
-                                <option value="">全部</option>
-                                <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                <option value="">USD&nbsp;&nbsp;美金</option>
-                                <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                            </select>
-                            <input style="max-width:50%;" type="text" placeholder="必填金額" required>
-                        </td>
-                        <td>
-                            <select style="min-width:30%;" name="" id="">
-                                <option value="" selected="">幣別</option>
-                                <option value="">全部</option>
-                                <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                <option value="">USD&nbsp;&nbsp;美金</option>
-                                <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                            </select>
-                            <input style="max-width:50%;" type="text" placeholder="金額" required>
-                        </td>
-                    </tr>
-                    <tr class="calculateBoxHead">
-                        <td>*Inception Date<br>再保險契約責任始期</td>
-                        <td>Expiration Date<br>再保險契約責任終期</td>
-                        <td colspan="2">*Last Updated Date<br>最後修改日</td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="必填" required></td>
-                        <td><input type="text" placeholder="必填" required></td>
-                        <td colspan="2"><input type="text" placeholder="自動帶入" required></td>
-                    </tr>
-                    <tr class="calculateBoxHead">
-                        <td colspan="4">*Slip/Wording<br>合約文件</td>
-                    </tr>
-                    <tr>
-                        <td colspan="4">
-                            <div class="fileList">
-                                <input style="max-width: 20%;" type="text" placeholder="" required="">
-                                <input style="max-width: 20%;" type="text" placeholder="" required="">
-                                <input style="max-width: 20%;" type="text" placeholder="" required="">
-                                <input style="max-width: 20%;" type="text" placeholder="" required="">
-                                <input style="max-width: 20%;" type="text" placeholder="" required="">
-                                <input style="max-width: 20%;" type="text" placeholder="" required="">
-                                <input style="max-width: 20%;" type="text" placeholder="" required="">
-                                <input style="max-width: 20%;" type="text" placeholder="" required="">
-                            <button class="btn btn-edit">瀏覽</button>
-                            <button class="btn btn-primary">上傳</button>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            </div>
             <div class="divSpace"></div>
+            <!-- tab content -->
+            <div class="row-group">
+				<ul class="row nav nav-pills" id="pills-tab" role="tablist">
+					<li class="nav-item"><a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1"
+							role="tab" aria-controls="pills-1" aria-selected="true">各年度資訊</a></li>
+					<li class="nav-item"><a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2"
+							role="tab" aria-controls="pills-2" aria-selected="false">新增合約型態</a></li>
+				</ul>
+			</div>
+            <div class="divSpace"></div>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="row-group tab-pane fade show active" id="pills-1" role="tabpanel"
+                    aria-labelledby="pills-1-tab">
+                    <div class="tableGray">
+                        <div class="item_title title s2">各年度資訊</div>
+                        <!-- table scroll-x -->
+                        <div class="x_scroll ">
+                            <table class="calculateBox">
+                                <tr class="calculateBoxHead">
+                                    <td>*U/W Year<br>承保年</td>
+                                    <td>*Status<br>合約狀態</td>
+                                    <td>*Portfolio Transfer<br>責任轉移</td>
+                                    <td>Clean-Cut Date<br>結清日</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="必填YYYY" required></td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="">必填</option>
+                                            <option value="O">Open</option>
+                                            <option value="C">Close</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="">必填</option>
+                                            <option value="R">Run-Off</option>
+                                            <option value="C">Clean-Cut</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="text" placeholder="必填YYYY/MM/DD" required></td>
+                                </tr>
+                                <tr class="calculateBoxHead">
+                                    <td>Broker Code<br>經紀人代碼</td>
+                                    <td>Broker Name<br>經紀人簡稱</td>
+                                    <td>*Trade<br>收付對象</td>
+                                    <td>*Trade Code<br>收付代碼</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="請填入七碼" required></td>
+                                    <td><input type="text" placeholder="文件寫自動帶入" required></td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="">必填</option>
+                                            <option value="R">相同</option>
+                                            <option value="C">自留</option>
+                                            <option value="C">指定</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="text" placeholder="1234567" required></td>
+                                </tr>
+                                <tr class="calculateBoxHead">
+                                    <td colspan="7">Commission<br>佣金</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7">
+                                        <button class="btn btn-edit" data-toggle="modal" data-target="#exampleModalone">
+                                            各項佣金
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="calculateBoxHead">
+                                    <td>*EPI (100%)<br>預估再保費</td>
+                                    <td>*EPI (Our Share)<br>預估再保費</td>
+                                    <td>*Revised EPI (100%)<br>修正後預估再保費</td>
+                                    <td>*Revised EPI (Our Share)<br>修正後預估再保費</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select style="min-width:30%;" name="" id="">
+                                            <option value="" selected="">幣別</option>
+                                            <option value="">全部</option>
+                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                            <option value="">USD&nbsp;&nbsp;美金</option>
+                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                        </select>
+                                        <input style="max-width:50%;" type="text" placeholder="金額" required>
+                                    </td>
+                                    <td>
+                                        <select style="min-width:30%;" name="" id="">
+                                            <option value="" selected="">幣別</option>
+                                            <option value="">全部</option>
+                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                            <option value="">USD&nbsp;&nbsp;美金</option>
+                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                        </select>
+                                        <input style="max-width:50%;" type="text" placeholder="金額" required>
+                                    </td>
+                                    <td>
+                                        <select style="min-width:30%;" name="" id="">
+                                            <option value="" selected="">幣別</option>
+                                            <option value="">全部</option>
+                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                            <option value="">USD&nbsp;&nbsp;美金</option>
+                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                        </select>
+                                        <input style="max-width:50%;" type="text" placeholder="金額" required>
+                                    </td>
+                                    <td>
+                                        <select style="min-width:30%;" name="" id="">
+                                            <option value="" selected="">幣別</option>
+                                            <option value="">全部</option>
+                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                            <option value="">USD&nbsp;&nbsp;美金</option>
+                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                        </select>
+                                        <input style="max-width:50%;" type="text" placeholder="金額" required>
+                                    </td>
+                                </tr>
+                                <tr class="calculateBoxHead">
+                                    <td>*Earthquake<br>地震</td>
+                                    <td>*Windstorm/Flood<br>颱風/洪水</td>
+                                    <td>Event Limit (100%)<br>事件限額</td>
+                                    <td>Cash Loss (100%)<br>現金攤賠</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="">必填</option>
+                                            <option value="Y">Y</option>
+                                            <option value="N">N</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="" id="">
+                                            <option value="">必填</option>
+                                            <option value="Y">Y</option>
+                                            <option value="N">N</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select style="min-width:30%;" name="" id="">
+                                            <option value="" selected="">幣別</option>
+                                            <option value="">全部</option>
+                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                            <option value="">USD&nbsp;&nbsp;美金</option>
+                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                        </select>
+                                        <input style="max-width:50%;" type="text" placeholder="必填金額" required>
+                                    </td>
+                                    <td>
+                                        <select style="min-width:30%;" name="" id="">
+                                            <option value="" selected="">幣別</option>
+                                            <option value="">全部</option>
+                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                            <option value="">USD&nbsp;&nbsp;美金</option>
+                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                        </select>
+                                        <input style="max-width:50%;" type="text" placeholder="金額" required>
+                                    </td>
+                                </tr>
+                                <tr class="calculateBoxHead">
+                                    <td>*Inception Date<br>再保險契約責任始期</td>
+                                    <td>Expiration Date<br>再保險契約責任終期</td>
+                                    <td colspan="2">*Last Updated Date<br>最後修改日</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="必填" required></td>
+                                    <td><input type="text" placeholder="必填" required></td>
+                                    <td colspan="2"><input type="text" placeholder="自動帶入" required></td>
+                                </tr>
+                                <tr class="calculateBoxHead">
+                                    <td colspan="4">*Slip/Wording<br>合約文件</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        <div class="fileList">
+                                            <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                            <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                            <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                            <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                            <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                            <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                            <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                            <input style="max-width: 20%;" type="text" placeholder="" required="">
+                                        <button class="btn btn-edit">瀏覽</button>
+                                        <button class="btn btn-primary">上傳</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        </div>
+				</div><!-- pills-1 end -->
+				<div class="row-group tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+					<div class="tableGray">
+                        <div>
+                            <div class="tableGray_b">
+                                <div class="item_title title s2">
+                                    合約型態內容
+                                </div>
+                                <button style="font-size: 15px;" class="btn btn-primary">刪除</button>
+                                <button style="font-size: 15px;" class="btn btn-primary">儲存</button>
+                                <button style="font-size: 15px;" class="btn btn-primary">離開</button>
+                                <!-- table scroll-x -->
+                                <div class="x_scroll ">
+                                    <table class="calculateBox">
+                                        <tr class="calculateBoxHead">
+                                            <td>*Section</td>
+                                            <td>Type Code<br>合約型態</td>
+                                            <td>Our Share (%)<br>分入成分 (%)</td>
+                                            <td>Our Share (100%)<br>分入成分 (100%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">必填</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">必填</option>
+                                                    <option value="">Quota Share</option>
+                                                    <option value="">Surplus</option>
+                                                    <option value="">Quota Share & Surplus</option>
+                                                    <option value="">Facultative</option>
+                                                    <option value="">Open Cover</option>
+                                                    <option value="">Pool</option>
+                                                    <option value="">Binding Authority</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <input type="text" style="max-width: 30%;" placeholder="必填" required>%
+                                                of
+                                                <input type="text" style="max-width: 30%;" placeholder="" required>%
+                                            </td>
+                                            <td>
+                                                <input type="text" style="max-width: 30%;" placeholder="必填" required>% of 100%
+                                            </td>
+                                        </tr>
+                                        <tr class="calculateBoxHead">
+                                            <td>*EPI (100%)<br>預估再保費</td>
+                                            <td>*EPI (Our Share)<br>預估再保費</td>
+                                            <td>Revised EPI (100%)<br>修正後預估再保費</td>
+                                            <td>Revised EPI (Our Share)<br>修正後預估再保費</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select style="min-width:30%;" name="" id="">
+                                                    <option value="" selected="">幣別</option>
+                                                    <option value="">全部</option>
+                                                    <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                    <option value="">USD&nbsp;&nbsp;美金</option>
+                                                    <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                    <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                    <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                    <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                    <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                    <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                    <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                    <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                    <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                    <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                    <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                    <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                    <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                    <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                    <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                    <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                    <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                    <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                    <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                    <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                </select>
+                                                <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                                            </td>
+                                            <td>
+                                                <select style="min-width:30%;" name="" id="">
+                                                    <option value="" selected="">幣別</option>
+                                                    <option value="">全部</option>
+                                                    <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                    <option value="">USD&nbsp;&nbsp;美金</option>
+                                                    <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                    <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                    <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                    <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                    <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                    <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                    <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                    <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                    <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                    <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                    <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                    <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                    <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                    <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                    <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                    <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                    <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                    <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                    <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                    <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                </select>
+                                                <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                                            </td>
+                                            <td>
+                                                <select style="min-width:30%;" name="" id="">
+                                                    <option value="" selected="">幣別</option>
+                                                    <option value="">全部</option>
+                                                    <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                    <option value="">USD&nbsp;&nbsp;美金</option>
+                                                    <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                    <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                    <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                    <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                    <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                    <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                    <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                    <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                    <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                    <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                    <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                    <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                    <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                    <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                    <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                    <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                    <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                    <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                    <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                    <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                </select>
+                                                <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                                            </td>
+                                            <td>
+                                                <select style="min-width:30%;" name="" id="">
+                                                    <option value="" selected="">幣別</option>
+                                                    <option value="">全部</option>
+                                                    <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                    <option value="">USD&nbsp;&nbsp;美金</option>
+                                                    <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                    <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                    <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                    <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                    <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                    <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                    <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                    <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                    <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                    <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                    <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                    <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                    <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                    <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                    <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                    <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                    <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                    <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                    <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                    <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                </select>
+                                                <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                                            </td>
+                                        </tr>
+                                        <tr class="calculateBoxHead">
+                                            <td>*Accounting Code<br>會計險別代號</td>
+                                            <td>*Actuarial Code<br>精算損益險別代號</td>
+                                            <td>*Business Code<br>預算險別代號</td>
+                                            <td>Remark<br>備註</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">必填</option>
+                                                    <option value="">F1P01 火普通險-自用</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">01-一年期住宅火災保險</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">火災保險</option>
+                                                </select>
+                                            </td>
+                                            <td><input type="text" placeholder="" required></td>
+                                        </tr>
+                                        <tr class="calculateBoxHead">
+                                            <td style="line-height: 2.5rem;">Coverage 代碼Phase I</td>
+                                            <td style="line-height: 2.5rem;">Coverage 代碼Phase II</td>
+                                            <td style="line-height: 2.5rem;">Portfolio編碼</td>
+                                            <td style="line-height: 2.5rem;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" placeholder="" required></td>
+                                            <td><input type="text" placeholder="" required></td>
+                                            <td><input type="text" placeholder="" required></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="calculateBoxHead" style="vertical-align: middle;">
+                                            <td colspan="2">
+                                                <div class="tableAbuttom">
+                                                    <a href="#">
+                                                    <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px; "></i>
+                                                    </a>
+                                                </div>
+                                                <div class="tableAbuttom">
+                                                    Limit (100%)<br>再保契約再保責任額 (限額)
+                                                </div>
+                                            </td>
+                                            <td colspan="2">
+                                                Limit (Our Share)<br>再保契約再保責任額 (限額)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn btn-edit">刪除</button>
+                                                        <select style="min-width: 30%;" name="" id="">
+                                                            <option value="">Territory</option>
+                                                            <option value="">Interest Abroad</option>
+                                                            <option value="">Non-Interest Abroad</option>
+                                                        </select>
+                                                        <select style="min-width:30%;" name="" id="">
+                                                            <option value="" selected="">幣別</option>
+                                                            <option value="">全部</option>
+                                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                            <option value="">USD&nbsp;&nbsp;美金</option>
+                                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                        </select>
+                                                        <input style="max-width:25%;" type="text" placeholder="金額" required="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                    <button class="btn btn-edit">刪除</button>
+                                                    <select style="min-width: 30%;" name="" id="">
+                                                        <option value="">Territory</option>
+                                                        <option value="">Interest Abroad</option>
+                                                        <option value="">Non-Interest Abroad</option>
+                                                    </select>
+                                                    <select style="min-width:30%;" name="" id="">
+                                                        <option value="" selected="">幣別</option>
+                                                        <option value="">全部</option>
+                                                        <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                        <option value="">USD&nbsp;&nbsp;美金</option>
+                                                        <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                        <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                        <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                        <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                        <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                        <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                        <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                        <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                        <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                        <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                        <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                        <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                        <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                        <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                        <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                        <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                        <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                        <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                        <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                        <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                    </select>
+                                                    <input style="max-width:25%;" type="text" placeholder="金額" required="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            </td>
+                                            <td colspan="2">
+                                                <table style="width: 100%;">
+                                                    <tr>
+                                                        <td>
+                                                        <button class="btn btn-edit">刪除</button>
+                                                        <select style="min-width: 30%;" name="" id="">
+                                                            <option value="">Territory</option>
+                                                            <option value="">Interest Abroad</option>
+                                                            <option value="">Non-Interest Abroad</option>
+                                                        </select>
+                                                        <select style="min-width:20%;" style="min-width:20%;" name="" id="">
+                                                                <option value="">幣別</option>
+                                                        </select>
+                                                        <input style="max-width:25%;" type="text" placeholder="金額" required="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>
+                                                    <button class="btn btn-edit">刪除</button>
+                                                    <select style="min-width: 30%;" name="" id="">
+                                                        <option value="">Territory</option>
+                                                        <option value="">Interest Abroad</option>
+                                                        <option value="">Non-Interest Abroad</option>
+                                                    </select>
+                                                    <select style="min-width:20%;" name="" id="">
+                                                        <option value="" selected="">幣別</option>
+                                                        <option value="">全部</option>
+                                                        <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                        <option value="">USD&nbsp;&nbsp;美金</option>
+                                                        <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                        <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                        <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                        <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                        <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                        <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                        <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                        <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                        <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                        <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                        <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                        <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                        <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                        <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                        <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                        <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                        <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                        <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                        <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                        <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                    </select>
+                                                    <input style="max-width:25%;" type="text" placeholder="金額" required="">
+                                                    </td>
+                                                </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr class="calculateBoxHead">
+                                            <td colspan="4">
+                                                <div class="tableAbuttom">
+                                                    <a href="#">
+                                                    <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px; margin-bottom: 5px;"></i>
+                                                </a> 
+                                                </div>
+                                                <div class="tableAbuttom">
+                                                Territory Code<br>區域代碼</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <button class="btn btn-edit">刪除</button>
+                                                <select style="min-width: 30%;" name="" id="">
+                                                    <option value="">Territory</option>
+                                                    <option value="">Interest Abroad</option>
+                                                    <option value="">Non-Interest Abroad</option>
+                                                </select>
+                                                    <input style="max-width:50%;" type="text" placeholder="" required="">
+                                                    <a data-toggle="modal" data-target="#exampleModalTwo">
+                                                        <i class="fas fa-folder-plus" style="font-size: 20px; margin-left: 5px; color:#5B5B5B;"></i>
+                                                    </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <button class="btn btn-edit">刪除</button>
+                                                <select style="min-width: 30%;" name="" id="">
+                                                    <option value="">Territory</option>
+                                                    <option value="">Interest Abroad</option>
+                                                    <option value="">Non-Interest Abroad</option>
+                                                </select>
+                                                    <input style="max-width:50%;" type="text" placeholder="" required="">
+                                                    <a onclick="window.open('territoryCode.html', 'newwindow', config='height=900,width=1000,toolbar=no');">
+                                                        <i class="fas fa-folder-plus" style="font-size: 20px; margin-left: 5px; color:#5B5B5B;"></i>
+                                                    </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- content end  -->
+                <!-- Modal區域選擇 -->
+                <div class="modal fade" id="exampleModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                1請輸入需新增之層數
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row-group">
+                            <div class="row">
+                                <div class="input-title col-4 col-border justify-content-end">Section</div>
+                                <div class="col-8 col-border">
+                                    <input type="text" placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-title col-4 col-border justify-content-end">Type</div>
+                                <div class="col-8 col-border">
+                                    <select name="" id="">
+                                        <option value="">Quota Share</option>
+                                        <option value="">Surplus</option>
+                                    </select>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">確認</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+				</div><!-- pills-2 end -->
+			</div>
+			<!-- tab-content end  -->
             <div class="col-12 d-flex">
                 <button class="btn btn-primary">複製</button>
                 <button class="btn btn-primary">修改</button>
                 <button class="btn btn-primary">儲存</button>
                 <button class="btn btn-primary">匯出</button>
                 <button class="btn btn-primary">列印</button>
-                <button class="btn btn-edit" data-toggle="modal" data-target="#exampleModaltwo">
-                    新增合約型態
-                    
-                </button>
             </div>
             <div class="divSpace"></div>
             <div class="row-group">
@@ -906,12 +1361,12 @@
         </div>
         </div>
     </div>
-    <!-- Modal新增合約型態 -->
-    <div class="modal modalAn fade" id="exampleModaltwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal區域代碼 -->
+    <div class="modal modalAn fade" id="exampleModalTwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
-                <div class="big_title title s1">比例合約</div>
+                <div class="big_title title s1">Territory區域選擇</div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -919,445 +1374,836 @@
             <div class="modal-body">
                 <div class="row-group">
                     <div class="container-fluid content">
-                        <div style="border: 1px solid #F18A47;padding: 10px; background-color: #fcfaf0;">
-                            <button style="font-size: 15px;" class="btn btn-primary">刪除</button>
-                            <button style="font-size: 15px;" class="btn btn-primary">儲存</button>
-                            <button style="font-size: 15px;" class="btn btn-primary">離開</button>
-                        <div class="tableGray_b">
-                            <div class="item_title title s2">
-                                合約型態內容
-                            </div>
-                            <!-- table scroll-x -->
-                            <div class="x_scroll ">
-                                <table class="calculateBox">
-                                    <tr class="calculateBoxHead">
-                                        <td>*Section</td>
-                                        <td>Type Code<br>合約型態</td>
-                                        <td>Our Share (%)<br>分入成分 (%)</td>
-                                        <td>Our Share (100%)<br>分入成分 (100%)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
+                        <div class="row-group form-row-group">
+                            <div class="container-fluid content">
+                                <div class="row-group">
+                                    <div class="col-12 col-border">
                                             <select name="" id="">
-                                                <option value="">必填</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <select name="" id="">
-                                                <option value="">必填</option>
-                                                <option value="">Quota Share</option>
-                                                <option value="">Surplus</option>
-                                                <option value="">Quota Share & Surplus</option>
-                                                <option value="">Facultative</option>
-                                                <option value="">Open Cover</option>
-                                                <option value="">Pool</option>
-                                                <option value="">Binding Authority</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <input type="text" style="max-width: 30%;" placeholder="必填" required>%
-                                            of
-                                            <input type="text" style="max-width: 30%;" placeholder="" required>%
-                                        </td>
-                                        <td>
-                                            <input type="text" style="max-width: 30%;" placeholder="必填" required>% of 100%
-                                        </td>
-                                    </tr>
-                                    <tr class="calculateBoxHead">
-                                        <td>*EPI (100%)<br>預估再保費</td>
-                                        <td>*EPI (Our Share)<br>預估再保費</td>
-                                        <td>Revised EPI (100%)<br>修正後預估再保費</td>
-                                        <td>Revised EPI (Our Share)<br>修正後預估再保費</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select style="min-width:30%;" name="" id="">
-                                                <option value="" selected="">幣別</option>
-                                                <option value="">全部</option>
-                                                <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                                <option value="">USD&nbsp;&nbsp;美金</option>
-                                                <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                                <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                                <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                                <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                                <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                                <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                            </select>
-                                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
-                                        </td>
-                                        <td>
-                                            <select style="min-width:30%;" name="" id="">
-                                                <option value="" selected="">幣別</option>
-                                                <option value="">全部</option>
-                                                <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                                <option value="">USD&nbsp;&nbsp;美金</option>
-                                                <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                                <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                                <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                                <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                                <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                                <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                            </select>
-                                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
-                                        </td>
-                                        <td>
-                                            <select style="min-width:30%;" name="" id="">
-                                                <option value="" selected="">幣別</option>
-                                                <option value="">全部</option>
-                                                <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                                <option value="">USD&nbsp;&nbsp;美金</option>
-                                                <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                                <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                                <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                                <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                                <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                                <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                            </select>
-                                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
-                                        </td>
-                                        <td>
-                                            <select style="min-width:30%;" name="" id="">
-                                                <option value="" selected="">幣別</option>
-                                                <option value="">全部</option>
-                                                <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                                <option value="">USD&nbsp;&nbsp;美金</option>
-                                                <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                                <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                                <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                                <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                                <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                                <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                                <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                                <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                                <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                                <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                                <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                                <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                                <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                                <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                                <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                                <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                                <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                                <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                                <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                                <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                            </select>
-                                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
-                                        </td>
-                                    </tr>
-                                    <tr class="calculateBoxHead">
-                                        <td>*Accounting Code<br>會計險別代號</td>
-                                        <td>*Actuarial Code<br>精算損益險別代號</td>
-                                        <td>*Business Code<br>預算險別代號</td>
-                                        <td>Remark<br>備註</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select name="" id="">
-                                                <option value="">必填</option>
-                                                <option value="">F1P01 火普通險-自用</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <select name="" id="">
-                                                <option value="">01-一年期住宅火災保險</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <select name="" id="">
-                                                <option value="">火災保險</option>
-                                            </select>
-                                        </td>
-                                        <td><input type="text" placeholder="" required></td>
-                                    </tr>
-                                    <tr class="calculateBoxHead">
-                                        <td style="line-height: 2.5rem;">Coverage 代碼Phase I</td>
-                                        <td style="line-height: 2.5rem;">Coverage 代碼Phase II</td>
-                                        <td style="line-height: 2.5rem;">Portfolio編碼</td>
-                                        <td style="line-height: 2.5rem;"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="text" placeholder="" required></td>
-                                        <td><input type="text" placeholder="" required></td>
-                                        <td><input type="text" placeholder="" required></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="calculateBoxHead" style="vertical-align: middle;">
-                                        <td colspan="2">
-                                            <div class="tableAbuttom">
-                                                <a href="#">
-                                                <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px; "></i>
-                                                </a>
+                                                <option value="">全部國家</option>
+                                                <option value="">亞太地區</option>
+                                                <option value="">歐洲、美加地區</option>
+                                                <option value="">其他地區</option>
+                                            </select>  
+                                    </div>
+                                </div>
+                                <!-- 亞太地區 -->
+                                <div class="row-group form-row-group" style="border: 1px solid #ccc; padding: 3px;">
+                                    <div class="row-group form-row-group">
+                                        <div class="row">
+                                            <span class="titleone">亞太地區</span> 
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">TW-台灣-Taiwan</label>
+                                            </span>
                                             </div>
-                                            <div class="tableAbuttom">
-                                                Limit (100%)<br>再保契約再保責任額 (限額)
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">CN-中國-China</label>
+                                                </span>
                                             </div>
-                                        </td>
-                                        <td colspan="2">
-                                            Limit (Our Share)<br>再保契約再保責任額 (限額)
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">
-                                        <table style="width: 100%;">
-                                            <tr>
-                                                <td>
-                                                    <button class="btn btn-edit">刪除</button>
-                                                    <select style="min-width: 30%;" name="" id="">
-                                                        <option value="">Territory</option>
-                                                        <option value="">Interest Abroad</option>
-                                                        <option value="">Non-Interest Abroad</option>
-                                                    </select>
-                                                    <select style="min-width:30%;" name="" id="">
-                                                        <option value="" selected="">幣別</option>
-                                                        <option value="">全部</option>
-                                                        <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                                        <option value="">USD&nbsp;&nbsp;美金</option>
-                                                        <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                                        <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                                        <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                                        <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                                        <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                                        <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                                        <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                                        <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                                        <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                                        <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                                        <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                                        <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                                        <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                                        <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                                        <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                                        <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                                        <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                                        <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                                        <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                                        <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                                    </select>
-                                                    <input style="max-width:25%;" type="text" placeholder="金額" required="">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                <button class="btn btn-edit">刪除</button>
-                                                <select style="min-width: 30%;" name="" id="">
-                                                    <option value="">Territory</option>
-                                                    <option value="">Interest Abroad</option>
-                                                    <option value="">Non-Interest Abroad</option>
-                                                </select>
-                                                <select style="min-width:30%;" name="" id="">
-                                                    <option value="" selected="">幣別</option>
-                                                    <option value="">全部</option>
-                                                    <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                                    <option value="">USD&nbsp;&nbsp;美金</option>
-                                                    <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                                    <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                                    <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                                    <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                                    <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                                    <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                                    <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                                    <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                                    <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                                    <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                                    <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                                    <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                                    <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                                    <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                                    <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                                    <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                                    <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                                    <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                                    <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                                    <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                                </select>
-                                                <input style="max-width:25%;" type="text" placeholder="金額" required="">
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        </td>
-                                        <td colspan="2">
-                                            <table style="width: 100%;">
-                                                <tr>
-                                                    <td>
-                                                    <button class="btn btn-edit">刪除</button>
-                                                    <select style="min-width: 30%;" name="" id="">
-                                                        <option value="">Territory</option>
-                                                        <option value="">Interest Abroad</option>
-                                                        <option value="">Non-Interest Abroad</option>
-                                                    </select>
-                                                    <select style="min-width:20%;" style="min-width:20%;" name="" id="">
-                                                            <option value="">幣別</option>
-                                                    </select>
-                                                    <input style="max-width:25%;" type="text" placeholder="金額" required="">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                <td>
-                                                <button class="btn btn-edit">刪除</button>
-                                                <select style="min-width: 30%;" name="" id="">
-                                                    <option value="">Territory</option>
-                                                    <option value="">Interest Abroad</option>
-                                                    <option value="">Non-Interest Abroad</option>
-                                                </select>
-                                                <select style="min-width:20%;" name="" id="">
-                                                    <option value="" selected="">幣別</option>
-                                                    <option value="">全部</option>
-                                                    <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                                    <option value="">USD&nbsp;&nbsp;美金</option>
-                                                    <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                                    <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                                    <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                                    <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                                    <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                                    <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                                    <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                                    <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                                    <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                                    <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                                    <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                                    <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                                    <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                                    <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                                    <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                                    <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                                    <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                                    <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                                    <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                                    <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                                </select>
-                                                <input style="max-width:25%;" type="text" placeholder="金額" required="">
-                                                </td>
-                                            </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr class="calculateBoxHead">
-                                        <td colspan="4">
-                                            <div class="tableAbuttom">
-                                                <a href="#">
-                                                <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px; margin-bottom: 5px;"></i>
-                                            </a> 
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">HK-香港-Hong Kong</label>
+                                                </span>
                                             </div>
-                                            <div class="tableAbuttom">
-                                            Territory Code<br>區域代碼</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="4">
-                                            <button class="btn btn-edit">刪除</button>
-                                            <select style="min-width: 30%;" name="" id="">
-                                                <option value="">Territory</option>
-                                                <option value="">Interest Abroad</option>
-                                                <option value="">Non-Interest Abroad</option>
-                                            </select>
-                                                <input style="max-width:50%;" type="text" placeholder="" required="">
-                                                <a onclick="window.open('territoryCode.html', 'newwindow', config='height=900,width=1000,toolbar=no');">
-                                                    <i class="fas fa-folder-plus" style="font-size: 20px; margin-left: 5px; color:#5B5B5B;"></i>
-                                                </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="4">
-                                            <button class="btn btn-edit">刪除</button>
-                                            <select style="min-width: 30%;" name="" id="">
-                                                <option value="">Territory</option>
-                                                <option value="">Interest Abroad</option>
-                                                <option value="">Non-Interest Abroad</option>
-                                            </select>
-                                                <input style="max-width:50%;" type="text" placeholder="" required="">
-                                                <a onclick="window.open('territoryCode.html', 'newwindow', config='height=900,width=1000,toolbar=no');">
-                                                    <i class="fas fa-folder-plus" style="font-size: 20px; margin-left: 5px; color:#5B5B5B;"></i>
-                                                </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        </div>
-                </div>
-                <!-- content end  -->
-                <!-- Modal區域選擇 -->
-                <div class="modal fade" id="exampleModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">
-                                1請輸入需新增之層數
-                            </h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row-group">
-                            <div class="row">
-                                <div class="input-title col-4 col-border justify-content-end">Section</div>
-                                <div class="col-8 col-border">
-                                    <input type="text" placeholder="" required>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">MO-澳門-Macau</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">AU-澳大利亞(澳洲)-Australia</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">BH-巴林-Bahrain</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">BT-不丹-Bhutan</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">BN-汶萊-Brunei Darussalam</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">KH-柬埔寨-Cambodia</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">FJ-斐濟-Fiji</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">GU-關島-Guam</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">IN-印度-India </label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">ID-印尼-Indonesia</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">IR-伊朗-Iran</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">IL-以色列-Israel</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">JP-日本-Japan</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">JO-約旦-Jordan</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">KW-科威特-Kuwait</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">KR-韓國-Korea</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">LA-寮國-Lao</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">MY-馬來西亞-Malaysia</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">NR-諾魯-Nauru</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">NZ-紐西蘭-New Zealand</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">OM-阿曼-Oman</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">PK-巴基斯坦-Pakistan</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">PG-巴布亞紐幾內亞-Papua New Guinea</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">PH-菲律賓-Philippines</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">QA-卡達-Qatar</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">SG-新加坡-Singapore</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">SA-沙烏地阿拉伯-Saudi Arabia</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">SB-索羅門群島-Solomon Islands</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">LK-斯里蘭卡-Sri Lanka</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">SY-敘利亞-Syrian Arab Republic</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">TH-泰國-Thailand</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">TR-土耳其-Turkey</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">AE-阿拉伯聯合大公國-United Arab Emirates</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">VN-越南-Viet Nam </label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">YE-葉門-Yemen</label>
+                                                </span>
+                                            </div>
+                                    </div>
+                                    <div class="col-12 d-flex">
+                                        <button class="btn btn-primary"> 全選</button>
+                                        <button class="btn btn-primary">清除</button>
+                                        <button class="btn btn-primary">加入</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- 歐洲、美加地區 -->
+                                <div class="row-group form-row-group" style="border: 1px solid #ccc; padding: 3px;">
+                                    <div class="row-group form-row-group">
+                                        <div class="row">
+                                            <span class="titleone">歐洲、美加地區</span> 
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">AM-亞美尼亞-Armenia</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">AT-奧地利-Austria</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">AZ-亞塞拜然-Azerbaijan</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">BY-白俄羅斯-Belarus</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">BE-比利時-Belgium</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">BG-保加利亞-Bulgaria</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">CY-塞普勒斯-Cyprus</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">CZ-捷克-Czech</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">DK-丹麥-Denmark</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">EE-愛沙尼亞-Estonia</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">FI-芬蘭-Finland</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">FR-法國-France</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">GE-喬治亞-Georgia</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">DE-德國-Germany</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">GB-英國-United Kingdom</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">GR-希臘-Greece</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">HU-匈牙利-Hungary</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">IE-愛爾蘭-Ireland</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">IT-義大利-Italy</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">KZ-哈薩克-Kazakhstan</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">KG-吉爾吉斯-Kyrgyzstan</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">LV-拉脫維亞-Latvia</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">LT-立陶宛-Lithuania</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">LU-盧森堡-Luxembourg</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">MT-馬耳他-Malta</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">MD-摩爾多瓦-Moldova</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">NL-荷蘭-Netherlands</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">NO-挪威-Norway</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">PL-波蘭-Poland</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">PT-葡萄牙-Portugal</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">ES-羅馬尼亞-Spain</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">RU-俄羅斯-Russian Federation</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">SK-斯洛伐克-Slovakia</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">SI-斯洛維尼亞-Slovenia</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">ES-西班牙-Spain</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">CH-瑞士-Switzerland</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">SE-瑞典-Sweden</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">TJ-塔吉克-Tajikistan</label>
+                                                </span>
+                                            </div>
+                                                <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">TM-土庫曼-Turkmenistan</label>
+                                                </span>
+                                                </div>
+                                                <div class="col-2">
+                                                    <span class="checkbox_box">
+                                                        <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                        <label for="check1">UA-烏克蘭-Ukraine</label>
+                                                    </span>
+                                                </div>
+                                                    <div class="col-2">
+                                                    <span class="checkbox_box">
+                                                        <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                        <label for="check1">UZ-烏茲別克-Uzbekistan</label>
+                                                    </span>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <span class="checkbox_box">
+                                                            <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                            <label for="check1">CA-加拿大-Canada</label>
+                                                        </span>
+                                                    </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">US-美國-United States</label>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    <div class="col-12 d-flex">
+                                        <button class="btn btn-primary"> 全選</button>
+                                        <button class="btn btn-primary">清除</button>
+                                        <button class="btn btn-primary">加入</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- 其他地區 -->
+                                <div class="row-group form-row-group" style="border: 1px solid #ccc; padding: 3px;">
+                                    <div class="row-group form-row-group">
+                                        <div class="row">
+                                            <span class="titleone">其他地區</span> 
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">AR-阿根廷-Argentina</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">BB-巴貝多-Barbados</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">BO-玻利維亞-Bolivia</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">BR-巴西-Brazil</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">CL-智利-Chile</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">CO-哥倫比亞-Colombia</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">CR-哥斯大黎加-Costa Rica</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">EC-厄瓜多-Ecuador</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">SV-薩爾瓦多-El Salvador</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">GT-瓜地馬拉-Guatemala</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">HN-宏都拉斯-Honduras</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">JM-牙買加-Jamaica</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">MX-墨西哥-Mexico</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">PA-巴拿馬-Panama</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">PY-巴拉圭-Paraguay</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">PE-秘魯-Peru</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">PR-波多黎各-Puerto Rico</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">UY-烏拉圭-Uruguay</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">VE-委內瑞拉-Venezuela</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">BJ-貝南-Benin</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">CI-象牙海岸-Ivory Coast (Cote D'Ivoire)</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">DJ-吉布地-Djibouti</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">EG-埃及-Egypt</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">ET-衣索比亞-Ethiopia</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">GH-迦納-Ghana</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">KE-肯亞-Kenya</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">LS-賴索托-Lesotho</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">MG-馬達加斯加-Madagascar</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">MW-馬拉威-Malawi</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">ML-馬利-Mali</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">MU-模里西斯-Mauritius</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">MZ-莫三比克-Mozambique</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">NE-尼日-Niger</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">NG-奈及利亞-Nigeria</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">SN-塞內加爾-Senegal</label>
+                                                </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">SL-獅子山-Sierra Leone</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                            <span class="checkbox_box">
+                                                <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                <label for="check1">ZA-南非-South Africa</label>
+                                            </span>
+                                            </div>
+                                            <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">SD-蘇丹-Sudan</label>
+                                                </span>
+                                            </div>
+                                                <div class="col-2">
+                                                <span class="checkbox_box">
+                                                    <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                    <label for="check1">TZ-坦尚尼亞-Tanzania</label>
+                                                </span>
+                                                </div>
+                                                <div class="col-2">
+                                                    <span class="checkbox_box">
+                                                        <input id="check1" type="checkbox" name="check" value="1" checked="">
+                                                        <label for="check1">TG-多哥-Togo</label>
+                                                    </span>
+                                                </div>
+                                        </div>
+                                    <div class="col-12 d-flex">
+                                        <button class="btn btn-primary"> 全選</button>
+                                        <button class="btn btn-primary">清除</button>
+                                        <button class="btn btn-primary">加入</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="row-group"style="border: 1px solid #ccc; padding: 3px;">
+                                    <div class="col-12">
+                                        全部國家除300-Africa,128-Burma,240-South Europe,其餘全選。
+                                    </div>
+                                    <button class="btn btn-primary">確定</button>
+                                    <button type="button" class="btn btn-delete">刪除</button>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="input-title col-4 col-border justify-content-end">Type</div>
-                                <div class="col-8 col-border">
-                                    <select name="" id="">
-                                        <option value="">Quota Share</option>
-                                        <option value="">Surplus</option>
-                                    </select>
-                                </div>
-                            </div>
-                            </div>
                         </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">確認</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-                        </div>
-                        </div>
-                    </div>
                 </div>
                 </div>
             </div>
