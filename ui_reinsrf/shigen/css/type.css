@@ -1044,8 +1044,8 @@ table.default_table tbody tr td.title.text_s {
   margin-left: .75rem;
 }
 
-.nav .nav-item .nav-link > a {
-  text-decoration: none;
+.nav .nav-item .nav-link > a:active {
+  background-color: red;
 }
 
 .nav-link {
