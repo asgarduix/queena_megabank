@@ -1026,29 +1026,20 @@ table.default_table tbody tr td.title.text_s {
   display: inline-block;
 }
 
-/* tab */
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  background-color: #3941a1;
-  text-decoration: none;
-  border-radius: .25rem;
+/* 內容tab選單  */
+.nav{
+  margin: 0;
 }
-
-.nav .nav-item .nav-link:hover{
-  background-color: #888bb5;
+.nav li.nav-item{
+  list-style: none;
+  /* margin: 10px 3px; */
+  margin-right: 3px;
 }
-
-.nav .nav-item .nav-link {
+.nav .nav-item .nav-link{
   padding: 10px;
-  background-color: #61669F;
-  color: #fff; 
-  margin-left: .75rem;
+  background-color: #DB8F00;
+  color: #fff;
 }
-
-.nav .nav-item .nav-link > a:active {
-  background-color: red;
-}
-
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background-color: #C27E00;
 }
