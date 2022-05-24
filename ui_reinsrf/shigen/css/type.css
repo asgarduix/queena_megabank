@@ -481,8 +481,20 @@ section {
   padding: 2px;
   padding-left: 4px;
   overflow: hidden;
-
 }
+
+.content .sub_title {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background-color:#CFCFCF;
+  color: #333;
+  padding: 2px;
+  padding-left: 4px;
+  overflow: hidden;
+  font-weight: 100;
+}
+
 
 .content .slidetoggle.item_title {
   padding-left: 30px;
