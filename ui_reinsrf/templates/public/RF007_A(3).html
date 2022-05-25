@@ -58,7 +58,7 @@
             </div>
             <div class="item_title title s2">臨時檔登錄</div>
             <div class="row-group form-row-group">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="input-title col-2 col-border">General<br>一般</div>
                     <div class="col-4 col-border">
                         <select style="min-width: 40%;" name="" id="">
@@ -130,9 +130,62 @@
                             <option value="">調整 Adjustment</option>
                         </select>
                     </div>
+                </div> -->
+                <!-- 0525修改 -->
+                <div class="row">
+                    <div class="input-title col-2 col-border">Period<br>帳單期間類型</div>
+                        <div class="col-4 col-border">
+                            <select name="" id="">
+                                <option value="A">All</option>
+                                <option value="B">General</option>
+                                <option value="C">Profit Commission</option>
+                                <option value="C">Cash Call/Date of Loss</option>
+                                <option value="C">Portfolio Transfer</option>
+                                <option value="">Commission Adjustment</option>
+                                <option value="">Loss Participation</option>
+                                <option value="">Commutation/Cut-Off</option>
+                                <option value="">Letter of Credit (LOC)</option>
+                                <option value="">Outstanding Claim Advance (OCA) </option>
+                            </select>
+                    </div>
+                    <div class="input-title col-2 col-border">General<br>一般</div>
+                    <div class="col-4 col-border">
+                        <select style="min-width: 40%;" name="" id="">
+                            <option value="1">1st Quarter</option>
+                            <option value="2">2nd Quarter</option>
+                            <option value="3">3rd Quarter</option>
+                            <option value="4">4rd Quarter</option>
+                            <option value="5">1st Half Year</option>
+                            <option value="6">2nd Half Year</option>
+                            <option value="7">Year</option>
+                            <option value="8" selected>Other</option>
+                        </select>
+                        <input style="min-width: 30%;" type="text" placeholder="YYYY/MM/DD" required>
+                        ～
+                        <input style="min-width: 30%;" type="text" placeholder="YYYY/MM/DD" required>
                 </div>
-
-            </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">*Portfolio Transfer<br>責任移轉</div>
+                    <div class="col-4 col-border">
+                        <select style="min-width: 30%;" name="" id="">
+                            <option value="0" selected></option>
+                            <option value="1">Out/Withdrawal</option>
+                            <option value="2">In/Entry</option>
+                        </select>
+                        <input style="min-width: 40%;" type="text" placeholder="YYYY" required>
+                    </div>
+                    <div class="input-title col-2 col-border">Start And End<br>起迄日期</div>
+                    <div class="col-4 col-border">
+                        <input type="text" style="max-width:30%;" placeholder="YYYY/MM/DD" required>
+                            ～
+                        <input type="text" style="max-width:30%;" placeholder="YYYY/MM/DD" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Account Type<br>帳單類型</div>
+                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                </div>
             <!-- A區 end -->
             <!-- b區 A區選項選填一個後才出現 -->
             <div style="border: 1px solid #ccc; padding: 3px;">
@@ -494,7 +547,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
             <!-- c區 end -->
             <div class="row-group">
                 <div class="row">
@@ -504,9 +557,7 @@
                     </div>
                 </div> 
             </div>
-           
-            
-    </div><!-- content end  -->
+            </div><!-- content end  -->
 </section>
 
 </body>
