@@ -150,7 +150,7 @@
                     </div>
                     <div class="input-title col-2 col-border">General<br>一般</div>
                     <div class="col-4 col-border">
-                        <select style="min-width: 40%;" name="" id="">
+                        <select name="" id="">
                             <option value="1">1st Quarter</option>
                             <option value="2">2nd Quarter</option>
                             <option value="3">3rd Quarter</option>
@@ -160,20 +160,16 @@
                             <option value="7">Year</option>
                             <option value="8" selected>Other</option>
                         </select>
-                        <input style="min-width: 30%;" type="text" placeholder="YYYY/MM/DD" required>
-                        ～
-                        <input style="min-width: 30%;" type="text" placeholder="YYYY/MM/DD" required>
                 </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">*Portfolio Transfer<br>責任移轉</div>
                     <div class="col-4 col-border">
-                        <select style="min-width: 30%;" name="" id="">
+                        <select name="" id="">
                             <option value="0" selected></option>
                             <option value="1">Out/Withdrawal</option>
                             <option value="2">In/Entry</option>
                         </select>
-                        <input style="min-width: 40%;" type="text" placeholder="YYYY" required>
                     </div>
                     <div class="input-title col-2 col-border">Start And End<br>起迄日期</div>
                     <div class="col-4 col-border">
@@ -184,11 +180,17 @@
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">Account Type<br>帳單類型</div>
-                    <div class="col-4 col-border"><input type="text" placeholder="" required></div>
+                    <div class="col-4 col-border">
+                        <select style="min-width: 30%;" name="" id="">
+                            <option value="0" selected>G:一般General</option>
+                            <option value="1">S:補充Supplementary</option>
+                            <option value="2">A:調整Adjustment</option>
+                        </select>
+                    </div>
                 </div>
             <!-- A區 end -->
             <!-- b區 A區選項選填一個後才出現 -->
-            <div style="border: 1px solid #ccc; padding: 3px;">
+            <div style="border: 1px solid #ccc; padding: 3px; margin-top:15px ;">
             <div class="row-group form-row-group">
                 <div class="row">
                     <div class="input-title col-2 col-border">*Treaty Code<br>合約卷號</div>
