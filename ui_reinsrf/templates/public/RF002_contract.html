@@ -33,237 +33,64 @@
 </head>
 
 <body>
-    <div class="ajax-aside-nav"></div>
-<section>
     <div class="ajax-section-main"></div>
     <div class="container-fluid content">
-            <div class="bread-crumbs">
-                <a href="#">分進作業</a> &gt; <a href="#">合約作業</a>
-            </div>
-            <div class="big_title title s1">合約作業</div>
-            <div class="col-12">
-                <div class="col-12 col-border">
-                    <div class="row-group form-row-group">
-                        <div class="row">
-                            <div class="input-title col-2 col-border">Treaty Code<br>合約卷號</div>
-                            <div class="col-4 col-border">
-                                <input type="text" placeholder="" required>
-                            </div>
-                            <div class="input-title col-2 col-border">U/W Year<br>承保年度</div>
-                            <div class="col-4 col-border">
-                                <input type="text" placeholder="" required>
-                            </div>
-                        </div>
-                    <div class="row">
-                    <div class="col-4 col-border">
-                    <button class="btn btn-primary">新增</button>
-                    <button class="btn btn-primary">查詢</button>
+        <button style="font-size: 15px;" class="btn btn-primary">新增</button>
+		<div class="tableGray">
+            <div>
+                <div class="tableGray_b">
+                    <div class="item_title title s2">
+                                    合約型態內容
                     </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="item_title title s2">比例合約</div>
-                <div class="divSpace"></div>
-            <div class="tableGray">
-            <div class="item_title title s2">合約基本資料</div>
-            <div class="row-group form-row-group">
-                <div class="row">
-                    <div class="input-title col-2 col-border">*Treaty Code<br>合約卷號</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="必填" required>
-                    </div>
-                    <div class="input-title col-2 col-border">*General Treaty Code<br>代表號</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="必填" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">*Treaty Name<br>合約名稱</div>
-                    <div class="col-10 col-border">
-                        <input type="text" placeholder="必填" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">*Ceding Company Code<br>分保公司代碼</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="必填" required>
-                    </div>
-                    <div class="input-title col-2 col-border">*Type Code<br>合約型態</div>
-                    <div class="col-4 col-border">
-                        <select name="" id="">
-                            <option value="">Quota Share</option>
-                            <option value="">Surplus</option>
-                            <option value="">Quota Share & Surplus</option>
-                            <option value="">Facultative</option>
-                            <option value="">Open Cover</option>
-                            <option value="">Pool</option>
-                            <option value="">Binding Authority</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Ceding Company Name<br>分保公司全名</div>
-                    <div class="col-10 col-border">
-                        <input type="text" placeholder="自動帶出分保公司代碼對應英文全名" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">*Inception Date<br>起保日</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="必填YYYY/MM/DD" required>
-                    </div>
-                    <div class="input-title col-2 col-border">*Attachment Point<br>再保險契約起賠額</div>
-                    <div class="col-4 col-border">
-                        <select style="min-width:30%;" name="" id="">
-                            <option value="" selected="">幣別</option>
-                            <option value="">全部</option>
-                            <option value="">TWD&nbsp;&nbsp;台幣</option>
-                            <option value="">USD&nbsp;&nbsp;美金</option>
-                            <option value="">HKD&nbsp;&nbsp;港幣</option>
-                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                            <option value="">JPY&nbsp;&nbsp;日圓</option>
-                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                            <option value="">EUR&nbsp;&nbsp;歐元</option>
-                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                            <option value="">CAD&nbsp;&nbsp;加幣</option>
-                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                            <option value="">THB&nbsp;&nbsp;泰幣</option>
-                            <option value="">VND&nbsp;&nbsp;越南幣</option>
-                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                        </select>
-                        <input style="max-width:50%;" type="text" placeholder="金額必填" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Cancel Date<br>註銷日期</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="YYYY/MM/DD" >
-                    </div>
-                    <div class="input-title col-2 col-border">*Attachment of Liability<br>責任歸屬</div>
-                    <div class="col-4 col-border">
-                        <select name="" id="">
-                        <option value="" selected>必填</option>
-                        <option value="">Risk Attaching</option>
-                        <option value="" >Loss Occurance</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">PNOC<br>暫時註銷通知</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="必填MM/DD" required>
-                    </div>
-                    <div class="input-title col-2 col-border">*國內/國外</div>
-                    <div class="col-4 col-border">
-                        <select name="" id="">
-                            <option value="" selected>必填</option>
-                            <option value="">國內</option>
-                            <option value="">國外</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">PNOC Automatically Tendered<br>自動提暫時註銷通知</div>
-                    <div class="col-4 col-border">
-                        <select name="" id="">
-                            <option value="Y">Y</option>
-                            <option value="N">N</option>
-                        </select>
-                    </div>
-                    <div class="input-title col-2 col-border">*Original File No.<br>對方來文號碼</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="請輸入號碼" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Commutation Date<br>結束日期</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="YYYY/MM/DD" required>
-                    </div>
-                    <div class="input-title col-2 col-border">Accounting Code<br>會計險別代碼</div>
-                    <div class="col-4 col-border">
-                        <input type="text" placeholder="必填" required>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="divSpace"></div>
-            </div>
-            <div class="divSpace"></div>
-                    <div class="tableGray">
-                        <div class="item_title title s2">各年度資訊</div>
+                        <button style="font-size: 15px;" class="btn btn-primary">刪除</button>
+                        <button style="font-size: 15px;" class="btn btn-primary">儲存</button>
+                        <button style="font-size: 15px;" class="btn btn-primary">離開</button>
                         <!-- table scroll-x -->
-                        <table class="calculateBox">
+                        <div class="x_scroll ">
+                            <table class="calculateBox">
                                 <tr class="calculateBoxHead">
-                                    <td>*U/W Year<br>承保年</td>
-                                    <td>*Status<br>合約狀態</td>
-                                    <td>*Portfolio Transfer<br>責任轉移</td>
-                                    <td>Clean-Cut Date<br>結清日</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" placeholder="必填YYYY" required></td>
-                                    <td>
-                                        <select name="" id="">
-                                            <option value="">必填</option>
-                                            <option value="O">Open</option>
-                                            <option value="C">Close</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select name="" id="">
-                                            <option value="">必填</option>
-                                            <option value="R">Run-Off</option>
-                                            <option value="C">Clean-Cut</option>
-                                        </select>
-                                    </td>
-                                    <td><input type="text" placeholder="必填YYYY/MM/DD" required></td>
-                                </tr>
-                                <tr class="calculateBoxHead">
-                                    <td>Broker Code<br>經紀人代碼</td>
-                                    <td>Broker Name<br>經紀人簡稱</td>
-                                    <td>*Trade<br>收付對象</td>
-                                    <td>*Trade Code<br>收付代碼</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" placeholder="請填入七碼" required></td>
-                                    <td><input type="text" placeholder="文件寫自動帶入" required></td>
-                                    <td>
-                                        <select name="" id="">
-                                            <option value="">必填</option>
-                                            <option value="R">相同</option>
-                                            <option value="C">自留</option>
-                                            <option value="C">指定</option>
-                                        </select>
-                                    </td>
-                                    <td><input type="text" placeholder="1234567" required></td>
-                                </tr>
-                                <tr class="calculateBoxHead">
-                                    <td colspan="7">Commission<br>佣金</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="7">
-                                        <button class="btn btn-edit" data-toggle="modal" data-target="#exampleModalone">
-                                            各項佣金
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="calculateBoxHead">
-                                    <td>*EPI (100%)<br>預估再保費</td>
-                                    <td>*EPI (Our Share)<br>預估再保費</td>
-                                    <td>*Revised EPI (100%)<br>修正後預估再保費</td>
-                                    <td>*Revised EPI (Our Share)<br>修正後預估再保費</td>
+                                    <td>*Section</td>
+                                    <td>Type Code<br>合約型態</td>
+                                    <td>Our Share (%)<br>分入成分 (%)</td>
+                                    <td>Our Share (100%)<br>分入成分 (100%)</td>
                                 </tr>
                                 <tr>
                                     <td>
+                                    <select name="" id="">
+                                        <option value="">必填</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
+                                    </td>
+                                    <td>
+                                    <select name="" id="">
+                                                    <option value="">必填</option>
+                                                    <option value="">Quota Share</option>
+                                                    <option value="">Surplus</option>
+                                                    <option value="">Quota Share & Surplus</option>
+                                                    <option value="">Facultative</option>
+                                                    <option value="">Open Cover</option>
+                                                    <option value="">Pool</option>
+                                                    <option value="">Binding Authority</option>
+                                    </select>
+                                    </td>
+                                    <td>
+                                    <input type="text" style="max-width: 30%;" placeholder="必填" required>%
+                                                of
+                                    <input type="text" style="max-width: 30%;" placeholder="" required>%
+                                    </td>
+                                    <td>
+                                    <input type="text" style="max-width: 30%;" placeholder="必填" required>% of 100%
+                                    </td>
+                                    </tr>
+                                    <tr class="calculateBoxHead">
+                                        <td>*EPI (100%)<br>預估再保費</td>
+                                        <td>*EPI (Our Share)<br>預估再保費</td>
+                                        <td>Revised EPI (100%)<br>修正後預估再保費</td>
+                                        <td>Revised EPI (Our Share)<br>修正後預估再保費</td>
+                                        </tr>
+                                    <tr>
+                                        <td>
                                         <select style="min-width:30%;" name="" id="">
                                             <option value="" selected="">幣別</option>
                                             <option value="">全部</option>
@@ -289,214 +116,367 @@
                                             <option value="">THB&nbsp;&nbsp;泰幣</option>
                                             <option value="">VND&nbsp;&nbsp;越南幣</option>
                                             <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                        </select>
-                                        <input style="max-width:50%;" type="text" placeholder="金額" required>
-                                    </td>
-                                    <td>
-                                        <select style="min-width:30%;" name="" id="">
-                                            <option value="" selected="">幣別</option>
-                                            <option value="">全部</option>
-                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                            <option value="">USD&nbsp;&nbsp;美金</option>
-                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                        </select>
-                                        <input style="max-width:50%;" type="text" placeholder="金額" required>
-                                    </td>
-                                    <td>
-                                        <select style="min-width:30%;" name="" id="">
-                                            <option value="" selected="">幣別</option>
-                                            <option value="">全部</option>
-                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                            <option value="">USD&nbsp;&nbsp;美金</option>
-                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                        </select>
-                                        <input style="max-width:50%;" type="text" placeholder="金額" required>
-                                    </td>
-                                    <td>
-                                        <select style="min-width:30%;" name="" id="">
-                                            <option value="" selected="">幣別</option>
-                                            <option value="">全部</option>
-                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                            <option value="">USD&nbsp;&nbsp;美金</option>
-                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                        </select>
-                                        <input style="max-width:50%;" type="text" placeholder="金額" required>
-                                    </td>
-                                </tr>
-                                <tr class="calculateBoxHead">
-                                    <td>*Earthquake<br>地震</td>
-                                    <td>*Windstorm/Flood<br>颱風/洪水</td>
-                                    <td>Event Limit (100%)<br>事件限額</td>
-                                    <td>Cash Loss (100%)<br>現金攤賠</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <select name="" id="">
-                                            <option value="">必填</option>
-                                            <option value="Y">Y</option>
-                                            <option value="N">N</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select name="" id="">
-                                            <option value="">必填</option>
-                                            <option value="Y">Y</option>
-                                            <option value="N">N</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select style="min-width:30%;" name="" id="">
-                                            <option value="" selected="">幣別</option>
-                                            <option value="">全部</option>
-                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                            <option value="">USD&nbsp;&nbsp;美金</option>
-                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                        </select>
-                                        <input style="max-width:50%;" type="text" placeholder="必填金額" required>
-                                    </td>
-                                    <td>
-                                        <select style="min-width:30%;" name="" id="">
-                                            <option value="" selected="">幣別</option>
-                                            <option value="">全部</option>
-                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
-                                            <option value="">USD&nbsp;&nbsp;美金</option>
-                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
-                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
-                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
-                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
-                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
-                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
-                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
-                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
-                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
-                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
-                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
-                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
-                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
-                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
-                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
-                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
-                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
-                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
-                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
-                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
-                                        </select>
-                                        <input style="max-width:50%;" type="text" placeholder="金額" required>
-                                    </td>
-                                </tr>
-                                <tr class="calculateBoxHead">
-                                    <td>*Inception Date<br>再保險契約責任始期</td>
-                                    <td>Expiration Date<br>再保險契約責任終期</td>
-                                    <td colspan="2">*Last Updated Date<br>最後修改日</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" placeholder="必填" required></td>
-                                    <td><input type="text" placeholder="必填" required></td>
-                                    <td colspan="2"><input type="text" placeholder="自動帶入" required></td>
-                                </tr>
-                                <tr class="calculateBoxHead">
-                                    <td colspan="4">*Slip/Wording<br>合約文件</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4">
-                                        <div class="fileList">
-                                            <input type="text" placeholder="" required="">
-                                            <input type="text" placeholder="" required="">
-                                            <input type="text" placeholder="" required="">
-                                            <input type="text" placeholder="" required="">
-                                            <input type="text" placeholder="" required="">
-                                        <button class="btn btn-edit">瀏覽</button>
-                                        <button class="btn btn-primary">上傳</button>
-                                        </div>
-                                    </td>
-                                </tr>
-                        </table>
-                    </div>
-                    <div class="divSpace"></div>
-					<div class="tableGray">
-                        <div class="item_title title sub_title">合約型態內容列表</div>
-                        <div class="row-group">
-                            <div class="col-12" style="border: 1px solid #ccc; padding: 3px;">
-                                <div id="table02"></div>
+                                            </select>
+                                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                                            </td>
+                                            <td>
+                                            <select style="min-width:30%;" name="" id="">
+                                                    <option value="" selected="">幣別</option>
+                                                    <option value="">全部</option>
+                                                    <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                    <option value="">USD&nbsp;&nbsp;美金</option>
+                                                    <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                    <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                    <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                    <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                    <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                    <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                    <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                    <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                    <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                    <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                    <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                    <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                    <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                    <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                    <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                    <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                    <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                    <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                    <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                    <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                </select>
+                                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                                            </td>
+                                            <td>
+                                            <select style="min-width:30%;" name="" id="">
+                                                    <option value="" selected="">幣別</option>
+                                                    <option value="">全部</option>
+                                                    <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                    <option value="">USD&nbsp;&nbsp;美金</option>
+                                                    <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                    <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                    <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                    <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                    <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                    <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                    <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                    <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                    <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                    <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                    <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                    <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                    <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                    <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                    <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                    <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                    <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                    <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                    <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                    <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                            </select>
+                                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                                            </td>
+                                            <td>
+                                            <select style="min-width:30%;" name="" id="">
+                                                    <option value="" selected="">幣別</option>
+                                                    <option value="">全部</option>
+                                                    <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                    <option value="">USD&nbsp;&nbsp;美金</option>
+                                                    <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                    <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                    <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                    <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                    <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                    <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                    <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                    <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                    <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                    <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                    <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                    <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                    <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                    <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                    <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                    <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                    <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                    <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                    <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                    <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                            </select>
+                                            <input style="max-width:50%;" type="text" placeholder="金額" required="">
+                                            </td>
+                                        </tr>
+                                        <tr class="calculateBoxHead">
+                                            <td>*Accounting Code<br>會計險別代號</td>
+                                            <td>*Actuarial Code<br>精算損益險別代號</td>
+                                            <td>*Business Code<br>預算險別代號</td>
+                                            <td>Remark<br>備註</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">必填</option>
+                                                    <option value="">F1P01 火普通險-自用</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">01-一年期住宅火災保險</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">火災保險</option>
+                                                </select>
+                                            </td>
+                                            <td><input type="text" placeholder="" required></td>
+                                        </tr>
+                                        <tr class="calculateBoxHead">
+                                            <td style="line-height: 2.5rem;">Coverage 代碼Phase I</td>
+                                            <td style="line-height: 2.5rem;">Coverage 代碼Phase II</td>
+                                            <td style="line-height: 2.5rem;">Portfolio編碼</td>
+                                            <td style="line-height: 2.5rem;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" placeholder="" required></td>
+                                            <td><input type="text" placeholder="" required></td>
+                                            <td><input type="text" placeholder="" required></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="calculateBoxHead" style="vertical-align: middle;">
+                                            <td colspan="2">
+                                                <div class="tableAbuttom">
+                                                    <a href="#">
+                                                    <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px; "></i>
+                                                    </a>
+                                                </div>
+                                                <div class="tableAbuttom">
+                                                    Limit (100%)<br>再保契約再保責任額 (限額)
+                                                </div>
+                                            </td>
+                                            <td colspan="2">
+                                                Limit (Our Share)<br>再保契約再保責任額 (限額)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td>
+                                                        <button class="btn btn-edit">刪除</button>
+                                                        <select style="min-width: 30%;" name="" id="">
+                                                            <option value="">Territory</option>
+                                                            <option value="">Interest Abroad</option>
+                                                            <option value="">Non-Interest Abroad</option>
+                                                        </select>
+                                                        <select style="min-width:30%;" name="" id="">
+                                                            <option value="" selected="">幣別</option>
+                                                            <option value="">全部</option>
+                                                            <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                            <option value="">USD&nbsp;&nbsp;美金</option>
+                                                            <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                            <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                            <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                            <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                            <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                            <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                            <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                            <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                            <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                            <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                            <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                            <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                            <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                            <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                            <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                            <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                            <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                            <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                            <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                            <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                        </select>
+                                                        <input style="max-width:25%;" type="text" placeholder="金額" required="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                    <button class="btn btn-edit">刪除</button>
+                                                    <select style="min-width: 30%;" name="" id="">
+                                                        <option value="">Territory</option>
+                                                        <option value="">Interest Abroad</option>
+                                                        <option value="">Non-Interest Abroad</option>
+                                                    </select>
+                                                    <select style="min-width:30%;" name="" id="">
+                                                        <option value="" selected="">幣別</option>
+                                                        <option value="">全部</option>
+                                                        <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                        <option value="">USD&nbsp;&nbsp;美金</option>
+                                                        <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                        <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                        <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                        <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                        <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                        <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                        <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                        <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                        <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                        <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                        <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                        <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                        <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                        <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                        <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                        <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                        <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                        <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                        <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                        <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                    </select>
+                                                    <input style="max-width:25%;" type="text" placeholder="金額" required="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            </td>
+                                            <td colspan="2">
+                                                <table style="width: 100%;">
+                                                    <tr>
+                                                        <td>
+                                                        <button class="btn btn-edit">刪除</button>
+                                                        <select style="min-width: 30%;" name="" id="">
+                                                            <option value="">Territory</option>
+                                                            <option value="">Interest Abroad</option>
+                                                            <option value="">Non-Interest Abroad</option>
+                                                        </select>
+                                                        <select style="min-width:20%;" style="min-width:20%;" name="" id="">
+                                                                <option value="">幣別</option>
+                                                        </select>
+                                                        <input style="max-width:25%;" type="text" placeholder="金額" required="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>
+                                                    <button class="btn btn-edit">刪除</button>
+                                                    <select style="min-width: 30%;" name="" id="">
+                                                        <option value="">Territory</option>
+                                                        <option value="">Interest Abroad</option>
+                                                        <option value="">Non-Interest Abroad</option>
+                                                    </select>
+                                                    <select style="min-width:20%;" name="" id="">
+                                                        <option value="" selected="">幣別</option>
+                                                        <option value="">全部</option>
+                                                        <option value="">TWD&nbsp;&nbsp;台幣</option>
+                                                        <option value="">USD&nbsp;&nbsp;美金</option>
+                                                        <option value="">HKD&nbsp;&nbsp;港幣</option>
+                                                        <option value="">KRW&nbsp;&nbsp;韓幣</option>
+                                                        <option value="">SGD&nbsp;&nbsp;新加坡幣</option>
+                                                        <option value="">JPY&nbsp;&nbsp;日圓</option>
+                                                        <option value="">GBP&nbsp;&nbsp;英鎊</option>
+                                                        <option value="">EUR&nbsp;&nbsp;歐元</option>
+                                                        <option value="">CNY&nbsp;&nbsp;人民幣</option>
+                                                        <option value="">INR&nbsp;&nbsp;印度盧比</option>
+                                                        <option value="">CAD&nbsp;&nbsp;加幣</option>
+                                                        <option value="">CHF&nbsp;&nbsp;瑞士法郎</option>
+                                                        <option value="">AUD&nbsp;&nbsp;澳幣</option>
+                                                        <option value="">DKK&nbsp;&nbsp;丹麥幣</option>
+                                                        <option value="">IDR&nbsp;&nbsp;印尼幣</option>
+                                                        <option value="">MYR&nbsp;&nbsp;馬來幣</option>
+                                                        <option value="">NZD&nbsp;&nbsp;紐西蘭幣</option>
+                                                        <option value="">PHP&nbsp;&nbsp;菲律賓幣</option>
+                                                        <option value="">SEK&nbsp;&nbsp;瑞典幣</option>
+                                                        <option value="">THB&nbsp;&nbsp;泰幣</option>
+                                                        <option value="">VND&nbsp;&nbsp;越南幣</option>
+                                                        <option value="">ZAR&nbsp;&nbsp;南非幣</option>
+                                                    </select>
+                                                    <input style="max-width:25%;" type="text" placeholder="金額" required="">
+                                                    </td>
+                                                </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr class="calculateBoxHead">
+                                            <td colspan="4">
+                                                <div class="tableAbuttom">
+                                                    <a href="#">
+                                                    <i class="fas fa-plus-square" style="font-size: 18px; margin-left: 5px; margin-bottom: 5px;"></i>
+                                                </a> 
+                                                </div>
+                                                <div class="tableAbuttom">
+                                                Territory Code<br>區域代碼</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <button class="btn btn-edit">刪除</button>
+                                                <select style="min-width: 30%;" name="" id="">
+                                                    <option value="">Territory</option>
+                                                    <option value="">Interest Abroad</option>
+                                                    <option value="">Non-Interest Abroad</option>
+                                                </select>
+                                                    <input style="max-width:50%;" type="text" placeholder="" required="">
+                                                    <a data-toggle="modal" data-target="#exampleModalTwo">
+                                                        <i class="fas fa-folder-plus" style="font-size: 20px; margin-left: 5px; color:#5B5B5B;"></i>
+                                                    </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <button class="btn btn-edit">刪除</button>
+                                                <select style="min-width: 30%;" name="" id="">
+                                                    <option value="">Territory</option>
+                                                    <option value="">Interest Abroad</option>
+                                                    <option value="">Non-Interest Abroad</option>
+                                                </select>
+                                                    <input style="max-width:50%;" type="text" placeholder="" required="">
+                                                    <a  data-toggle="modal" data-target="#exampleModalTwo">
+                                                        <i class="fas fa-folder-plus" style="font-size: 20px; margin-left: 5px; color:#5B5B5B;"></i>
+                                                    </a>
+                                            </td>
+                                        </tr>
+                            </table>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- content end  -->
+        <!-- Modal區域選擇 -->
+        <div class="modal fade" id="exampleModalone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                1請輸入需新增之層數
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row-group">
+                            <div class="row">
+                                <div class="input-title col-4 col-border justify-content-end">Section</div>
+                                <div class="col-8 col-border">
+                                    <input type="text" placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-title col-4 col-border justify-content-end">Type</div>
+                                <div class="col-8 col-border">
+                                    <select name="" id="">
+                                        <option value="">Quota Share</option>
+                                        <option value="">Surplus</option>
+                                    </select>
+                                </div>
+                            </div>
                             </div>
                         </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">確認</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        </div>
+                        </div>
                     </div>
+        </div>
 			<!-- tab-content end  -->
             <div class="col-12 d-flex">
                 <button class="btn btn-primary">複製</button>
@@ -504,34 +484,6 @@
                 <button class="btn btn-primary">儲存</button>
                 <button class="btn btn-primary">匯出</button>
                 <button class="btn btn-primary">列印</button>
-            </div>
-            <div class="divSpace"></div>
-            <div class="row-group">
-                <div class="col-12" style="border: 1px solid #ccc; padding: 3px;">
-                    <!-- <table class="tblCssDataGrid css_table" style="table-layout:fixed">
-                        <tbody>
-                            <tr class="cssDataGridHeader">
-                                <th>Treaty Code<br>合約卷號</th>
-                                <th>U/W Year<br>承保年度</th>
-                                <th>Company Code<br>再保人代碼</th>
-                                <th>Broker Code<br>經紀人代碼</th>
-                                <th>Status<br>狀態</th>
-                                <th>EPI (Our Share)<br>預估再保費</th>
-                                <th>Revised EPI (Our Share)<br>修正後預估再保費</th>
-                            </tr>
-                            <tr class="cssDataGridHeader">
-                                <td>202110001</td>
-                                <td>2021</td>
-                                <td>123</td>
-                                <td>2334</td>
-                                <td> 是</td>
-                                <td>TWD$200,000,000</td>
-                                <td>TWD$200,000,000</td>
-                            </tr>
-                        </tbody>
-                    </table> -->
-                    <div id="table01"></div>
-                </div>
             </div>
             <div class="divSpace"></div>
     </div>
@@ -1758,7 +1710,6 @@
         </div>
         </div>
     </div>
-</section>
 
 </body>
 <script src="../../shigen/js/tabulator.min.js"></script>
@@ -1806,56 +1757,6 @@
             { title: "Status<br>狀態", field: "Status<br>狀態" },
             { title: "EPI (Our Share)<br>預估再保費", field: "EPI (Our Share)<br>預估再保費" },
             { title: "Revised EPI (Our Share)<br>修正後預估再保費", field: "Revised EPI (Our Share)<br>修正後預估再保費" },
-        ],
-    });
-    // 選擇預設勾選row
-    table01.selectRow("b1");
-    // 使用filter能精準指定欄位
-    //table.selectRow(table.setFilter("id","=","a1"));
-</script>
-
-<script>
-    let table02Data = [{
-        id: "b1",
-        Section: "設計文字",
-        預估再保費: "設計文字",
-        預估再保費: "設計文字",
-        會計險別代號: "設計文字",
-        精算損益險別代號: "設計文字",
-        預算險別代號: "設計文字",
-    }, ];
-    var table02 = new Tabulator("#table02", {
-        data: table01Data,
-        //autoColumns: true,
-        layout: "fitColumns",
-        height: "255px",
-        pagination: "local",
-        paginationSize: 5,
-        paginationSizeSelector: [5, 10, 30, 50, true],
-        movableColumns: true,
-        resizableRows: true,
-        tooltips: true,
-        tooltipsHeader: true,
-        tooltipGenerationMode: "hover",
-        selectable: true,
-        columns: [{
-                formatter: "rowSelection",
-                titleFormatter: "rowSelection",
-                headerHozAlign: "center",
-                hozAlign: "center",
-                headerSort: false,
-                maxWidth: 30,
-                minWidth: 30,
-                cellClick: function(e, cell) {
-                    cell.getRow().toggleSelect();
-                }
-            },
-            { title: "Section<br>", field: "*Section<br>" },
-            { title: "EPI (100%)<br>預估再保費", field: "EPI (100%)<br>預估再保費" },
-            { title: "EPI (Our Share)<br>預估再保費 (%)", field: "EPI (Our Share)<br>預估再保費 (%)" },
-            { title: "Accounting Code<br>會計險別代號", field: "Accounting Code<br>會計險別代號" },
-            { title: "Actuarial Code<br>精算損益險別代號", field: "Actuarial Code<br>精算損益險別代號" },
-            { title: "Business Code<br>預算險別代號", field: "Business Code<br>預算險別代號" },
         ],
     });
     // 選擇預設勾選row
