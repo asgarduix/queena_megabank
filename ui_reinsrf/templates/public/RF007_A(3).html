@@ -133,13 +133,13 @@
                 </div> -->
                 <!-- 0525修改 -->
                 <div class="row">
-                    <div class="input-title col-2 col-border">Period<br>帳單期間類型</div>
+                    <div class="input-title col-2 col-border">Period Type<br>帳單期間類型</div>
                         <div class="col-4 col-border">
                             <select name="" id="">
-                                <option value="B">General (YYYYMMDD~YYYYMMDD)</option>
-                                <option value="C">Profit Commission (YYYY)</option>
-                                <option value="C">Cash Call/Date of Loss (YYYYMMDD)</option>
-                                <option value="C">Portfolio Transfer (YYYY)</option>
+                                <option value="">General (YYYYMMDD~YYYYMMDD)</option>
+                                <option value="">Profit Commission (YYYY)</option>
+                                <option value="">Cash Call/Date of Loss (YYYYMMDD)</option>
+                                <option value="">Portfolio Transfer (YYYY)</option>
                                 <option value="">Commission Adjustment (YYYY)</option>
                                 <option value="">Loss Participation (YYYY)</option>
                                 <option value="">Commutation/Cut-Off (YYYYMMDD)</option>
@@ -147,7 +147,17 @@
                                 <option value="">Outstanding Claim Advance (OCA) (YYYYMMDD)</option>
                             </select>
                     </div>
-                    <div class="input-title col-2 col-border">General<br>一般</div>
+                    <div class="input-title col-2 col-border">Account Type<br>帳單類型</div>
+                    <div class="col-4 col-border">
+                        <select style="min-width: 30%;" name="" id="">
+                            <option value="0" selected>G:一般General</option>
+                            <option value="1">S:補充Supplementary</option>
+                            <option value="2">A:調整Adjustment</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-title col-2 col-border">Period<br>帳單期間</div>
                     <div class="col-4 col-border">
                         <select name="" id="">
                             <option value="1">1st Quarter</option>
@@ -159,7 +169,13 @@
                             <option value="7">Year</option>
                             <option value="8" selected>Other</option>
                         </select>
-                </div>
+                    </div>
+                    <div class="input-title col-2 col-border">Date<br>起迄日期</div>
+                    <div class="col-4 col-border">
+                        <input type="text" style="max-width:30%;" placeholder="YYYY/MM/DD" required>
+                            ～
+                        <input type="text" style="max-width:30%;" placeholder="YYYY/MM/DD" required>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="input-title col-2 col-border">*Portfolio Transfer<br>責任移轉</div>
@@ -168,22 +184,6 @@
                             <option value="0" selected></option>
                             <option value="1">Out/Withdrawal</option>
                             <option value="2">In/Entry</option>
-                        </select>
-                    </div>
-                    <div class="input-title col-2 col-border">Start And End<br>起迄日期</div>
-                    <div class="col-4 col-border">
-                        <input type="text" style="max-width:30%;" placeholder="YYYY/MM/DD" required>
-                            ～
-                        <input type="text" style="max-width:30%;" placeholder="YYYY/MM/DD" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-title col-2 col-border">Account Type<br>帳單類型</div>
-                    <div class="col-4 col-border">
-                        <select style="min-width: 30%;" name="" id="">
-                            <option value="0" selected>G:一般General</option>
-                            <option value="1">S:補充Supplementary</option>
-                            <option value="2">A:調整Adjustment</option>
                         </select>
                     </div>
                 </div>
